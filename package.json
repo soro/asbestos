@@ -1,0 +1,48 @@
+{
+  "name": "asbestos-projects-nys",
+  "version": "0.1.0",
+  "description": "Search active abatement projects in New York State",
+  "main": "dist/app.js",
+  "scripts": {
+    "clean": "rimraf dist",
+    "copy-assets": "copyfiles -u 2 src/static/*.css dist/css && copyfiles -u 2 src/static/index.html src/static/sw.js src/static/new-york.pmtiles dist && copyfiles output.json dist",
+    "build:server": "tsc",
+    "build:client": "mkdir -p dist/js && browserify src/site/site.ts -p [ tsify ] -o dist/js/site.js",
+    "build": "npm run clean && npm run build:server && npm run build:client && npm run copy-assets",
+    "scrape": "node dist/scrape.js",
+    "geocode": "node dist/geocode.js",
+    "refresh-data": "npm run scrape && npm run geocode && cp output.json dist/data.json",
+    "start": "node dist/app.js",
+    "prestart": "npm run build",
+    "prepublishOnly": "npm run build"
+  },
+  "files": [
+    "bin",
+    "dist",
+    "package.json"
+  ],
+  "author": "Soeren Roerden",
+  "license": "MIT",
+  "dependencies": {
+    "@types/maplibre-gl": "^1.14.0",
+    "events": "^1.1.1",
+    "express": "^5.2.1",
+    "maplibre-gl": "^5.16.0",
+    "pino": "^10.2.0",
+    "playwright": "^1.57.0",
+    "pmtiles": "^4.3.2",
+    "source-map": "^0.7.6"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.0.9",
+    "@types/pino": "^7.0.5",
+    "browserify": "^17.0.1",
+    "copyfiles": "^2.4.1",
+    "rimraf": "^6.1.2",
+    "ts-node": "^10.9.2",
+    "tsify": "^5.0.4",
+    "tslint": "^6.1.3",
+    "typescript": "^5.9.3"
+  }
+}

@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "noImplicitAny": false,
+        "sourceMap": true,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "declaration": true,
+        "target": "es6",
+        "outDir": "./dist",
+        "noUnusedLocals": false,
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        "strictNullChecks": true,
+        "noUnusedParameters": false,
+        "pretty": true,
+        "noFallthroughCasesInSwitch": true,
+        "experimentalDecorators": true,
+        "allowUnreachableCode": false,
+        "esModuleInterop": true
+    },
+    "include": ["src"],
+    "exclude": ["node_modules", "**/*.spec.js"]
+}

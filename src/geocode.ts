@@ -1,83 +1,193 @@
 import * as fs from "fs";
 import * as path from "path";
 import { SearchResult, GeocodedResult } from "./types";
+import { buildAddressQuery, hasCoordinates } from "./data";
+import { getConfiguredGeocoders } from "./geocoders";
+import { GeocodeCoordinates, GeocoderProvider, GeocoderProviderName, isGeocoderProviderName } from "./geocoders/types";
 
 const RAW_OUTPUT = path.join(__dirname, "../raw_output.json");
 const OUTPUT = path.join(__dirname, "../output.json");
 const CACHE_FILE = path.join(__dirname, "../geocode_cache.json");
 
-let cache: Record<string, { lat: number, lng: number }> = {};
+interface CachedGeocode extends GeocodeCoordinates {
+    provider?: GeocoderProviderName;
+}
 
-if (fs.existsSync(CACHE_FILE)) {
+interface GeocodeLookup {
+    coords: CachedGeocode | null;
+    fromCache: boolean;
+    attemptedDelayMs: number;
+}
+
+function normalizeCacheEntry(value: unknown): CachedGeocode | null {
+    if (!value || typeof value !== "object") {
+        return null;
+    }
+
+    const candidate = value as {
+        lat?: unknown;
+        lng?: unknown;
+        provider?: unknown;
+    };
+
+    if (typeof candidate.lat !== "number" || !Number.isFinite(candidate.lat)) {
+        return null;
+    }
+
+    if (typeof candidate.lng !== "number" || !Number.isFinite(candidate.lng)) {
+        return null;
+    }
+
+    const entry: CachedGeocode = {
+        lat: candidate.lat,
+        lng: candidate.lng,
+    };
+
+    if (typeof candidate.provider === "string" && isGeocoderProviderName(candidate.provider)) {
+        entry.provider = candidate.provider;
+    }
+
+    return entry;
+}
+
+function loadCache(): Record<string, CachedGeocode> {
+    if (!fs.existsSync(CACHE_FILE)) {
+        return {};
+    }
+
     try {
-        cache = JSON.parse(fs.readFileSync(CACHE_FILE, "utf8"));
-    } catch (e) {
+        const rawCache = JSON.parse(fs.readFileSync(CACHE_FILE, "utf8")) as Record<string, unknown>;
+        return Object.entries(rawCache).reduce<Record<string, CachedGeocode>>((normalizedCache, [address, entry]) => {
+            const normalizedEntry = normalizeCacheEntry(entry);
+            if (normalizedEntry) {
+                normalizedCache[address] = normalizedEntry;
+            }
+
+            return normalizedCache;
+        }, {});
+    } catch (_error) {
         console.log("Error reading cache, starting fresh.");
+        return {};
     }
 }
+
+let cache: Record<string, CachedGeocode> = loadCache();
 
 function saveCache() {
     fs.writeFileSync(CACHE_FILE, JSON.stringify(cache, null, 2));
 }
 
-async function geocodeAddress(address: string): Promise<{ lat: number, lng: number } | null> {
-    if (cache[address]) {
-        return cache[address];
+function seedCacheFromOutput(): void {
+    if (!fs.existsSync(OUTPUT)) {
+        return;
     }
 
-    const url = `https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=${encodeURIComponent(address)}&benchmark=Public_AR_Current&format=json`;
     try {
-        const res = await fetch(url);
-        
-        if (!res.ok) throw new Error(`HTTP ${res.status}`);
-        
-        const data = await res.json() as any;
-        const matches = data.result?.addressMatches;
-        
-        if (Array.isArray(matches) && matches.length > 0) {
-            const coords = matches[0].coordinates;
-            const result = {
-                lat: coords.y,
-                lng: coords.x
-            };
-            cache[address] = result;
-            return result;
+        const existingOutput = JSON.parse(fs.readFileSync(OUTPUT, "utf8")) as GeocodedResult[];
+        for (const item of existingOutput) {
+            if (!hasCoordinates(item)) {
+                continue;
+            }
+
+            const address = buildAddressQuery(item);
+            if (!cache[address]) {
+                cache[address] = {
+                    lat: item.lat,
+                    lng: item.lng,
+                };
+            }
         }
-    } catch (e) {
-        console.error(`Geocoding error for ${address}:`, e);
+    } catch (error) {
+        console.warn("Unable to seed geocode cache from output.json:", error);
     }
-    return null;
 }
 
-async function main() {
+function wait(ms: number): Promise<void> {
+    return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+function formatProviderLabel(provider: GeocoderProviderName | undefined, fromCache: boolean): string {
+    if (fromCache) {
+        return provider ? `cache:${provider}` : "cache";
+    }
+
+    return provider ?? "unknown";
+}
+
+async function geocodeAddress(address: string, geocoders: GeocoderProvider[]): Promise<GeocodeLookup> {
+    const cachedCoords = cache[address];
+    if (cachedCoords) {
+        return {
+            coords: cachedCoords,
+            fromCache: true,
+            attemptedDelayMs: 0,
+        };
+    }
+
+    let attemptedDelayMs = 0;
+
+    for (const geocoder of geocoders) {
+        attemptedDelayMs = Math.max(attemptedDelayMs, geocoder.requestDelayMs);
+        const coords = await geocoder.geocode(address);
+        if (!coords) {
+            continue;
+        }
+
+        const result: CachedGeocode = {
+            ...coords,
+            provider: geocoder.name,
+        };
+        cache[address] = result;
+        return {
+            coords: result,
+            fromCache: false,
+            attemptedDelayMs,
+        };
+    }
+
+    return {
+        coords: null,
+        fromCache: false,
+        attemptedDelayMs,
+    };
+}
+
+async function main(): Promise<void> {
     if (!fs.existsSync(RAW_OUTPUT)) {
         console.error("No raw output found. Run scraper first.");
         process.exit(1);
     }
 
+    seedCacheFromOutput();
+    const geocoders = getConfiguredGeocoders();
+
     const rawData: SearchResult[] = JSON.parse(fs.readFileSync(RAW_OUTPUT, "utf8"));
     const geocodedData: GeocodedResult[] = [];
 
     console.log(`Geocoding ${rawData.length} items...`);
+    console.log(`Configured geocoder order: ${geocoders.map((geocoder) => geocoder.name).join(" -> ")}`);
 
     for (const item of rawData) {
-        const address = `${item.street}, ${item.city}, ${item.zip}, NY`;
-        
-        // Check if we already have it in output (if merging) - for now just overwrite
-        
-        const coords = await geocodeAddress(address);
-        if (coords) {
-            console.log(`Geocoded: ${address}`);
-            geocodedData.push({ ...item, ...coords });
+        const address = buildAddressQuery(item);
+        const lookup = await geocodeAddress(address, geocoders);
+
+        if (lookup.coords) {
+            console.log(`Geocoded [${formatProviderLabel(lookup.coords.provider, lookup.fromCache)}]: ${address}`);
+            geocodedData.push({
+                ...item,
+                lat: lookup.coords.lat,
+                lng: lookup.coords.lng,
+            });
         } else {
             console.log(`Failed to geocode: ${address}`);
             // Keep it without coords? Map won't show it.
             // Let's keep it so we don't lose data.
             geocodedData.push(item);
         }
-        
-        // Rate limit
-        await new Promise(r => setTimeout(r, 100));
+
+        if (!lookup.fromCache && lookup.attemptedDelayMs > 0) {
+            await wait(lookup.attemptedDelayMs);
+        }
     }
 
     saveCache();

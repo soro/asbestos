@@ -34,13 +34,6 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Prepare Dist
-        run: |
-          cp output.json dist/data.json
-          # Ensure CSS and JS are copied (already done by build script but being explicit for safety)
-          cp src/static/index.html dist/index.html || true
-          cp -r src/static/*.css dist/css/ || true
-
       - name: Upload Artifact
         uses: actions/upload-pages-artifact@v3
         with:

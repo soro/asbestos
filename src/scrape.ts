@@ -1,7 +1,8 @@
 import * as fs from "fs";
 import * as path from "path";
-import { chromium, Browser, Page, Frame } from "playwright";
+import { chromium, Browser, Frame } from "playwright";
 import { SearchResult } from "./types";
+import { getSiteKey } from "./data";
 
 let interceptedBatches: SearchResult[][] = [];
 let interceptionResolve: ((value?: any) => void) | null = null;
@@ -34,19 +35,18 @@ function parseDispResponse(text: string): SearchResult[] {
             if (val.r === 2 && val.u === "CONTRACTOR") continue;
             
             if (val.r === 2) currentRow.contractor = val.u;
-            if (val.r === 3) console.log(`Column 3 (potential county?): ${val.u}`);
             if (val.r === 4) currentRow.start = val.u;
             if (val.r === 6) currentRow.end = val.u;
             if (val.r === 8) currentRow.street = val.u;
             if (val.r === 10) currentRow.city = val.u;
             if (val.r === 12) currentRow.zip = val.u;
-            if (val.r === 13) console.log(`Column 13 (potential county?): ${val.u}`);
             
             if (val.r === 14) { // Last column (Case Reference)
-                 if (currentRow.contractor) {
-                     results.push(currentRow as SearchResult);
-                 }
-                 currentRow = {};
+                currentRow.caseReference = val.u;
+                if (currentRow.contractor) {
+                    results.push(currentRow as SearchResult);
+                }
+                currentRow = {};
             }
         }
         console.log(`Extracted ${results.length} rows from JSON.`);
@@ -86,6 +86,7 @@ async function fullCrawl(browser: Browser): Promise<SearchResult[]> {
     await page.goto(baseUrl, { waitUntil: "domcontentloaded", timeout: 60000 });
 
     const allResults: SearchResult[] = [];
+    const seenResults = new Set<string>();
     let hasNextPage = true;
     let pageCount = 0;
 
@@ -98,7 +99,13 @@ async function fullCrawl(browser: Browser): Promise<SearchResult[]> {
     while (hasNextPage) {
         while (interceptedBatches.length > 0) {
             const batch = interceptedBatches.shift()!;
-            allResults.push(...batch);
+            for (const row of batch) {
+                const key = getSiteKey(row);
+                if (!seenResults.has(key)) {
+                    seenResults.add(key);
+                    allResults.push(row);
+                }
+            }
         }
         pageCount++;
         console.log(`Page ${pageCount} processed. Total rows: ${allResults.length}`);
@@ -176,6 +183,7 @@ async function main(): Promise<void> {
         headless: true,
         args: ["--no-sandbox", "--disable-setuid-sandbox"] 
     });
+    let exitCode = 0;
     
     try {
         console.log("Crawling...");
@@ -192,11 +200,11 @@ async function main(): Promise<void> {
         fs.writeFileSync(fp, JSON.stringify(results, null, 2));
         console.log(`Saved results to ${fp}`);
     } catch (e) {
+        exitCode = 1;
         console.error("Error during crawl:", e);
-        process.exit(1);
     } finally {
         await browser.close();
-        process.exit(0);
+        process.exitCode = exitCode;
     }
 }
 

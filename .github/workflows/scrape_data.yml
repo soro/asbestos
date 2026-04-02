@@ -27,8 +27,8 @@ jobs:
       - name: Install Playwright Browsers
         run: npx playwright install chromium --with-deps
 
-      - name: Build
-        run: npm run build
+      - name: Build Node Tools
+        run: npm run build:node
 
       - name: Scrape Data
         run: npm run scrape

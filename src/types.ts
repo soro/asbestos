@@ -6,6 +6,7 @@ export interface SearchResult {
     zip: string;
     city: string;
     county?: string;
+    caseReference?: string;
 }
 
 export interface GeocodedResult extends SearchResult {

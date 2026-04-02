@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Asbestos map favicon">
+  <defs>
+    <linearGradient id="pin" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="100%" stop-color="#b91c1c"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#pin)" d="M32 4c-11.6 0-21 9.4-21 21 0 15.8 18.4 34.3 20.5 36.3a1 1 0 0 0 1.4 0C34.6 59.3 53 40.8 53 25 53 13.4 43.6 4 32 4Z"/>
+  <circle cx="32" cy="25" r="11" fill="#fff5f5"/>
+  <path fill="#dc2626" d="M32 18 38.1 28.5H25.9L32 18Z"/>
+  <circle cx="32" cy="33.5" r="2.6" fill="#dc2626"/>
+</svg>

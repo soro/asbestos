@@ -1,97 +1,90 @@
 import * as path from "path";
 import pino from "pino";
-import * as fs from 'fs';
+import * as fs from "fs";
 import express from "express";
 import { GeocodedResult } from "./types";
 
 const log = pino();
 const app = express();
-const port = 3000;
-
-console.log("Server running in:", __dirname);
+const port = Number(process.env.PORT ?? 3000);
+const distDir = __dirname;
+const outputFile = path.join(__dirname, "../output.json");
 
 let sites = new Array<GeocodedResult>();
+let reloadTimer: NodeJS.Timeout | undefined;
 
-const fp = path.join(__dirname, "../output.json");
-try {
-    if (fs.existsSync(fp)) {
-        sites = JSON.parse(fs.readFileSync(fp, "utf8"));
-    } else {
-        log.warn(`Data file not found at ${fp}. Starting with empty site list.`);
-    }
-} catch (e) {
-    log.error(`Error reading data file: ${e}`);
-}
-
-async function readFile(fileName: fs.PathLike): Promise<string> {
-    return new Promise((resolve, reject) => {
-        fs.readFile(fileName, { encoding: "utf8" }, (err, data) => {
-            if (err) { reject(err); } else { resolve(data); }
-        });
-    });
-}
-
-async function statFile(fileName: fs.PathLike): Promise<fs.Stats> {
-    return new Promise((resolve, reject) => {
-        fs.stat(fileName, (err, stats) => {
-            if (err) { reject(err); } else { resolve(stats); }
-        });
-    });
-}
-
-async function loadSites(p: fs.PathLike): Promise<GeocodedResult[]> {
-    return readFile(p).then(JSON.parse);
-}
-
-if (fs.existsSync(fp)) {
-    fs.watch(fp, (event, name) => {
-        if (name) {
-            statFile(fp).then((stats) => {
-                if (stats.size > 0) {
-                    loadSites(fp).then((newSites) => { sites = newSites; });
-                }
-            });
+async function loadSites(): Promise<void> {
+    try {
+        if (!fs.existsSync(outputFile)) {
+            sites = [];
+            log.warn({ path: outputFile }, "Data file not found. Starting with an empty site list.");
+            return;
         }
+
+        const fileContents = await fs.promises.readFile(outputFile, "utf8");
+        sites = JSON.parse(fileContents) as GeocodedResult[];
+        log.info({ count: sites.length }, "Loaded site data");
+    } catch (error) {
+        log.error({ err: error, path: outputFile }, "Error reading data file");
+    }
+}
+
+function watchSitesFile(): void {
+    if (!fs.existsSync(outputFile)) {
+        return;
+    }
+
+    fs.watch(outputFile, () => {
+        if (reloadTimer) {
+            clearTimeout(reloadTimer);
+        }
+
+        // Delay slightly so we don't read the file mid-write.
+        reloadTimer = setTimeout(() => {
+            void loadSites();
+        }, 250);
     });
 }
 
 app.use((req, res, next) => {
-    console.log(`Request: ${req.method} ${req.url}`);
+    log.info({ method: req.method, url: req.url }, "request");
     next();
 });
 
-app.use("/css", express.static(path.join(__dirname, "../src/static")));
-app.use("/js", express.static(path.join(__dirname, "../dist/js")));
+app.use("/css", express.static(path.join(distDir, "css")));
+app.use("/js", express.static(path.join(distDir, "js")));
 
-// Serve PMTiles and Service Worker from the current directory (dist)
-app.get("/new-york.pmtiles", (req, res) => {
-    res.sendFile(path.join(__dirname, "new-york.pmtiles"));
+app.get("/new-york.pmtiles", (_req, res) => {
+    res.sendFile(path.join(distDir, "new-york.pmtiles"));
 });
 
-app.get("/sw.js", (req, res) => {
-    res.sendFile(path.join(__dirname, "sw.js"));
+app.get("/sw.js", (_req, res) => {
+    res.sendFile(path.join(distDir, "sw.js"));
 });
 
-app.get("/output.json", (req, res) => {
-    const file = path.join(__dirname, "../output.json");
-    if (fs.existsSync(file)) {
-        res.sendFile(file);
-    } else {
-        res.status(404).send("Data file not found");
-    }
+app.get("/favicon.svg", (_req, res) => {
+    res.sendFile(path.join(distDir, "favicon.svg"));
 });
 
-app.get("/", (req, res) => {
-    res.sendFile(path.join(__dirname, "index.html"));
+app.get("/output.json", (_req, res) => {
+    res.json(sites);
 });
 
-app.get("/all_sites", (req, res) => {
-    res.send(sites);
+app.get("/", (_req, res) => {
+    res.sendFile(path.join(distDir, "index.html"));
 });
 
-app.listen(port, "0.0.0.0", (err) => {
-    if (err) {
-        return log.error(err);
-    }
-    return log.info(`server is listening on ${port}`);
+app.get("/all_sites", (_req, res) => {
+    res.json(sites);
 });
+
+async function main(): Promise<void> {
+    await loadSites();
+    watchSitesFile();
+
+    app.listen(port, "0.0.0.0", () => {
+        log.info({ port }, "Server is listening");
+    });
+}
+
+void main();

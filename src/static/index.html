@@ -35,14 +35,14 @@
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
       z-index: 1000;
       display: grid;
-      grid-template-columns: minmax(220px, auto) minmax(320px, 460px) minmax(180px, auto) minmax(240px, 1fr);
-      align-items: center; /* Vertically center items */
-      gap: 12px 16px;
+      grid-template-columns: minmax(0, 1fr) minmax(280px, 420px);
+      align-items: center;
+      gap: 12px 20px;
       padding: 12px 20px;
     }
     .header h1 {
         margin: 0;
-        font-size: 1.5rem; /* Slightly smaller for better fit */
+        font-size: 1.5rem;
         line-height: 1;
         min-width: 0;
         overflow: hidden;
@@ -50,40 +50,19 @@
     }
 
     .header-controls {
-        display: contents;
+        display: flex;
+        justify-content: flex-end;
+        min-width: 0;
     }
 
     .search-container {
         min-width: 0;
-        position: relative; /* For dropdown positioning */
+        width: 100%;
+        position: relative;
     }
 
     .search-field {
         position: relative;
-    }
-
-    .status-message {
-        font-size: 1.2rem;
-        color: #5c6675;
-        line-height: 1.35;
-        min-width: 0;
-    }
-
-    .status-message[data-tone="error"] {
-        color: #b42318;
-    }
-
-    .basemap-toggle {
-        margin-left: 16px;
-        margin-bottom: 0;
-        height: 38px;
-        padding: 0 14px;
-        border: 1px solid #c7d0db;
-        border-radius: 999px;
-        background: #f8fafc;
-        color: #334155;
-        font-size: 11px;
-        letter-spacing: .08rem;
     }
 
     #search-input {
@@ -101,16 +80,16 @@
         top: 50%;
         right: 8px;
         transform: translateY(-50%);
-        width: 24px;
-        height: 24px;
+        width: 22px;
+        height: 22px;
         padding: 0;
         margin: 0;
         border: none;
         border-radius: 999px;
         background: transparent;
         color: #64748b;
-        font-size: 16px;
-        line-height: 24px;
+        font-size: 15px;
+        line-height: 22px;
         text-transform: none;
         letter-spacing: 0;
     }
@@ -161,37 +140,13 @@
 
     @media (max-width: 1100px) {
         .header {
-            grid-template-columns: minmax(220px, 1fr) auto;
-            grid-template-areas:
-                "title controls"
-                "status status";
-        }
-        .header h1 {
-            grid-area: title;
-        }
-        .header-controls {
-            grid-area: controls;
-            display: flex;
-            justify-content: flex-end;
-            gap: 12px;
-            align-items: center;
-            min-width: 0;
-        }
-        .search-container {
-            width: min(420px, 100%);
-        }
-        .status-message {
-            grid-area: status;
+            grid-template-columns: minmax(0, 1fr) minmax(260px, 360px);
         }
     }
 
     @media (max-width: 720px) {
         .header {
             grid-template-columns: 1fr;
-            grid-template-areas:
-                "title"
-                "controls"
-                "status";
             padding: 12px;
         }
         .header h1 {
@@ -199,14 +154,6 @@
             text-align: center;
         }
         .header-controls {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 10px;
-        }
-        .status-message {
-            text-align: center;
-        }
-        .basemap-toggle {
             width: 100%;
         }
         #search-results {
@@ -281,7 +228,7 @@
 </head>
 <body>
 
-  <div class="header">
+    <div class="header">
     <h1>Asbestos Remediation Projects in NY</h1>
     <div class="header-controls">
       <div class="search-container">
@@ -291,9 +238,7 @@
           </div>
           <div id="search-results"></div>
       </div>
-      <button id="basemap-toggle" class="basemap-toggle" type="button">Use Raster Basemap</button>
     </div>
-    <div id="status-message" class="status-message" role="status" aria-live="polite"></div>
   </div>
 
   <div id="map-container">

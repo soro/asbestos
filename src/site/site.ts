@@ -6,10 +6,8 @@ import { GeocodedResult } from "../types";
 const MAX_SEARCH_RESULTS = 10;
 const PROJECT_SOURCE_ID = "asbestos-projects";
 const PROJECT_LAYER_ID = "projects-circles";
-const BASEMAP_STORAGE_KEY = "asbestos.basemap";
 
 type BasemapMode = "pmtiles" | "raster";
-type StatusTone = "info" | "error";
 type MappedSite = GeocodedResult & { lat: number; lng: number };
 
 type ProjectFeatureProperties = {
@@ -44,16 +42,6 @@ export async function getAllSites(): Promise<GeocodedResult[]> {
     }
 
     return response.json() as Promise<GeocodedResult[]>;
-}
-
-function setStatusMessage(message: string, tone: StatusTone = "info"): void {
-    const statusMessage = document.getElementById("status-message");
-    if (!statusMessage) {
-        return;
-    }
-
-    statusMessage.textContent = message;
-    statusMessage.setAttribute("data-tone", tone);
 }
 
 function createPopupContent(site: ProjectFeatureProperties): HTMLElement {
@@ -259,78 +247,6 @@ function renderSearchResults(
     container.style.display = visibleResults.length > 0 ? "block" : "none";
 }
 
-function readStoredBasemapMode(): BasemapMode | null {
-    try {
-        const storedValue = window.localStorage.getItem(BASEMAP_STORAGE_KEY);
-        if (storedValue === "pmtiles" || storedValue === "raster") {
-            return storedValue;
-        }
-    } catch (_error) {
-        // Ignore storage access failures.
-    }
-
-    return null;
-}
-
-function persistBasemapMode(mode: BasemapMode): void {
-    try {
-        window.localStorage.setItem(BASEMAP_STORAGE_KEY, mode);
-    } catch (_error) {
-        // Ignore storage access failures.
-    }
-}
-
-function getRequestedBasemapMode(): BasemapMode | null {
-    const requestedMode = new URLSearchParams(window.location.search).get("basemap");
-    if (requestedMode === "pmtiles" || requestedMode === "raster") {
-        return requestedMode;
-    }
-
-    return null;
-}
-
-function isLinuxFirefox(): boolean {
-    return navigator.userAgent.includes("Firefox") && navigator.userAgent.includes("Linux");
-}
-
-function isGitHubPagesHost(): boolean {
-    return window.location.hostname.endsWith("github.io");
-}
-
-function getInitialBasemapMode(): { mode: BasemapMode; note?: string } {
-    const requestedMode = getRequestedBasemapMode();
-    if (requestedMode) {
-        return { mode: requestedMode };
-    }
-
-    const storedMode = readStoredBasemapMode();
-    if (storedMode) {
-        return { mode: storedMode };
-    }
-
-    if (isGitHubPagesHost() && isLinuxFirefox()) {
-        return {
-            mode: "raster",
-            note: "Using raster tiles by default because PMTiles can fail on GitHub Pages in Linux Firefox.",
-        };
-    }
-
-    return { mode: "pmtiles" };
-}
-
-function describeBasemap(mode: BasemapMode): string {
-    return mode === "pmtiles" ? "vector PMTiles basemap" : "raster basemap";
-}
-
-function updateBasemapToggleLabel(mode: BasemapMode): void {
-    const toggle = document.getElementById("basemap-toggle") as HTMLButtonElement | null;
-    if (!toggle) {
-        return;
-    }
-
-    toggle.textContent = mode === "pmtiles" ? "Use Raster Basemap" : "Use Vector Basemap";
-}
-
 function isPmtilesSourceError(event: unknown): boolean {
     if (typeof event !== "object" || event === null) {
         return false;
@@ -372,30 +288,12 @@ export async function initMap(): Promise<void> {
     const searchInput = document.getElementById("search-input") as HTMLInputElement | null;
     const searchClear = document.getElementById("search-clear") as HTMLButtonElement | null;
     const searchResults = document.getElementById("search-results");
-    const basemapToggle = document.getElementById("basemap-toggle") as HTMLButtonElement | null;
-
-    const initialBasemap = getInitialBasemapMode();
 
     let map: maplibregl.Map | null = null;
     let allSites: MappedSite[] = [];
     let visibleSites: MappedSite[] = [];
-    let pendingBasemapNote = initialBasemap.note;
-    let currentBasemapMode = initialBasemap.mode;
+    let currentBasemapMode: BasemapMode = "pmtiles";
     let isSwitchingBasemap = false;
-
-    function updateStatus(tone: StatusTone = "info"): void {
-        if (!allSites.length) {
-            setStatusMessage(pendingBasemapNote ?? "Loading project data...", tone);
-            pendingBasemapNote = undefined;
-            return;
-        }
-
-        const regionLabel = CONFIG.filterToNYC ? "in the NYC area" : "across New York";
-        const baseMessage = `Showing ${visibleSites.length} mapped projects ${regionLabel} on the ${describeBasemap(currentBasemapMode)}.`;
-        const message = pendingBasemapNote ? `${baseMessage} ${pendingBasemapNote}` : baseMessage;
-        setStatusMessage(message, tone);
-        pendingBasemapNote = undefined;
-    }
 
     function fitBoundsToSites(sites: MappedSite[]): void {
         if (!map) {
@@ -445,7 +343,6 @@ export async function initMap(): Promise<void> {
                 setProjectData(map, visibleSites);
             }
             syncSearchControls(query);
-            updateStatus();
             return;
         }
 
@@ -470,15 +367,12 @@ export async function initMap(): Promise<void> {
             visibleSites = [site];
             setProjectData(map, visibleSites);
             focusOnSite(map, site);
-            updateStatus();
         });
         syncSearchControls(query);
 
         if (visibleSites.length === 1 && map) {
             focusOnSite(map, visibleSites[0]);
         }
-
-        updateStatus();
     }
 
     async function renderMap(): Promise<void> {
@@ -486,8 +380,6 @@ export async function initMap(): Promise<void> {
             map.remove();
             map = null;
         }
-
-        updateBasemapToggleLabel(currentBasemapMode);
 
         if (currentBasemapMode === "raster") {
             await ensureRasterServiceWorker();
@@ -507,8 +399,7 @@ export async function initMap(): Promise<void> {
 
             isSwitchingBasemap = true;
             currentBasemapMode = "raster";
-            pendingBasemapNote = "PMTiles failed to load in this browser, so the map switched to raster tiles.";
-            updateBasemapToggleLabel(currentBasemapMode);
+            console.warn("PMTiles failed to load, falling back to raster tiles.", event);
 
             void renderMap().finally(() => {
                 isSwitchingBasemap = false;
@@ -566,11 +457,9 @@ export async function initMap(): Promise<void> {
             });
 
             fitBoundsToSites(visibleSites);
-            updateStatus();
         });
     }
 
-    setStatusMessage("Loading project data...");
     syncSearchControls("");
 
     try {
@@ -588,7 +477,6 @@ export async function initMap(): Promise<void> {
         }
 
         visibleSites = allSites;
-        updateBasemapToggleLabel(currentBasemapMode);
 
         if (searchInput && searchResults) {
             searchInput.addEventListener("input", (event) => {
@@ -617,17 +505,9 @@ export async function initMap(): Promise<void> {
             clearSearch();
         });
 
-        basemapToggle?.addEventListener("click", () => {
-            currentBasemapMode = currentBasemapMode === "pmtiles" ? "raster" : "pmtiles";
-            persistBasemapMode(currentBasemapMode);
-            pendingBasemapNote = `Switched to the ${describeBasemap(currentBasemapMode)}.`;
-            void renderMap();
-        });
-
         await renderMap();
     } catch (error) {
         console.error("Failed to initialize map data:", error);
-        setStatusMessage("Unable to load project data right now.", "error");
     }
 }
 

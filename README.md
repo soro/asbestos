@@ -13,6 +13,7 @@ The PMTiles basemap is intentionally stored as `new-york.pmtiles.gz`. This is a 
 
 - `src/scrape.ts`: Playwright scraper for the NY Department of Labor report.
 - `src/geocode.ts`: Runs the geocoding pipeline with configurable provider order and fallback.
+- `src/update-basemap.ts`: Rebuilds the clipped Protomaps basemap archive used by the site.
 - `src/app.ts`: Express server for the built frontend and live data reloads.
 - `src/site/site.ts`: MapLibre client for the searchable map UI.
 - `output.json`: Current geocoded project dataset used by the site.
@@ -26,6 +27,7 @@ npm run build:full
 npm start
 ```
 
+- Node.js 24 or newer is the supported runtime for local development and GitHub Actions.
 - `npm run build`: builds the static GitHub Pages artifact in `dist/`.
 - `npm run build:full`: builds the static site plus the local Node tools/server.
 
@@ -46,3 +48,24 @@ GEOCODER_PROVIDER_ORDER=nys,census npm run geocode
 ```
 
 The NYS provider uses `NYS_GEOCODER_URL` if you need to override the future production endpoint during testing.
+
+## Basemap Refresh
+
+```bash
+npm run refresh-basemap
+```
+
+This rebuilds `src/static/new-york.pmtiles.gz` by:
+
+- discovering the latest Protomaps daily build from `https://build-metadata.protomaps.dev/builds.json`
+- extracting only the NYC-area bounding box `-74.3,40.49,-73.6,41.0`
+- capping detail at `maxzoom=14` so the artifact stays under the GitHub Pages size target
+
+Useful overrides:
+
+```bash
+npm run refresh-basemap -- --dry-run
+PROTOMAPS_BUILD_KEY=20260313.pmtiles npm run refresh-basemap
+```
+
+The task downloads the official `go-pmtiles` CLI on demand and currently assumes standard `tar`/`unzip` tooling is available.

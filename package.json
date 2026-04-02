@@ -11,6 +11,7 @@
     "build:static": "npm run clean && npm run build:client && npm run copy-assets",
     "build:full": "npm run clean && npm run build:node && npm run build:client && npm run copy-assets",
     "build": "npm run build:static",
+    "refresh-basemap": "npm run build:node && node dist/update-basemap.js",
     "scrape": "node dist/scrape.js",
     "geocode": "node dist/geocode.js",
     "refresh-data": "npm run build:node && npm run scrape && npm run geocode && npm run build",
@@ -23,6 +24,9 @@
     "dist",
     "package.json"
   ],
+  "engines": {
+    "node": ">=24"
+  },
   "author": "Soeren Roerden",
   "license": "MIT",
   "dependencies": {

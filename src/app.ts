@@ -2,6 +2,7 @@ import * as path from "path";
 import pino from "pino";
 import * as fs from "fs";
 import express from "express";
+import { BASEMAP_FILENAME } from "./basemap";
 import { GeocodedResult } from "./types";
 
 const log = pino();
@@ -54,8 +55,8 @@ app.use((req, res, next) => {
 app.use("/css", express.static(path.join(distDir, "css")));
 app.use("/js", express.static(path.join(distDir, "js")));
 
-app.get("/new-york.pmtiles.gz", (_req, res) => {
-    res.sendFile(path.join(distDir, "new-york.pmtiles.gz"));
+app.get(`/${BASEMAP_FILENAME}`, (_req, res) => {
+    res.sendFile(path.join(distDir, BASEMAP_FILENAME));
 });
 
 app.get("/sw.js", (_req, res) => {

@@ -1,5 +1,6 @@
 import maplibregl from "maplibre-gl";
 import { Protocol } from "pmtiles";
+import { BASEMAP_BOUNDS, BASEMAP_FILENAME } from "../basemap";
 import { formatProjectDate, hasCoordinates } from "../data";
 import { GeocodedResult } from "../types";
 
@@ -21,14 +22,9 @@ type ProjectFeatureProperties = {
 };
 
 const CONFIG = {
-    pmtilesUrl: "new-york.pmtiles.gz",
+    pmtilesUrl: BASEMAP_FILENAME,
     filterToNYC: true,
-    nycBounds: {
-        minLng: -74.3,
-        minLat: 40.49,
-        maxLng: -73.6,
-        maxLat: 41.0,
-    },
+    nycBounds: BASEMAP_BOUNDS,
 };
 
 const pmtilesProtocol = new Protocol();

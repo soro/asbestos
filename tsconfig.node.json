@@ -2,9 +2,11 @@
     "extends": "./tsconfig.json",
     "include": [
         "src/app.ts",
+        "src/basemap.ts",
         "src/geocoders/**/*.ts",
         "src/geocode.ts",
         "src/scrape.ts",
+        "src/update-basemap.ts",
         "src/data.ts",
         "src/types.ts"
     ],

@@ -30,6 +30,7 @@
   "author": "Soeren Roerden",
   "license": "MIT",
   "dependencies": {
+    "@protomaps/basemaps": "^5.7.2",
     "express": "^5.2.1",
     "maplibre-gl": "^5.16.0",
     "pino": "^10.2.0",

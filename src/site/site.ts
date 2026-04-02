@@ -1,5 +1,6 @@
 import maplibregl from "maplibre-gl";
 import { Protocol } from "pmtiles";
+import { layers as protomapsLayers, namedFlavor } from "@protomaps/basemaps";
 import { BASEMAP_BOUNDS, BASEMAP_FILENAME } from "../basemap";
 import { formatProjectDate, hasCoordinates } from "../data";
 import { GeocodedResult } from "../types";
@@ -7,6 +8,8 @@ import { GeocodedResult } from "../types";
 const MAX_SEARCH_RESULTS = 10;
 const PROJECT_SOURCE_ID = "asbestos-projects";
 const PROJECT_LAYER_ID = "projects-circles";
+const PROTOMAPS_GLYPHS_URL = "https://protomaps.github.io/basemaps-assets/fonts/{fontstack}/{range}.pbf";
+const PROTOMAPS_GRAYSCALE_SPRITE_URL = "https://protomaps.github.io/basemaps-assets/sprites/v4/grayscale";
 
 type BasemapMode = "pmtiles" | "raster";
 type MappedSite = GeocodedResult & { lat: number; lng: number };
@@ -77,7 +80,8 @@ function getMapStyle(mode: BasemapMode): maplibregl.StyleSpecification {
 
         return {
             version: 8,
-            glyphs: "https://protomaps.github.io/basemaps-assets/fonts/{fontstack}/{range}.pbf",
+            glyphs: PROTOMAPS_GLYPHS_URL,
+            sprite: PROTOMAPS_GRAYSCALE_SPRITE_URL,
             sources: {
                 protomaps: {
                     type: "vector",
@@ -85,68 +89,7 @@ function getMapStyle(mode: BasemapMode): maplibregl.StyleSpecification {
                     attribution: '<a href="https://protomaps.com">Protomaps</a> © <a href="https://openstreetmap.org">OpenStreetMap</a>',
                 },
             },
-            layers: [
-                {
-                    id: "background",
-                    type: "background",
-                    paint: { "background-color": "#e0e0e0" },
-                },
-                {
-                    id: "water",
-                    type: "fill",
-                    source: "protomaps",
-                    "source-layer": "water",
-                    paint: { "fill-color": "#a0c8f0" },
-                },
-                {
-                    id: "roads",
-                    type: "line",
-                    source: "protomaps",
-                    "source-layer": "roads",
-                    paint: { "line-color": "#ffffff", "line-width": 1 },
-                },
-                {
-                    id: "road_labels",
-                    type: "symbol",
-                    source: "protomaps",
-                    "source-layer": "roads",
-                    minzoom: 12,
-                    layout: {
-                        "symbol-placement": "line",
-                        "text-field": ["get", "name"],
-                        "text-size": 12,
-                        "text-font": ["Noto Sans Regular"],
-                    },
-                    paint: {
-                        "text-color": "#666",
-                        "text-halo-color": "#fff",
-                        "text-halo-width": 2,
-                    },
-                },
-                {
-                    id: "buildings",
-                    type: "fill",
-                    source: "protomaps",
-                    "source-layer": "buildings",
-                    paint: { "fill-color": "#d0d0d0" },
-                },
-                {
-                    id: "places",
-                    type: "symbol",
-                    source: "protomaps",
-                    "source-layer": "places",
-                    layout: {
-                        "text-field": ["get", "name"],
-                        "text-size": 12,
-                        "text-font": ["Noto Sans Regular"],
-                    },
-                    paint: {
-                        "text-color": "#444",
-                        "text-halo-color": "#fff",
-                        "text-halo-width": 2,
-                    },
-                },
-            ],
+            layers: protomapsLayers("protomaps", namedFlavor("grayscale"), { lang: "en" }),
         };
     }
 

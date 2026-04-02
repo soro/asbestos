@@ -21,7 +21,7 @@ type ProjectFeatureProperties = {
 };
 
 const CONFIG = {
-    pmtilesUrl: "new-york.pmtiles",
+    pmtilesUrl: "new-york.pmtiles.gz",
     filterToNYC: true,
     nycBounds: {
         minLng: -74.3,

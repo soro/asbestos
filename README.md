@@ -7,6 +7,8 @@ The production site is a static GitHub Pages deployment. Scraping and geocoding 
 
 Live site: <https://soro.github.io/asbestos/>
 
+The PMTiles basemap is intentionally stored as `new-york.pmtiles.gz`. This is a GitHub Pages workaround for Firefox range-request failures caused by automatic compression of `.pmtiles` responses. The file contents are still a normal PMTiles archive; only the filename is changed so Pages serves raw byte ranges more reliably.
+
 ## Project Layout
 
 - `src/scrape.ts`: Playwright scraper for the NY Department of Labor report.

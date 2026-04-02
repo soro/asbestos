@@ -54,8 +54,8 @@ app.use((req, res, next) => {
 app.use("/css", express.static(path.join(distDir, "css")));
 app.use("/js", express.static(path.join(distDir, "js")));
 
-app.get("/new-york.pmtiles", (_req, res) => {
-    res.sendFile(path.join(distDir, "new-york.pmtiles"));
+app.get("/new-york.pmtiles.gz", (_req, res) => {
+    res.sendFile(path.join(distDir, "new-york.pmtiles.gz"));
 });
 
 app.get("/sw.js", (_req, res) => {

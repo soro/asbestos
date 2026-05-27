@@ -2,8 +2,15 @@ import maplibregl from "maplibre-gl";
 import { Protocol } from "pmtiles";
 import { layers as protomapsLayers, namedFlavor } from "@protomaps/basemaps";
 import { BASEMAP_BOUNDS, BASEMAP_FILENAME } from "../basemap";
-import { formatProjectDate, hasCoordinates } from "../data";
-import { GeocodedResult } from "../types";
+import { formatProjectDate } from "../data";
+import {
+    Acp7MaterialDetail,
+    NormalizedProject,
+    NycDepAcp7ProjectSource,
+    ProjectAddress,
+    ProjectCoordinates,
+    ProjectSourceRecord,
+} from "../types";
 
 const MAX_SEARCH_RESULTS = 10;
 const PROJECT_SOURCE_ID = "asbestos-projects";
@@ -15,16 +22,23 @@ const PROTOMAPS_GLYPHS_URL = "https://protomaps.github.io/basemaps-assets/fonts/
 const PROTOMAPS_GRAYSCALE_SPRITE_URL = "https://protomaps.github.io/basemaps-assets/sprites/v4/grayscale";
 
 type BasemapMode = "pmtiles" | "raster";
-type MappedSite = GeocodedResult & { lat: number; lng: number };
+type MappedProject = NormalizedProject & { coordinates: ProjectCoordinates };
+type MappedLocation = {
+    id: string;
+    addressKey: string;
+    address: ProjectAddress;
+    lat: number;
+    lng: number;
+    projects: MappedProject[];
+    selectedProjectId?: string;
+    searchText: string;
+};
 
 type ProjectFeatureProperties = {
-    contractor: string;
-    street: string;
-    city: string;
-    zip: string;
-    start: string;
-    end: string;
-    caseReference?: string;
+    locationId: string;
+    projectId: string;
+    title: string;
+    address: string;
 };
 
 const CONFIG = {
@@ -38,43 +52,293 @@ let hasRegisteredPmtilesProtocol = false;
 let hasRegisteredRasterServiceWorker = false;
 let activePopup: maplibregl.Popup | null = null;
 
-export async function getAllSites(): Promise<GeocodedResult[]> {
-    const response = await fetch("output.json");
+export async function getAllProjects(): Promise<NormalizedProject[]> {
+    const response = await fetch("projects.json");
     if (!response.ok) {
         throw new Error(`Failed to load project data (${response.status})`);
     }
 
-    return response.json() as Promise<GeocodedResult[]>;
+    return response.json() as Promise<NormalizedProject[]>;
 }
 
-function createPopupContent(site: ProjectFeatureProperties): HTMLElement {
+function hasProjectCoordinates(project: NormalizedProject): project is MappedProject {
+    return Boolean(project.coordinates &&
+        typeof project.coordinates.lat === "number" &&
+        Number.isFinite(project.coordinates.lat) &&
+        typeof project.coordinates.lng === "number" &&
+        Number.isFinite(project.coordinates.lng));
+}
+
+function formatAddress(address: ProjectAddress): string {
+    return [
+        address.street,
+        address.city,
+        address.zip,
+    ].filter((part) => part.trim().length > 0).join(", ");
+}
+
+function getLocationTitle(location: MappedLocation): string {
+    const project = getSelectedProject(location);
+
+    if (project) {
+        return project.contractor;
+    }
+
+    return `${location.projects.length} projects`;
+}
+
+function getSelectedProject(location: MappedLocation): MappedProject | undefined {
+    return location.selectedProjectId
+        ? location.projects.find((project) => project.id === location.selectedProjectId)
+        : location.projects[0];
+}
+
+function getSourceLabel(source: ProjectSourceRecord["source"]): string {
+    return source === "nyc_dep_acp7" ? "NYC DEP" : "NYS DOL";
+}
+
+function getProjectSourceLabels(project: NormalizedProject): string[] {
+    return Array.from(new Set(project.sources.map((source) => getSourceLabel(source.source))));
+}
+
+function getAcp7Sources(project: NormalizedProject): NycDepAcp7ProjectSource[] {
+    return project.sources.filter((source): source is NycDepAcp7ProjectSource => source.source === "nyc_dep_acp7");
+}
+
+function getProjectIdentifierLabels(project: NormalizedProject): string[] {
+    return project.sources.flatMap((source) => {
+        if (source.source === "nys_dol" && source.caseReference) {
+            return [`Case ${source.caseReference}`];
+        }
+
+        if (source.source === "nyc_dep_acp7") {
+            return [source.tru];
+        }
+
+        return [];
+    });
+}
+
+function createSourceBadges(project: NormalizedProject): HTMLElement {
+    const badges = document.createElement("div");
+    badges.className = "project-popup__badges";
+
+    for (const label of getProjectSourceLabels(project)) {
+        const badge = document.createElement("span");
+        badge.className = "project-popup__badge";
+        badge.textContent = label;
+        badges.appendChild(badge);
+    }
+
+    return badges;
+}
+
+function appendIfPresent(details: HTMLElement, label: string, value: string | undefined): void {
+    if (!value || value.trim().length === 0) {
+        return;
+    }
+
+    appendPopupDetail(details, label, value);
+}
+
+function appendProjectDateDetails(details: HTMLElement, project: NormalizedProject): void {
+    appendPopupDetail(details, "Start", formatProjectDate(project.start));
+    appendPopupDetail(details, "End", formatProjectDate(project.end));
+}
+
+function appendSourceIdDetails(details: HTMLElement, project: NormalizedProject): void {
+    for (const source of project.sources) {
+        if (source.source === "nys_dol" && source.caseReference) {
+            appendPopupDetail(details, "Case", source.caseReference);
+        }
+
+        if (source.source === "nyc_dep_acp7") {
+            appendPopupDetail(details, "TRU", source.tru);
+            appendPopupDetail(details, "Status", source.status);
+        }
+    }
+}
+
+function createAcp7ExtendedDetails(project: NormalizedProject): HTMLElement | null {
+    const acp7Sources = getAcp7Sources(project);
+    if (acp7Sources.length === 0) {
+        return null;
+    }
+
+    const wrapper = document.createElement("details");
+    wrapper.className = "project-popup__extended-details";
+
+    const summary = document.createElement("summary");
+    summary.className = "project-popup__extended-summary";
+    summary.textContent = "Additional details";
+    wrapper.appendChild(summary);
+
+    for (const source of acp7Sources) {
+        const section = document.createElement("div");
+        section.className = "project-popup__extended";
+
+        const details = document.createElement("div");
+        details.className = "project-popup__details project-popup__details--extended";
+        appendIfPresent(details, "Facility", source.facilityAka);
+        appendIfPresent(details, "Type", source.facilityType);
+        appendIfPresent(details, "Owner", source.buildingOwnerName);
+        appendIfPresent(details, "Monitor", source.airMonitorName);
+        appendIfPresent(details, "BBL", source.address.bbl);
+        appendIfPresent(details, "NTA", source.address.nta);
+        appendIfPresent(details, "CB", source.address.communityBoard);
+        appendIfPresent(details, "Council", source.address.councilDistrict);
+
+        if (details.children.length > 0) {
+            section.appendChild(details);
+        }
+
+        if (source.materialDetails.length > 0) {
+            section.appendChild(createMaterialDetails(source.materialDetails));
+        }
+
+        if (section.children.length > 0) {
+            wrapper.appendChild(section);
+        }
+    }
+
+    return wrapper.children.length > 1 ? wrapper : null;
+}
+
+function createMaterialDetails(materialDetails: Acp7MaterialDetail[]): HTMLElement {
+    const wrapper = document.createElement("details");
+    wrapper.className = "project-popup__materials";
+
+    const summary = document.createElement("summary");
+    summary.className = "project-popup__materials-summary";
+    summary.textContent = `Materials (${materialDetails.length})`;
+    wrapper.appendChild(summary);
+
+    const list = document.createElement("div");
+    list.className = "project-popup__material-list";
+
+    for (const detail of materialDetails) {
+        const item = document.createElement("div");
+        item.className = "project-popup__material";
+
+        const titleParts = [
+            detail.floor ? `Floor ${detail.floor}` : undefined,
+            detail.section,
+        ].filter((part): part is string => Boolean(part));
+
+        const title = document.createElement("div");
+        title.className = "project-popup__material-title";
+        title.textContent = titleParts.length > 0 ? titleParts.join(" - ") : "Material detail";
+        item.appendChild(title);
+
+        const details = document.createElement("div");
+        details.className = "project-popup__material-meta";
+
+        appendIfPresent(details, "Material", detail.acmType);
+        if (typeof detail.acmAmount === "number") {
+            appendPopupDetail(details, "Amount", `${detail.acmAmount}${detail.acmUnit ? ` ${detail.acmUnit}` : ""}`);
+        }
+        appendIfPresent(details, "Work", detail.abatementType);
+        appendIfPresent(details, "Method", detail.procedureName);
+
+        item.appendChild(details);
+        list.appendChild(item);
+    }
+
+    wrapper.appendChild(list);
+    return wrapper;
+}
+
+function createProjectBody(project: NormalizedProject): HTMLElement {
+    const body = document.createElement("div");
+    body.className = "project-popup__project-body";
+
+    const details = document.createElement("div");
+    details.className = "project-popup__details";
+    appendProjectDateDetails(details, project);
+    appendSourceIdDetails(details, project);
+    body.appendChild(details);
+
+    const extendedDetails = createAcp7ExtendedDetails(project);
+    if (extendedDetails) {
+        body.appendChild(extendedDetails);
+    }
+
+    return body;
+}
+
+function createProjectSummary(project: NormalizedProject): HTMLElement {
+    const summaryContent = document.createElement("div");
+    summaryContent.className = "project-popup__summary-content";
+
+    const title = document.createElement("div");
+    title.className = "project-popup__project-title";
+    title.textContent = project.contractor;
+
+    const meta = document.createElement("div");
+    meta.className = "project-popup__project-meta";
+    const identifiers = getProjectIdentifierLabels(project);
+    meta.textContent = [
+        `${formatProjectDate(project.start)} - ${formatProjectDate(project.end)}`,
+        ...identifiers,
+    ].join(" | ");
+
+    summaryContent.append(title, meta, createSourceBadges(project));
+    return summaryContent;
+}
+
+function createProjectSection(project: NormalizedProject, forceOpen: boolean): HTMLElement {
+    const section = document.createElement("details");
+    section.className = "project-popup__project";
+    section.open = forceOpen;
+
+    const summary = document.createElement("summary");
+    summary.className = "project-popup__summary";
+    summary.appendChild(createProjectSummary(project));
+
+    section.append(summary, createProjectBody(project));
+    return section;
+}
+
+function createPopupContent(location: MappedLocation): HTMLElement {
     const container = document.createElement("div");
     container.className = "project-popup";
 
     const title = document.createElement("div");
     title.className = "project-popup__title";
-    title.textContent = site.contractor;
+    title.textContent = getLocationTitle(location);
 
     const address = document.createElement("div");
     address.className = "project-popup__address";
-    address.textContent = `${site.street}, ${site.city}, ${site.zip}`;
+    address.textContent = formatAddress(location.address);
 
-    const details = document.createElement("div");
-    details.className = "project-popup__details";
+    const selectedProject = getSelectedProject(location);
+    if (location.projects.length === 1 && selectedProject) {
+        const badges = createSourceBadges(selectedProject);
+        badges.classList.add("project-popup__badges--top");
 
-    appendPopupDetail(details, "Start", formatProjectDate(site.start));
-    appendPopupDetail(details, "End", formatProjectDate(site.end));
+        const body = createProjectBody(selectedProject);
+        body.classList.add("project-popup__project-body--single");
 
-    if (site.caseReference) {
-        appendPopupDetail(details, "Case", site.caseReference);
+        container.append(title, address, badges, body);
+        return container;
     }
 
-    container.append(title, address, details);
+    const projects = document.createElement("div");
+    projects.className = "project-popup__projects";
+
+    location.projects.forEach((project, index) => {
+        projects.appendChild(createProjectSection(
+            project,
+            location.projects.length === 1 || project.id === location.selectedProjectId || (!location.selectedProjectId && index === 0),
+        ));
+    });
+
+    container.append(title, address, projects);
 
     return container;
 }
 
-function appendPopupDetail(details: HTMLDivElement, label: string, value: string): void {
+function appendPopupDetail(details: HTMLElement, label: string, value: string): void {
     const row = document.createElement("div");
     row.className = "project-popup__detail";
 
@@ -142,54 +406,51 @@ function getMapStyle(mode: BasemapMode): maplibregl.StyleSpecification {
     };
 }
 
-function getGeoJson(sites: MappedSite[]): GeoJSON.FeatureCollection<GeoJSON.Point, ProjectFeatureProperties> {
+function getGeoJson(locations: MappedLocation[]): GeoJSON.FeatureCollection<GeoJSON.Point, ProjectFeatureProperties> {
     return {
         type: "FeatureCollection",
-        features: sites.map((site) => ({
+        features: locations.map((location) => ({
             type: "Feature",
             geometry: {
                 type: "Point",
-                coordinates: [site.lng, site.lat],
+                coordinates: [location.lng, location.lat],
             },
             properties: {
-                contractor: site.contractor,
-                street: site.street,
-                city: site.city,
-                zip: site.zip,
-                start: site.start,
-                end: site.end,
-                caseReference: site.caseReference,
+                locationId: location.id,
+                projectId: location.selectedProjectId ?? location.id,
+                title: getLocationTitle(location),
+                address: formatAddress(location.address),
             },
         })),
     };
 }
 
-function setProjectData(map: maplibregl.Map, sites: MappedSite[]): void {
+function setProjectData(map: maplibregl.Map, locations: MappedLocation[]): void {
     const source = map.getSource(PROJECT_SOURCE_ID) as maplibregl.GeoJSONSource | undefined;
     if (source) {
-        source.setData(getGeoJson(sites));
+        source.setData(getGeoJson(locations));
     }
 }
 
-function focusOnSite(map: maplibregl.Map, site: MappedSite): void {
+function focusOnLocation(map: maplibregl.Map, location: MappedLocation): void {
     map.flyTo({
-        center: [site.lng, site.lat],
+        center: [location.lng, location.lat],
         zoom: 15,
     });
 
-    openProjectPopup(map, [site.lng, site.lat], site);
+    openProjectPopup(map, [location.lng, location.lat], location);
 }
 
 function openProjectPopup(
     map: maplibregl.Map,
     coordinates: [number, number],
-    site: ProjectFeatureProperties,
+    location: MappedLocation,
 ): void {
     closeActivePopup();
 
-    const popup = new maplibregl.Popup({ maxWidth: "360px" })
+    const popup = new maplibregl.Popup({ maxWidth: "430px" })
         .setLngLat(coordinates)
-        .setDOMContent(createPopupContent(site))
+        .setDOMContent(createPopupContent(location))
         .addTo(map);
 
     activePopup = popup;
@@ -212,14 +473,14 @@ function closeActivePopup(): boolean {
 
 function renderSearchResults(
     container: HTMLElement,
-    sites: MappedSite[],
+    locations: MappedLocation[],
     activeIndex: number,
-    onSelect: (site: MappedSite) => void,
+    onSelect: (location: MappedLocation) => void,
 ): number {
     container.replaceChildren();
 
-    const visibleResults = sites.slice(0, MAX_SEARCH_RESULTS);
-    for (const [index, site] of visibleResults.entries()) {
+    const visibleResults = locations.slice(0, MAX_SEARCH_RESULTS);
+    for (const [index, location] of visibleResults.entries()) {
         const result = document.createElement("div");
         result.className = "result-item";
         result.id = `${SEARCH_RESULT_ID_PREFIX}-${index}`;
@@ -232,19 +493,26 @@ function renderSearchResults(
 
         const title = document.createElement("strong");
         title.className = "result-title";
-        title.textContent = site.contractor;
+        title.textContent = getLocationTitle(location);
 
         const address = document.createElement("span");
         address.className = "result-address";
-        address.textContent = `${site.street}, ${site.city} ${site.zip}`;
+        address.textContent = formatAddress(location.address);
 
-        result.append(title, address);
+        const meta = document.createElement("span");
+        meta.className = "result-meta";
+        const selectedProject = getSelectedProject(location);
+        meta.textContent = selectedProject
+            ? getProjectSourceLabels(selectedProject).join(" + ")
+            : `${location.projects.length} project records`;
+
+        result.append(title, address, meta);
 
         result.addEventListener("mousedown", (event) => {
             event.preventDefault();
         });
         result.addEventListener("click", () => {
-            onSelect(site);
+            onSelect(location);
         });
 
         container.appendChild(result);
@@ -291,6 +559,96 @@ async function ensureRasterServiceWorker(): Promise<void> {
     }
 }
 
+function getProjectSearchText(project: NormalizedProject): string {
+    const sourceText = project.sources.flatMap((source) => {
+        if (source.source === "nys_dol") {
+            return [source.caseReference ?? ""];
+        }
+
+        return [
+            source.tru,
+            source.status,
+            source.facilityAka ?? "",
+            source.facilityType ?? "",
+            source.buildingOwnerName ?? "",
+            source.airMonitorName ?? "",
+            source.address.bbl ?? "",
+            source.address.nta ?? "",
+            ...source.materialDetails.flatMap((detail) => [
+                detail.floor ?? "",
+                detail.section ?? "",
+                detail.acmType ?? "",
+                detail.acmUnit ?? "",
+                detail.abatementType ?? "",
+                detail.procedureName ?? "",
+            ]),
+        ];
+    });
+
+    return [
+        project.contractor,
+        project.title,
+        project.start,
+        project.end,
+        project.address.street,
+        project.address.city,
+        project.address.zip,
+        project.address.borough ?? "",
+        ...sourceText,
+    ].join(" ").toLowerCase();
+}
+
+function createLocationSearchText(projects: MappedProject[], address: ProjectAddress): string {
+    return [
+        formatAddress(address),
+        address.borough ?? "",
+        ...projects.map(getProjectSearchText),
+    ].join(" ").toLowerCase();
+}
+
+function sortLocationProjects(projects: MappedProject[]): MappedProject[] {
+    return [...projects].sort((left, right) =>
+        left.start.localeCompare(right.start) ||
+        left.contractor.localeCompare(right.contractor) ||
+        left.id.localeCompare(right.id));
+}
+
+function groupProjectsByAddress(projects: MappedProject[]): Map<string, MappedProject[]> {
+    const projectsByAddress = new Map<string, MappedProject[]>();
+
+    for (const project of projects) {
+        const existingProjects = projectsByAddress.get(project.addressKey) ?? [];
+        existingProjects.push(project);
+        projectsByAddress.set(project.addressKey, existingProjects);
+    }
+
+    for (const [addressKey, groupedProjects] of projectsByAddress) {
+        projectsByAddress.set(addressKey, sortLocationProjects(groupedProjects));
+    }
+
+    return projectsByAddress;
+}
+
+function createProjectLocations(projects: MappedProject[], projectsByAddress: Map<string, MappedProject[]>): MappedLocation[] {
+    return projects.map((project) => {
+        const groupedProjects = projectsByAddress.get(project.addressKey) ?? [project];
+        const sortedProjects = sortLocationProjects(groupedProjects);
+        return {
+            id: project.id,
+            addressKey: project.addressKey,
+            address: project.address,
+            lat: project.coordinates.lat,
+            lng: project.coordinates.lng,
+            projects: sortedProjects,
+            selectedProjectId: project.id,
+            searchText: createLocationSearchText([project], project.address),
+        };
+    }).sort((left, right) =>
+        left.address.street.localeCompare(right.address.street) ||
+        left.address.city.localeCompare(right.address.city) ||
+        left.id.localeCompare(right.id));
+}
+
 export async function initMap(): Promise<void> {
     const searchInput = document.getElementById("search-input") as HTMLInputElement | null;
     const searchClear = document.getElementById("search-clear") as HTMLButtonElement | null;
@@ -298,21 +656,23 @@ export async function initMap(): Promise<void> {
     const searchContainer = document.querySelector(".search-container");
 
     let map: maplibregl.Map | null = null;
-    let allSites: MappedSite[] = [];
-    let visibleSites: MappedSite[] = [];
+    let allProjects: MappedProject[] = [];
+    let allLocations: MappedLocation[] = [];
+    let visibleLocations: MappedLocation[] = [];
+    let locationsById = new Map<string, MappedLocation>();
     let currentBasemapMode: BasemapMode = "pmtiles";
     let isSwitchingBasemap = false;
     let activeSearchIndex = -1;
     let renderedSearchCount = 0;
 
-    function fitBoundsToSites(sites: MappedSite[]): void {
+    function fitBoundsToLocations(locations: MappedLocation[]): void {
         if (!map) {
             return;
         }
 
         const bounds = new maplibregl.LngLatBounds();
-        for (const site of sites) {
-            bounds.extend([site.lng, site.lat]);
+        for (const location of locations) {
+            bounds.extend([location.lng, location.lat]);
         }
 
         if (!bounds.isEmpty()) {
@@ -408,18 +768,18 @@ export async function initMap(): Promise<void> {
         syncSearchControls(searchInput ? normalizeSearchQuery(searchInput.value) : "");
     }
 
-    function selectSearchSite(site: MappedSite): void {
+    function selectSearchLocation(location: MappedLocation): void {
         if (!map || !searchInput) {
             return;
         }
 
-        searchInput.value = site.contractor;
-        visibleSites = [site];
-        setProjectData(map, visibleSites);
+        searchInput.value = getLocationTitle(location);
+        visibleLocations = [location];
+        setProjectData(map, visibleLocations);
         renderedSearchCount = 0;
         searchResults?.replaceChildren();
         hideSearchResults();
-        focusOnSite(map, site);
+        focusOnLocation(map, location);
     }
 
     function clearSearch(): void {
@@ -440,30 +800,24 @@ export async function initMap(): Promise<void> {
         activeSearchIndex = -1;
 
         if (!query) {
-            visibleSites = allSites;
+            visibleLocations = allLocations;
             renderedSearchCount = 0;
             searchResults.hidden = true;
             searchResults.replaceChildren();
             if (map) {
-                setProjectData(map, visibleSites);
+                setProjectData(map, visibleLocations);
             }
             syncSearchControls(query);
             return;
         }
 
-        visibleSites = allSites.filter((site) =>
-            site.contractor.toLowerCase().includes(query) ||
-            site.city.toLowerCase().includes(query) ||
-            site.street.toLowerCase().includes(query) ||
-            site.zip.includes(query) ||
-            Boolean(site.caseReference?.includes(query)),
-        );
+        visibleLocations = allLocations.filter((location) => location.searchText.includes(query));
 
         if (map) {
-            setProjectData(map, visibleSites);
+            setProjectData(map, visibleLocations);
         }
 
-        renderedSearchCount = renderSearchResults(searchResults, visibleSites, activeSearchIndex, selectSearchSite);
+        renderedSearchCount = renderSearchResults(searchResults, visibleLocations, activeSearchIndex, selectSearchLocation);
         syncSearchControls(query);
     }
 
@@ -507,7 +861,7 @@ export async function initMap(): Promise<void> {
 
             loadedMap.addSource(PROJECT_SOURCE_ID, {
                 type: "geojson",
-                data: getGeoJson(visibleSites),
+                data: getGeoJson(visibleLocations),
                 cluster: true,
                 clusterMaxZoom: 11,
                 clusterRadius: 38,
@@ -607,11 +961,12 @@ export async function initMap(): Promise<void> {
 
                 const coordinates = [...feature.geometry.coordinates] as [number, number];
                 const properties = feature.properties as ProjectFeatureProperties | undefined;
-                if (!properties) {
+                const location = properties ? locationsById.get(properties.locationId) : undefined;
+                if (!location) {
                     return;
                 }
 
-                openProjectPopup(loadedMap, coordinates, properties);
+                openProjectPopup(loadedMap, coordinates, location);
             });
 
             loadedMap.on("mouseenter", PROJECT_LAYER_ID, () => {
@@ -630,27 +985,30 @@ export async function initMap(): Promise<void> {
                 loadedMap.getCanvas().style.setProperty("cursor", "");
             });
 
-            fitBoundsToSites(visibleSites);
+            fitBoundsToLocations(visibleLocations);
         });
     }
 
     syncSearchControls("");
 
     try {
-        const loadedSites = await getAllSites();
-        allSites = loadedSites.filter(hasCoordinates);
+        const loadedProjects = await getAllProjects();
+        allProjects = loadedProjects.filter(hasProjectCoordinates);
 
         if (CONFIG.filterToNYC) {
             const bounds = CONFIG.nycBounds;
-            allSites = allSites.filter((site) =>
-                site.lng >= bounds.minLng &&
-                site.lng <= bounds.maxLng &&
-                site.lat >= bounds.minLat &&
-                site.lat <= bounds.maxLat,
+            allProjects = allProjects.filter((project) =>
+                project.coordinates.lng >= bounds.minLng &&
+                project.coordinates.lng <= bounds.maxLng &&
+                project.coordinates.lat >= bounds.minLat &&
+                project.coordinates.lat <= bounds.maxLat,
             );
         }
 
-        visibleSites = allSites;
+        const projectsByAddress = groupProjectsByAddress(allProjects);
+        allLocations = createProjectLocations(allProjects, projectsByAddress);
+        visibleLocations = allLocations;
+        locationsById = new Map(allLocations.map((location) => [location.id, location]));
 
         if (searchInput && searchResults) {
             searchInput.addEventListener("input", (event) => {
@@ -681,9 +1039,9 @@ export async function initMap(): Promise<void> {
                 if (event.key === "Enter" && !searchResults.hidden && renderedSearchCount > 0) {
                     event.preventDefault();
                     const selectedIndex = activeSearchIndex >= 0 ? activeSearchIndex : 0;
-                    const selectedSite = visibleSites[selectedIndex];
-                    if (selectedSite) {
-                        selectSearchSite(selectedSite);
+                    const selectedLocation = visibleLocations[selectedIndex];
+                    if (selectedLocation) {
+                        selectSearchLocation(selectedLocation);
                     }
                     return;
                 }

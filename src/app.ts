@@ -10,6 +10,7 @@ const app = express();
 const port = Number(process.env.PORT ?? 3000);
 const distDir = __dirname;
 const outputFile = path.join(__dirname, "../output.json");
+const projectsFile = path.join(__dirname, "../projects.json");
 
 let sites = new Array<GeocodedResult>();
 let reloadTimer: NodeJS.Timeout | undefined;
@@ -70,6 +71,10 @@ app.get("/favicon.svg", (_req, res) => {
 
 app.get("/output.json", (_req, res) => {
     res.json(sites);
+});
+
+app.get("/projects.json", (_req, res) => {
+    res.sendFile(projectsFile);
 });
 
 app.get("/", (_req, res) => {

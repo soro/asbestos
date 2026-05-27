@@ -5,7 +5,7 @@
   "main": "dist/app.js",
   "scripts": {
     "clean": "rimraf dist",
-    "copy-assets": "mkdir -p dist/css dist/fonts && cp src/static/*.css node_modules/maplibre-gl/dist/maplibre-gl.css dist/css/ && cp -R src/static/fonts/. dist/fonts/ && cp src/static/index.html src/static/sw.js src/static/new-york.pmtiles.gz src/static/favicon.svg output.json dist/",
+    "copy-assets": "mkdir -p dist/css dist/fonts && cp src/static/*.css node_modules/maplibre-gl/dist/maplibre-gl.css dist/css/ && cp -R src/static/fonts/. dist/fonts/ && cp src/static/index.html src/static/sw.js src/static/new-york.pmtiles.gz src/static/favicon.svg output.json projects.json dist/",
     "build:node": "tsc -p tsconfig.node.json",
     "build:client": "esbuild src/site/site.ts --bundle --minify --outfile=dist/js/site.js --format=iife --target=es2020",
     "build:static": "npm run clean && npm run build:client && npm run copy-assets",
@@ -14,7 +14,9 @@
     "refresh-basemap": "npm run build:node && node dist/update-basemap.js",
     "scrape": "node dist/scrape.js",
     "geocode": "node dist/geocode.js",
-    "refresh-data": "npm run build:node && npm run scrape && npm run geocode && npm run build",
+    "fetch-acp7": "node dist/fetch-acp7.js",
+    "build-projects-data": "node dist/build-projects.js",
+    "refresh-data": "npm run build:node && npm run scrape && npm run geocode && npm run fetch-acp7 && npm run build-projects-data && npm run build",
     "start": "node dist/app.js",
     "prestart": "npm run build:full",
     "prepublishOnly": "npm run build:full"

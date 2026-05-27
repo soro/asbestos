@@ -37,10 +37,16 @@ jobs:
       - name: Geocode Data
         run: npm run geocode
 
+      - name: Fetch NYC Open Data ACP7
+        run: npm run fetch-acp7
+
+      - name: Build Normalized Project Data
+        run: npm run build-projects-data
+
       - name: Commit Data
         run: |
           git config --global user.name 'GitHub Action'
           git config --global user.email 'action@github.com'
-          git add output.json geocode_cache.json geocode_failure_cache.json
+          git add output.json acp7_output.json projects.json geocode_cache.json geocode_failure_cache.json
           git diff --quiet && git diff --staged --quiet || git commit -m "Update data"
           git push

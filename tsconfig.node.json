@@ -3,8 +3,11 @@
     "include": [
         "src/app.ts",
         "src/basemap.ts",
+        "src/build-projects.ts",
+        "src/fetch-acp7.ts",
         "src/geocoders/**/*.ts",
         "src/geocode.ts",
+        "src/geocoding.ts",
         "src/scrape.ts",
         "src/update-basemap.ts",
         "src/data.ts",

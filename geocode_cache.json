@@ -21329,5 +21329,205 @@
     "lat": 43.1301339,
     "lng": -77.6308934,
     "provider": "nominatim"
+  },
+  "1a-6b Defoe Place, Bronx, 10475, NY": {
+    "lat": 40.876488000003,
+    "lng": -73.831122000001,
+    "provider": "nys"
+  },
+  "33A - 42B Adler Place, Bronx, 10475, NY": {
+    "lat": 40.871637000003,
+    "lng": -73.829236500001,
+    "provider": "nys"
+  },
+  "4650 Fieldstone road, Bronx, 10471, NY": {
+    "lat": 40.894920000003,
+    "lng": -73.903999500001,
+    "provider": "nys"
+  },
+  "13a-18b Defoe Place, Bronx, 10475, NY": {
+    "lat": 40.875957000003,
+    "lng": -73.830177000001,
+    "provider": "nys"
+  },
+  "64-20 175th Avenue, Queens, 11365, NY": {
+    "lat": 40.737641435648,
+    "lng": -73.794082304725,
+    "provider": "nys"
+  },
+  "315 East 65h Street, New York, 10065, NY": {
+    "lat": 40.764204000003,
+    "lng": -73.960875000001,
+    "provider": "nys"
+  },
+  "100; 120 Aldrich Street, Bronx, 10475, NY": {
+    "lat": 40.870638000003,
+    "lng": -73.831869000001,
+    "provider": "nys"
+  },
+  "4160; 4180 Hutchinson River Parkway, Bronx, 10475, NY": {
+    "lat": 40.866453000003,
+    "lng": -73.822428000001,
+    "provider": "nys"
+  },
+  "100; 120; 140 Darrow Place, Bronx, 10475, NY": {
+    "lat": 40.877514000003,
+    "lng": -73.832031000001,
+    "provider": "nys"
+  },
+  "52 Edgcombe Avenue, New York, 10032, NY": {
+    "lat": 40.818519000003,
+    "lng": -73.946709000001,
+    "provider": "nys"
+  },
+  "1145 University Avenue, Brooklyn, 11201, NY": {
+    "lat": 40.837941000003,
+    "lng": -73.928749500001,
+    "provider": "nys"
+  },
+  "100; 120; 140 Asch Loop, Bronx, 10475, NY": {
+    "lat": 40.871223000003,
+    "lng": -73.827220500001,
+    "provider": "nys"
+  },
+  "100; 120 Dreiser Loop, Bronx, 10475, NY": {
+    "lat": 40.877388000003,
+    "lng": -73.827774000001,
+    "provider": "nys"
+  },
+  "4100; 4120 Hutchinson River Parkway, Bronx, 10475, NY": {
+    "lat": 40.863411000003,
+    "lng": -73.825155000001,
+    "provider": "nys"
+  },
+  "100; 120; 140 Debs Place, Bronx, 10475, NY": {
+    "lat": 40.876515000003,
+    "lng": -73.827162000001,
+    "provider": "nys"
+  },
+  "100; 120 Co-op City Blvd, Bronx, 10475, NY": {
+    "lat": 40.871583000003,
+    "lng": -73.825236000001,
+    "provider": "nys"
+  },
+  "100; 120 Erskine Place, Bronx, 10475, NY": {
+    "lat": 40.861701000003,
+    "lng": -73.821375000001,
+    "provider": "nys"
+  },
+  "4200; 4220; 4240 Hutchinson River Parkway, Bronx, 10475, NY": {
+    "lat": 40.866705000003,
+    "lng": -73.821267000001,
+    "provider": "nys"
+  },
+  "100; 120; 140 Einstein Loop, Bronx, 10475, NY": {
+    "lat": 40.865346000003,
+    "lng": -73.822050000001,
+    "provider": "nys"
+  },
+  "100; 120; 140 Erdman Place, Bronx, 10475, NY": {
+    "lat": 40.863663000003,
+    "lng": -73.823994000001,
+    "provider": "nys"
+  },
+  "25A-32B Adler Place, Bronx, 10475, NY": {
+    "lat": 40.871610000003,
+    "lng": -73.828449000001,
+    "provider": "nys"
+  },
+  "2440; 2420; 2400 Hunter Avenue, Bronx, 10475, NY": {
+    "lat": 40.862016000003,
+    "lng": -73.824088500001,
+    "provider": "nys"
+  },
+  "100; 120; 140 Bellamy Loop, Bronx, 10475, NY": {
+    "lat": 40.872717000003,
+    "lng": -73.826586000001,
+    "provider": "nys"
+  },
+  "100; 120; 140 Carver Loop, Bronx, 10475, NY": {
+    "lat": 40.877982000003,
+    "lng": -73.826455500001,
+    "provider": "nys"
+  },
+  "100; 120; 140 Donizetti Place, Bronx, 10475, NY": {
+    "lat": 40.876101000003,
+    "lng": -73.832620500001,
+    "provider": "nys"
+  },
+  "1A - 8B Earhart Lane, Bronx, 10475, NY": {
+    "lat": 40.862061000003,
+    "lng": -73.822963500001,
+    "provider": "nys"
+  },
+  "161 Marshal Street, Brooklyn, 11234, NY": {
+    "lat": 40.704868201053,
+    "lng": -73.98117225152,
+    "provider": "nys"
+  },
+  "234 East 29th Street, New York, 10016, NY": {
+    "lat": 40.741803000003,
+    "lng": -73.978803000001,
+    "provider": "nys"
+  },
+  "25A-32B Earhart Lane, Bronx, 10475, NY": {
+    "lat": 40.861935000003,
+    "lng": -73.822446000001,
+    "provider": "nys"
+  },
+  "1A - 4B Asch Loop, Bronx, 10475, NY": {
+    "lat": 40.871421000003,
+    "lng": -73.831324500001,
+    "provider": "nys"
+  },
+  "1A-10B Debs Place, Bronx, 10475, NY": {
+    "lat": 40.876389000003,
+    "lng": -73.828174500001,
+    "provider": "nys"
+  },
+  "1A-4B Adler Place, Bronx, 10475, NY": {
+    "lat": 40.871637000003,
+    "lng": -73.827868500001,
+    "provider": "nys"
+  },
+  "7a-12b Defoe Place, Bronx, 10475, NY": {
+    "lat": 40.876101000003,
+    "lng": -73.830924000001,
+    "provider": "nys"
+  },
+  "15A-24B Earhart Lane, Bronx, 10475, NY": {
+    "lat": 40.862628000003,
+    "lng": -73.822729500001,
+    "provider": "nys"
+  },
+  "9A - 14B Earhart Lane, Bronx, 10475, NY": {
+    "lat": 40.862133000003,
+    "lng": -73.823391000001,
+    "provider": "nys"
+  },
+  "7A-12B Broun Place, Bronx, 10475, NY": {
+    "lat": 40.873221000003,
+    "lng": -73.827558000001,
+    "provider": "nys"
+  },
+  "17A -28B Broun Place, Bronx, 10475, NY": {
+    "lat": 40.873833000003,
+    "lng": -73.827594000001,
+    "provider": "nys"
+  },
+  "17A-22b Cooper Place, Bronx, 10475, NY": {
+    "lat": 40.877181000003,
+    "lng": -73.824250500001,
+    "provider": "nys"
+  },
+  "31A-38B Cooper Place, Bronx, 10475, NY": {
+    "lat": 40.876767000003,
+    "lng": -73.825569000001,
+    "provider": "nys"
+  },
+  "19A-26B Debs Place, Bronx, 10475, NY": {
+    "lat": 40.875651000003,
+    "lng": -73.827247500001,
+    "provider": "nys"
   }
 }

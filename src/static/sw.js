@@ -51,7 +51,7 @@ self.addEventListener('fetch', (event) => {
 
                     return networkResponse;
                 }).catch(() => {
-                    // Could return a fallback tile here if offline
+                    return Response.error();
                 });
             })
         );

@@ -1,5 +1,12 @@
 import { GeocodedResult, SearchResult } from "./types";
 
+const PROJECT_DATE_FORMATTER = new Intl.DateTimeFormat("en-US", {
+    month: "short",
+    day: "numeric",
+    year: "numeric",
+    timeZone: "UTC",
+});
+
 function normalizeWhitespace(value: string): string {
     return value.trim().replace(/\s+/g, " ");
 }
@@ -50,5 +57,22 @@ export function hasCoordinates(site: GeocodedResult): site is GeocodedResult & {
 }
 
 export function formatProjectDate(value: string): string {
-    return value.split("T")[0] || value;
+    const trimmedValue = value.trim();
+    const match = /^(\d{4})-(\d{2})-(\d{2})/.exec(trimmedValue);
+    if (!match) {
+        return trimmedValue || value;
+    }
+
+    const year = Number(match[1]);
+    const monthIndex = Number(match[2]) - 1;
+    const day = Number(match[3]);
+    const date = new Date(Date.UTC(year, monthIndex, day));
+
+    if (date.getUTCFullYear() !== year ||
+        date.getUTCMonth() !== monthIndex ||
+        date.getUTCDate() !== day) {
+        return trimmedValue;
+    }
+
+    return PROJECT_DATE_FORMATTER.format(date);
 }

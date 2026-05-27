@@ -1,7 +1,7 @@
-Asbestos Remediations NYS
+Asbestos Remediations NYC
 =========================
 
-Scrapes and displays active asbestos remediation projects across New York State.
+Scrapes active asbestos remediation projects across New York State and displays the NYC-area projects on a searchable map.
 
 The production site is a static GitHub Pages deployment. Scraping and geocoding happen in GitHub Actions on a schedule; the browser only downloads static assets and the prebuilt dataset.
 
@@ -16,7 +16,7 @@ The PMTiles basemap is intentionally stored as `new-york.pmtiles.gz`. This is a 
 - `src/update-basemap.ts`: Rebuilds the clipped Protomaps basemap archive used by the site.
 - `src/app.ts`: Express server for the built frontend and live data reloads.
 - `src/site/site.ts`: MapLibre client for the searchable map UI.
-- `output.json`: Current geocoded project dataset used by the site.
+- `output.json`: Current geocoded project dataset used by the site. The browser filters this statewide dataset to the configured NYC map bounds.
 
 ## Local Usage
 

@@ -7,7 +7,10 @@ import { GeocodedResult } from "../types";
 
 const MAX_SEARCH_RESULTS = 10;
 const PROJECT_SOURCE_ID = "asbestos-projects";
+const PROJECT_CLUSTER_LAYER_ID = "project-clusters";
+const PROJECT_CLUSTER_COUNT_LAYER_ID = "project-cluster-count";
 const PROJECT_LAYER_ID = "projects-circles";
+const SEARCH_RESULT_ID_PREFIX = "search-result";
 const PROTOMAPS_GLYPHS_URL = "https://protomaps.github.io/basemaps-assets/fonts/{fontstack}/{range}.pbf";
 const PROTOMAPS_GRAYSCALE_SPRITE_URL = "https://protomaps.github.io/basemaps-assets/sprites/v4/grayscale";
 
@@ -33,6 +36,7 @@ const CONFIG = {
 const pmtilesProtocol = new Protocol();
 let hasRegisteredPmtilesProtocol = false;
 let hasRegisteredRasterServiceWorker = false;
+let activePopup: maplibregl.Popup | null = null;
 
 export async function getAllSites(): Promise<GeocodedResult[]> {
     const response = await fetch("output.json");
@@ -45,26 +49,45 @@ export async function getAllSites(): Promise<GeocodedResult[]> {
 
 function createPopupContent(site: ProjectFeatureProperties): HTMLElement {
     const container = document.createElement("div");
+    container.className = "project-popup";
 
-    const title = document.createElement("strong");
+    const title = document.createElement("div");
+    title.className = "project-popup__title";
     title.textContent = site.contractor;
-    title.style.display = "block";
 
     const address = document.createElement("div");
+    address.className = "project-popup__address";
     address.textContent = `${site.street}, ${site.city}, ${site.zip}`;
 
-    const schedule = document.createElement("div");
-    schedule.textContent = `Start: ${formatProjectDate(site.start)} End: ${formatProjectDate(site.end)}`;
+    const details = document.createElement("div");
+    details.className = "project-popup__details";
 
-    container.append(title, address, schedule);
+    appendPopupDetail(details, "Start", formatProjectDate(site.start));
+    appendPopupDetail(details, "End", formatProjectDate(site.end));
 
     if (site.caseReference) {
-        const caseReference = document.createElement("div");
-        caseReference.textContent = `Case: ${site.caseReference}`;
-        container.appendChild(caseReference);
+        appendPopupDetail(details, "Case", site.caseReference);
     }
 
+    container.append(title, address, details);
+
     return container;
+}
+
+function appendPopupDetail(details: HTMLDivElement, label: string, value: string): void {
+    const row = document.createElement("div");
+    row.className = "project-popup__detail";
+
+    const labelElement = document.createElement("span");
+    labelElement.className = "project-popup__label";
+    labelElement.textContent = label;
+
+    const valueElement = document.createElement("span");
+    valueElement.className = "project-popup__value";
+    valueElement.textContent = value;
+
+    row.append(labelElement, valueElement);
+    details.appendChild(row);
 }
 
 function registerPmtilesProtocol(): void {
@@ -154,28 +177,62 @@ function focusOnSite(map: maplibregl.Map, site: MappedSite): void {
         zoom: 15,
     });
 
-    new maplibregl.Popup()
-        .setLngLat([site.lng, site.lat])
+    openProjectPopup(map, [site.lng, site.lat], site);
+}
+
+function openProjectPopup(
+    map: maplibregl.Map,
+    coordinates: [number, number],
+    site: ProjectFeatureProperties,
+): void {
+    activePopup?.remove();
+
+    const popup = new maplibregl.Popup({ maxWidth: "360px" })
+        .setLngLat(coordinates)
         .setDOMContent(createPopupContent(site))
         .addTo(map);
+
+    activePopup = popup;
+    popup.on("close", () => {
+        if (activePopup === popup) {
+            activePopup = null;
+        }
+    });
 }
 
 function renderSearchResults(
     container: HTMLElement,
     sites: MappedSite[],
+    activeIndex: number,
     onSelect: (site: MappedSite) => void,
-): void {
+): number {
     container.replaceChildren();
 
     const visibleResults = sites.slice(0, MAX_SEARCH_RESULTS);
-    for (const site of visibleResults) {
+    for (const [index, site] of visibleResults.entries()) {
         const result = document.createElement("div");
         result.className = "result-item";
+        result.id = `${SEARCH_RESULT_ID_PREFIX}-${index}`;
+        result.setAttribute("role", "option");
+        result.setAttribute("aria-selected", index === activeIndex ? "true" : "false");
+
+        if (index === activeIndex) {
+            result.classList.add("is-active");
+        }
 
         const title = document.createElement("strong");
+        title.className = "result-title";
         title.textContent = site.contractor;
-        result.append(title, document.createTextNode(`${site.street}, ${site.city}`));
 
+        const address = document.createElement("span");
+        address.className = "result-address";
+        address.textContent = `${site.street}, ${site.city} ${site.zip}`;
+
+        result.append(title, address);
+
+        result.addEventListener("mousedown", (event) => {
+            event.preventDefault();
+        });
         result.addEventListener("click", () => {
             onSelect(site);
         });
@@ -183,7 +240,8 @@ function renderSearchResults(
         container.appendChild(result);
     }
 
-    container.style.display = visibleResults.length > 0 ? "block" : "none";
+    container.hidden = visibleResults.length === 0;
+    return visibleResults.length;
 }
 
 function isPmtilesSourceError(event: unknown): boolean {
@@ -227,12 +285,15 @@ export async function initMap(): Promise<void> {
     const searchInput = document.getElementById("search-input") as HTMLInputElement | null;
     const searchClear = document.getElementById("search-clear") as HTMLButtonElement | null;
     const searchResults = document.getElementById("search-results");
+    const searchContainer = document.querySelector(".search-container");
 
     let map: maplibregl.Map | null = null;
     let allSites: MappedSite[] = [];
     let visibleSites: MappedSite[] = [];
     let currentBasemapMode: BasemapMode = "pmtiles";
     let isSwitchingBasemap = false;
+    let activeSearchIndex = -1;
+    let renderedSearchCount = 0;
 
     function fitBoundsToSites(sites: MappedSite[]): void {
         if (!map) {
@@ -255,8 +316,60 @@ export async function initMap(): Promise<void> {
         }
 
         if (searchInput) {
-            searchInput.setAttribute("aria-expanded", searchResults?.style.display === "block" ? "true" : "false");
+            const resultsAreOpen = Boolean(searchResults && !searchResults.hidden);
+            searchInput.setAttribute("aria-expanded", resultsAreOpen ? "true" : "false");
+
+            if (resultsAreOpen && activeSearchIndex >= 0) {
+                searchInput.setAttribute("aria-activedescendant", `${SEARCH_RESULT_ID_PREFIX}-${activeSearchIndex}`);
+            } else {
+                searchInput.removeAttribute("aria-activedescendant");
+            }
         }
+    }
+
+    function normalizeSearchQuery(value: string): string {
+        return value.trim().toLowerCase();
+    }
+
+    function hideSearchResults(): void {
+        activeSearchIndex = -1;
+        if (searchResults) {
+            searchResults.hidden = true;
+        }
+        syncSearchControls(searchInput ? normalizeSearchQuery(searchInput.value) : "");
+    }
+
+    function setActiveSearchIndex(index: number): void {
+        if (!searchResults || renderedSearchCount === 0) {
+            return;
+        }
+
+        activeSearchIndex = (index + renderedSearchCount) % renderedSearchCount;
+
+        for (const [resultIndex, child] of Array.from(searchResults.children).entries()) {
+            const result = child as HTMLElement;
+            const isActive = resultIndex === activeSearchIndex;
+            result.classList.toggle("is-active", isActive);
+            result.setAttribute("aria-selected", isActive ? "true" : "false");
+        }
+
+        const activeResult = searchResults.children[activeSearchIndex] as HTMLElement | undefined;
+        activeResult?.scrollIntoView({ block: "nearest" });
+        syncSearchControls(searchInput ? normalizeSearchQuery(searchInput.value) : "");
+    }
+
+    function selectSearchSite(site: MappedSite): void {
+        if (!map || !searchInput) {
+            return;
+        }
+
+        searchInput.value = site.contractor;
+        visibleSites = [site];
+        setProjectData(map, visibleSites);
+        renderedSearchCount = 0;
+        searchResults?.replaceChildren();
+        hideSearchResults();
+        focusOnSite(map, site);
     }
 
     function clearSearch(): void {
@@ -274,9 +387,12 @@ export async function initMap(): Promise<void> {
             return;
         }
 
+        activeSearchIndex = -1;
+
         if (!query) {
             visibleSites = allSites;
-            searchResults.style.display = "none";
+            renderedSearchCount = 0;
+            searchResults.hidden = true;
             searchResults.replaceChildren();
             if (map) {
                 setProjectData(map, visibleSites);
@@ -289,29 +405,16 @@ export async function initMap(): Promise<void> {
             site.contractor.toLowerCase().includes(query) ||
             site.city.toLowerCase().includes(query) ||
             site.street.toLowerCase().includes(query) ||
-            site.zip.includes(query),
+            site.zip.includes(query) ||
+            Boolean(site.caseReference?.includes(query)),
         );
 
         if (map) {
             setProjectData(map, visibleSites);
         }
 
-        renderSearchResults(searchResults, visibleSites, (site) => {
-            if (!map || !searchInput) {
-                return;
-            }
-
-            searchInput.value = site.contractor;
-            searchResults.style.display = "none";
-            visibleSites = [site];
-            setProjectData(map, visibleSites);
-            focusOnSite(map, site);
-        });
+        renderedSearchCount = renderSearchResults(searchResults, visibleSites, activeSearchIndex, selectSearchSite);
         syncSearchControls(query);
-
-        if (visibleSites.length === 1 && map) {
-            focusOnSite(map, visibleSites[0]);
-        }
     }
 
     async function renderMap(): Promise<void> {
@@ -355,18 +458,95 @@ export async function initMap(): Promise<void> {
             loadedMap.addSource(PROJECT_SOURCE_ID, {
                 type: "geojson",
                 data: getGeoJson(visibleSites),
+                cluster: true,
+                clusterMaxZoom: 11,
+                clusterRadius: 38,
+            });
+
+            loadedMap.addLayer({
+                id: PROJECT_CLUSTER_LAYER_ID,
+                type: "circle",
+                source: PROJECT_SOURCE_ID,
+                filter: ["has", "point_count"],
+                paint: {
+                    "circle-color": [
+                        "step",
+                        ["get", "point_count"],
+                        "#d7263d",
+                        20,
+                        "#b91c37",
+                        60,
+                        "#8f172a",
+                    ],
+                    "circle-opacity": 0.9,
+                    "circle-radius": [
+                        "step",
+                        ["get", "point_count"],
+                        14,
+                        20,
+                        18,
+                        60,
+                        23,
+                    ],
+                    "circle-stroke-width": 2,
+                    "circle-stroke-color": "#ffffff",
+                },
+            });
+
+            loadedMap.addLayer({
+                id: PROJECT_CLUSTER_COUNT_LAYER_ID,
+                type: "symbol",
+                source: PROJECT_SOURCE_ID,
+                filter: ["has", "point_count"],
+                layout: {
+                    "text-field": ["get", "point_count_abbreviated"],
+                    "text-font": ["Noto Sans Regular"],
+                    "text-size": 11,
+                    "text-allow-overlap": true,
+                },
+                paint: {
+                    "text-color": "#ffffff",
+                },
             });
 
             loadedMap.addLayer({
                 id: PROJECT_LAYER_ID,
                 type: "circle",
                 source: PROJECT_SOURCE_ID,
+                filter: ["!", ["has", "point_count"]],
                 paint: {
-                    "circle-color": "#ff0000",
-                    "circle-radius": 6,
-                    "circle-stroke-width": 1,
-                    "circle-stroke-color": "#fff",
+                    "circle-color": "#d7263d",
+                    "circle-opacity": 0.88,
+                    "circle-radius": [
+                        "interpolate",
+                        ["linear"],
+                        ["zoom"],
+                        9,
+                        4,
+                        14,
+                        8,
+                    ],
+                    "circle-stroke-width": 1.5,
+                    "circle-stroke-color": "#ffffff",
                 },
+            });
+
+            loadedMap.on("click", PROJECT_CLUSTER_LAYER_ID, (event) => {
+                const feature = event.features?.[0];
+                const clusterId = feature?.properties?.cluster_id;
+                const geometry = feature?.geometry;
+                const source = loadedMap.getSource(PROJECT_SOURCE_ID) as maplibregl.GeoJSONSource | undefined;
+                if (typeof clusterId !== "number" || geometry?.type !== "Point" || !source) {
+                    return;
+                }
+
+                const coordinates = geometry.coordinates as [number, number];
+                void source.getClusterExpansionZoom(clusterId).then((zoom) => {
+                    loadedMap.easeTo({
+                        center: coordinates,
+                        zoom,
+                    });
+                });
             });
 
             loadedMap.on("click", PROJECT_LAYER_ID, (event) => {
@@ -381,17 +561,22 @@ export async function initMap(): Promise<void> {
                     return;
                 }
 
-                new maplibregl.Popup()
-                    .setLngLat(coordinates)
-                    .setDOMContent(createPopupContent(properties))
-                    .addTo(loadedMap);
+                openProjectPopup(loadedMap, coordinates, properties);
             });
 
             loadedMap.on("mouseenter", PROJECT_LAYER_ID, () => {
                 loadedMap.getCanvas().style.setProperty("cursor", "pointer");
             });
 
+            loadedMap.on("mouseenter", PROJECT_CLUSTER_LAYER_ID, () => {
+                loadedMap.getCanvas().style.setProperty("cursor", "pointer");
+            });
+
             loadedMap.on("mouseleave", PROJECT_LAYER_ID, () => {
+                loadedMap.getCanvas().style.setProperty("cursor", "");
+            });
+
+            loadedMap.on("mouseleave", PROJECT_CLUSTER_LAYER_ID, () => {
                 loadedMap.getCanvas().style.setProperty("cursor", "");
             });
 
@@ -419,10 +604,40 @@ export async function initMap(): Promise<void> {
 
         if (searchInput && searchResults) {
             searchInput.addEventListener("input", (event) => {
-                applySearch((event.target as HTMLInputElement).value.trim().toLowerCase());
+                applySearch(normalizeSearchQuery((event.target as HTMLInputElement).value));
             });
 
             searchInput.addEventListener("keydown", (event) => {
+                if (event.key === "ArrowDown" && renderedSearchCount > 0) {
+                    event.preventDefault();
+                    searchResults.hidden = false;
+                    setActiveSearchIndex(activeSearchIndex + 1);
+                    return;
+                }
+
+                if (event.key === "ArrowUp" && renderedSearchCount > 0) {
+                    event.preventDefault();
+                    searchResults.hidden = false;
+                    setActiveSearchIndex(activeSearchIndex === -1 ? renderedSearchCount - 1 : activeSearchIndex - 1);
+                    return;
+                }
+
+                if (event.key === "Enter" && !searchResults.hidden && renderedSearchCount > 0) {
+                    event.preventDefault();
+                    const selectedIndex = activeSearchIndex >= 0 ? activeSearchIndex : 0;
+                    const selectedSite = visibleSites[selectedIndex];
+                    if (selectedSite) {
+                        selectSearchSite(selectedSite);
+                    }
+                    return;
+                }
+
+                if (event.key === "Escape" && !searchResults.hidden) {
+                    event.preventDefault();
+                    hideSearchResults();
+                    return;
+                }
+
                 if (event.key === "Escape" && searchInput.value) {
                     event.preventDefault();
                     clearSearch();
@@ -432,10 +647,9 @@ export async function initMap(): Promise<void> {
             document.addEventListener("click", (event) => {
                 const target = event.target;
                 if (target instanceof Node &&
-                    !searchInput.contains(target) &&
-                    !searchResults.contains(target)) {
-                    searchResults.style.display = "none";
-                    syncSearchControls(searchInput.value.trim().toLowerCase());
+                    searchContainer instanceof HTMLElement &&
+                    !searchContainer.contains(target)) {
+                    hideSearchResults();
                 }
             });
         }

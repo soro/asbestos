@@ -1,11 +1,11 @@
 {
   "name": "asbestos-projects-nys",
   "version": "0.1.0",
-  "description": "Search active abatement projects in New York State",
+  "description": "Search active asbestos abatement projects in New York City",
   "main": "dist/app.js",
   "scripts": {
     "clean": "rimraf dist",
-    "copy-assets": "copyfiles -u 2 src/static/*.css dist/css && copyfiles -u 2 src/static/index.html src/static/sw.js src/static/new-york.pmtiles.gz src/static/favicon.svg dist && copyfiles output.json dist",
+    "copy-assets": "copyfiles -u 2 src/static/*.css dist/css && copyfiles -u 3 node_modules/maplibre-gl/dist/maplibre-gl.css dist/css && copyfiles -u 2 src/static/index.html src/static/sw.js src/static/new-york.pmtiles.gz src/static/favicon.svg dist && copyfiles output.json dist",
     "build:node": "tsc -p tsconfig.node.json",
     "build:client": "mkdir -p dist/js && browserify src/site/site.ts -p [ tsify ] -o dist/js/site.js",
     "build:static": "npm run clean && npm run build:client && npm run copy-assets",

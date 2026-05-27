@@ -1,11 +1,13 @@
 import { createCensusGeocoder } from "./census";
+import { createNominatimGeocoder } from "./nominatim";
 import { createNysGeocoder } from "./nys";
 import { GeocoderProvider, GeocoderProviderName, isGeocoderProviderName } from "./types";
 
-const DEFAULT_PROVIDER_ORDER: GeocoderProviderName[] = ["census"];
+const DEFAULT_PROVIDER_ORDER: GeocoderProviderName[] = ["nys", "census", "nominatim"];
 
 const PROVIDER_FACTORIES: Record<GeocoderProviderName, () => GeocoderProvider> = {
     census: createCensusGeocoder,
+    nominatim: createNominatimGeocoder,
     nys: createNysGeocoder,
 };
 

@@ -1,4 +1,4 @@
-export const GEOCODER_PROVIDER_NAMES = ["census", "nys"] as const;
+export const GEOCODER_PROVIDER_NAMES = ["census", "nominatim", "nys"] as const;
 
 export type GeocoderProviderName = typeof GEOCODER_PROVIDER_NAMES[number];
 

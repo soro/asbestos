@@ -20,6 +20,8 @@ The interface self-hosts Clarity City webfonts from VMware's archived Clarity Ci
 - `src/site/site.ts`: MapLibre client for the searchable map UI.
 - `output.json`: Current geocoded project dataset used by the site. The browser filters this statewide dataset to the configured NYC map bounds.
 
+The downloadable `output.json` contains both resolved and unresolved projects in one flat array. Resolved projects include numeric `lat` and `lng` fields; unresolved projects are kept in the file without those coordinate fields.
+
 ## Local Usage
 
 ```bash
@@ -41,15 +43,15 @@ npm run scrape
 npm run geocode
 ```
 
-`npm run geocode` reuses `geocode_cache.json`, and now also seeds that cache from the existing `output.json`, so previously geocoded addresses do not need to be looked up again during the nightly action.
+`npm run geocode` reuses `geocode_cache.json`, and now also seeds that cache from the existing `output.json`, so previously geocoded addresses do not need to be looked up again during the nightly action. It also writes `geocode_failure_cache.json` for addresses that still fail after every configured provider, so repeated runs do not retry permanent failures unless the provider order or cache version changes.
 
-The geocoding pipeline supports ordered fallback through `GEOCODER_PROVIDER_ORDER`. It currently defaults to `census`, but the code also includes a disabled NYS provider so the action can later switch to `nys,census` without another refactor.
+The geocoding pipeline supports ordered fallback through `GEOCODER_PROVIDER_ORDER`. It defaults to the production NYS Geocoder, then Census, then Nominatim as the final fallback for the small set of addresses and place descriptions the government geocoders cannot resolve.
 
 ```bash
-GEOCODER_PROVIDER_ORDER=nys,census npm run geocode
+GEOCODER_PROVIDER_ORDER=nys,census,nominatim npm run geocode
 ```
 
-The NYS provider uses `NYS_GEOCODER_URL` if you need to override the future production endpoint during testing.
+The NYS provider uses `NYS_GEOCODER_URL` if you need to override the production endpoint during testing. The Nominatim provider uses `NOMINATIM_GEOCODER_URL`, `NOMINATIM_USER_AGENT`, and `NOMINATIM_REQUEST_DELAY_MS` for endpoint, contact header, and rate-limit tuning.
 
 ## Basemap Refresh
 

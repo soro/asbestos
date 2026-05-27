@@ -8,6 +8,8 @@ import { GeocodeCoordinates, GeocoderProvider, GeocoderProviderName, isGeocoderP
 const RAW_OUTPUT = path.join(__dirname, "../raw_output.json");
 const OUTPUT = path.join(__dirname, "../output.json");
 const CACHE_FILE = path.join(__dirname, "../geocode_cache.json");
+const FAILURE_CACHE_FILE = path.join(__dirname, "../geocode_failure_cache.json");
+const FAILURE_CACHE_VERSION = 1;
 
 interface CachedGeocode extends GeocodeCoordinates {
     provider?: GeocoderProviderName;
@@ -16,7 +18,15 @@ interface CachedGeocode extends GeocodeCoordinates {
 interface GeocodeLookup {
     coords: CachedGeocode | null;
     fromCache: boolean;
+    fromFailureCache: boolean;
+    providerError: boolean;
     attemptedDelayMs: number;
+}
+
+interface CachedGeocodeFailure {
+    providers: GeocoderProviderName[];
+    failedAt: string;
+    cacheVersion: number;
 }
 
 function normalizeCacheEntry(value: unknown): CachedGeocode | null {
@@ -77,6 +87,66 @@ function saveCache() {
     fs.writeFileSync(CACHE_FILE, JSON.stringify(cache, null, 2));
 }
 
+function normalizeFailureCacheEntry(value: unknown): CachedGeocodeFailure | null {
+    if (!value || typeof value !== "object") {
+        return null;
+    }
+
+    const candidate = value as {
+        providers?: unknown;
+        failedAt?: unknown;
+        cacheVersion?: unknown;
+    };
+
+    if (!Array.isArray(candidate.providers) ||
+        !candidate.providers.every((provider): provider is GeocoderProviderName => (
+            typeof provider === "string" && isGeocoderProviderName(provider)
+        ))) {
+        return null;
+    }
+
+    if (typeof candidate.failedAt !== "string" || candidate.failedAt.trim().length === 0) {
+        return null;
+    }
+
+    if (candidate.cacheVersion !== FAILURE_CACHE_VERSION) {
+        return null;
+    }
+
+    return {
+        providers: candidate.providers,
+        failedAt: candidate.failedAt,
+        cacheVersion: FAILURE_CACHE_VERSION,
+    };
+}
+
+function loadFailureCache(): Record<string, CachedGeocodeFailure> {
+    if (!fs.existsSync(FAILURE_CACHE_FILE)) {
+        return {};
+    }
+
+    try {
+        const rawCache = JSON.parse(fs.readFileSync(FAILURE_CACHE_FILE, "utf8")) as Record<string, unknown>;
+        return Object.entries(rawCache).reduce<Record<string, CachedGeocodeFailure>>((normalizedCache, [address, entry]) => {
+            const normalizedEntry = normalizeFailureCacheEntry(entry);
+            if (normalizedEntry) {
+                normalizedCache[address] = normalizedEntry;
+            }
+
+            return normalizedCache;
+        }, {});
+    } catch (_error) {
+        console.log("Error reading failure cache, starting fresh.");
+        return {};
+    }
+}
+
+let failureCache: Record<string, CachedGeocodeFailure> = loadFailureCache();
+
+function saveFailureCache() {
+    fs.writeFileSync(FAILURE_CACHE_FILE, JSON.stringify(failureCache, null, 2));
+}
+
 function seedCacheFromOutput(): void {
     if (!fs.existsSync(OUTPUT)) {
         return;
@@ -115,20 +185,45 @@ function formatProviderLabel(provider: GeocoderProviderName | undefined, fromCac
 }
 
 async function geocodeAddress(address: string, geocoders: GeocoderProvider[]): Promise<GeocodeLookup> {
+    const providerOrder = geocoders.map((geocoder) => geocoder.name);
     const cachedCoords = cache[address];
     if (cachedCoords) {
         return {
             coords: cachedCoords,
             fromCache: true,
+            fromFailureCache: false,
+            providerError: false,
+            attemptedDelayMs: 0,
+        };
+    }
+
+    const cachedFailure = failureCache[address];
+    if (cachedFailure &&
+        cachedFailure.cacheVersion === FAILURE_CACHE_VERSION &&
+        cachedFailure.providers.length === providerOrder.length &&
+        cachedFailure.providers.every((provider, index) => provider === providerOrder[index])) {
+        return {
+            coords: null,
+            fromCache: false,
+            fromFailureCache: true,
+            providerError: false,
             attemptedDelayMs: 0,
         };
     }
 
     let attemptedDelayMs = 0;
+    let hadProviderError = false;
 
     for (const geocoder of geocoders) {
         attemptedDelayMs = Math.max(attemptedDelayMs, geocoder.requestDelayMs);
-        const coords = await geocoder.geocode(address);
+        let coords: GeocodeCoordinates | null;
+        try {
+            coords = await geocoder.geocode(address);
+        } catch (_error) {
+            hadProviderError = true;
+            continue;
+        }
+
         if (!coords) {
             continue;
         }
@@ -138,16 +233,29 @@ async function geocodeAddress(address: string, geocoders: GeocoderProvider[]): P
             provider: geocoder.name,
         };
         cache[address] = result;
+        delete failureCache[address];
         return {
             coords: result,
             fromCache: false,
+            fromFailureCache: false,
+            providerError: false,
             attemptedDelayMs,
+        };
+    }
+
+    if (!hadProviderError) {
+        failureCache[address] = {
+            providers: providerOrder,
+            failedAt: new Date().toISOString(),
+            cacheVersion: FAILURE_CACHE_VERSION,
         };
     }
 
     return {
         coords: null,
         fromCache: false,
+        fromFailureCache: false,
+        providerError: hadProviderError,
         attemptedDelayMs,
     };
 }
@@ -179,7 +287,8 @@ async function main(): Promise<void> {
                 lng: lookup.coords.lng,
             });
         } else {
-            console.log(`Failed to geocode: ${address}`);
+            const failureLabel = lookup.fromFailureCache ? " [failure-cache]" : lookup.providerError ? " [provider-error]" : "";
+            console.log(`Failed to geocode${failureLabel}: ${address}`);
             // Keep it without coords? Map won't show it.
             // Let's keep it so we don't lose data.
             geocodedData.push(item);
@@ -191,6 +300,7 @@ async function main(): Promise<void> {
     }
 
     saveCache();
+    saveFailureCache();
     fs.writeFileSync(OUTPUT, JSON.stringify(geocodedData, null, 2));
     console.log(`Saved ${geocodedData.length} items to ${OUTPUT}`);
 }

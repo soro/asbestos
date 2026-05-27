@@ -90,11 +90,45 @@ body {
 
 .header-controls {
   display: flex;
+  align-items: center;
+  gap: 8px;
   justify-content: flex-end;
   min-width: 0;
 }
 
+.data-download {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--surface);
+  color: var(--muted);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.data-download:hover,
+.data-download:focus {
+  border-color: var(--border-strong);
+  background: #f1f5f9;
+  color: var(--text);
+  outline: 0;
+}
+
+.data-download:focus-visible {
+  border-color: var(--focus);
+  box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.14);
+}
+
 .search-container {
+  flex: 1 1 auto;
   min-width: 0;
   width: 100%;
   position: relative;

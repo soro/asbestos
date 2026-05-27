@@ -1,0 +1,173 @@
+{
+  "BETWEEN 57TH STREET- 7TH AVENUE STATION & LEXINGTON AVE. - 53RD ST. STATION AND ALONG THE 60TH ST. TUNNEL, NEW YORK, 10022, NY": {
+    "providers": [
+      "nys",
+      "census",
+      "nominatim"
+    ],
+    "failedAt": "2026-05-27T16:46:44.605Z",
+    "cacheVersion": 1
+  },
+  "I-95 OVER HUDSON RIVER, BRONX, 10033, NY": {
+    "providers": [
+      "nys",
+      "census",
+      "nominatim"
+    ],
+    "failedAt": "2026-05-27T16:46:47.167Z",
+    "cacheVersion": 1
+  },
+  "2937 F DOUGLASS BLVD, NEW YORK, 10039, NY": {
+    "providers": [
+      "nys",
+      "census",
+      "nominatim"
+    ],
+    "failedAt": "2026-05-27T16:46:49.655Z",
+    "cacheVersion": 1
+  },
+  "2999 F DOUGLASS BLVD, NEW YORK, 10039, NY": {
+    "providers": [
+      "nys",
+      "census",
+      "nominatim"
+    ],
+    "failedAt": "2026-05-27T16:46:52.128Z",
+    "cacheVersion": 1
+  },
+  "2955 F DOUGLASS BLVD, NEW YORK, 10039, NY": {
+    "providers": [
+      "nys",
+      "census",
+      "nominatim"
+    ],
+    "failedAt": "2026-05-27T16:46:56.334Z",
+    "cacheVersion": 1
+  },
+  "155TH STREET STATION THRU 167TH STREET STATION, BRONX, 10451, NY": {
+    "providers": [
+      "nys",
+      "census",
+      "nominatim"
+    ],
+    "failedAt": "2026-05-27T16:46:59.207Z",
+    "cacheVersion": 1
+  },
+  "2870 DR. KAZIMIROFF BOULEVARD, BRONX, 10458, NY": {
+    "providers": [
+      "nys",
+      "census",
+      "nominatim"
+    ],
+    "failedAt": "2026-05-27T16:47:01.946Z",
+    "cacheVersion": 1
+  },
+  "VAN DAM/ QUEENS BLVD COLUMN 138-CBH # 14, FLUSHING, 11354, NY": {
+    "providers": [
+      "nys",
+      "census",
+      "nominatim"
+    ],
+    "failedAt": "2026-05-27T16:47:04.454Z",
+    "cacheVersion": 1
+  },
+  "59TH STREET AND LEX AVE PUMP ROOM 1014 AND SUMP PIT, QUEENS, 11375, NY": {
+    "providers": [
+      "nys",
+      "census",
+      "nominatim"
+    ],
+    "failedAt": "2026-05-27T16:47:06.940Z",
+    "cacheVersion": 1
+  },
+  "¿ 51 PRINCE LN ¿ ¿ ¿ RESTAURANTS ¿ HOTELS ¿ THINGS TO DO ¿ TRANSIT ¿ PARKING ¿ PHARMACIES ¿ ATMS ¿ 51 PRINCE LN, WESTBURT, 11590, NY": {
+    "providers": [
+      "nys",
+      "census",
+      "nominatim"
+    ],
+    "failedAt": "2026-05-27T16:47:10.868Z",
+    "cacheVersion": 1
+  },
+  "1907TH STREET, BOHEMIA, 11716, NY": {
+    "providers": [
+      "nys",
+      "census",
+      "nominatim"
+    ],
+    "failedAt": "2026-05-27T16:47:13.499Z",
+    "cacheVersion": 1
+  },
+  "EMPIRE STATE PLAZA AGENCY BUILDING 1, ALBANY, 12203, NY": {
+    "providers": [
+      "nys",
+      "census",
+      "nominatim"
+    ],
+    "failedAt": "2026-05-27T16:47:15.964Z",
+    "cacheVersion": 1
+  },
+  "NYPA - HANGING GARDENS, MASSENA, 13662, NY": {
+    "providers": [
+      "nys",
+      "census",
+      "nominatim"
+    ],
+    "failedAt": "2026-05-27T16:47:19.719Z",
+    "cacheVersion": 1
+  },
+  "BLDG. 140-FURNACE 14, MASSENA, 13662, NY": {
+    "providers": [
+      "nys",
+      "census",
+      "nominatim"
+    ],
+    "failedAt": "2026-05-27T16:47:22.166Z",
+    "cacheVersion": 1
+  },
+  "ACE HARDWARE, OGDENSBURG, 13669, NY": {
+    "providers": [
+      "nys",
+      "census",
+      "nominatim"
+    ],
+    "failedAt": "2026-05-27T16:47:24.580Z",
+    "cacheVersion": 1
+  },
+  "7 BROADCAST PLAZA, BUFFALO, 14202, NY": {
+    "providers": [
+      "nys",
+      "census",
+      "nominatim"
+    ],
+    "failedAt": "2026-05-27T16:47:29.763Z",
+    "cacheVersion": 1
+  },
+  "DEC HQ, AVON, 14414, NY": {
+    "providers": [
+      "nys",
+      "census",
+      "nominatim"
+    ],
+    "failedAt": "2026-05-27T16:47:32.305Z",
+    "cacheVersion": 1
+  },
+  "FLCC - MULLER FIELD STATION, HONEOYE, 14471, NY": {
+    "providers": [
+      "nys",
+      "census",
+      "nominatim"
+    ],
+    "failedAt": "2026-05-27T16:47:34.811Z",
+    "cacheVersion": 1
+  },
+  "URCU, ROCHESTER, 14620, NY": {
+    "providers": [
+      "nys",
+      "census",
+      "nominatim"
+    ],
+    "failedAt": "2026-05-27T16:47:40.789Z",
+    "cacheVersion": 1
+  }
+}

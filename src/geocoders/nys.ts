@@ -1,6 +1,6 @@
 import { GeocodeCoordinates, GeocoderProvider } from "./types";
 
-const DEFAULT_NYS_GEOCODER_URL = "https://gisservices.its.ny.gov/arcgis/rest/services/Locators/SAM_Composite/GeocodeServer";
+const DEFAULT_NYS_GEOCODER_URL = "https://nysgeohub.ny.gov/arcgis/rest/services/Geocoder/NYS_Geocoder/GeocodeServer";
 const REQUEST_DELAY_MS = 100;
 
 interface NysGeocoderError {
@@ -40,8 +40,7 @@ export function createNysGeocoder(): GeocoderProvider {
 
                 const data = await response.json() as NysGeocoderResponse;
                 if (data.error) {
-                    console.error(`NYS geocoding error for ${address}: ${data.error.message ?? "Unknown error"}`);
-                    return null;
+                    throw new Error(data.error.message ?? "Unknown NYS geocoding error");
                 }
 
                 const location = data.candidates?.[0]?.location;
@@ -55,7 +54,7 @@ export function createNysGeocoder(): GeocoderProvider {
                 };
             } catch (error) {
                 console.error(`NYS geocoding error for ${address}:`, error);
-                return null;
+                throw error;
             }
         },
     };

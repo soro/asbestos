@@ -16,6 +16,10 @@ export function createCensusGeocoder(): GeocoderProvider {
             try {
                 const response = await fetch(url);
                 if (!response.ok) {
+                    if (response.status === 400) {
+                        return null;
+                    }
+
                     throw new Error(`HTTP ${response.status}`);
                 }
 
@@ -42,7 +46,7 @@ export function createCensusGeocoder(): GeocoderProvider {
                 };
             } catch (error) {
                 console.error(`Census geocoding error for ${address}:`, error);
-                return null;
+                throw error;
             }
         },
     };

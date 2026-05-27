@@ -107,11 +107,19 @@ body {
   border-radius: 6px;
   background: var(--surface);
   color: var(--muted);
-  font-size: 20px;
-  font-weight: 600;
   line-height: 1;
   text-decoration: none;
   box-sizing: border-box;
+}
+
+.data-download__icon {
+  width: 21px;
+  height: 21px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .data-download:hover,

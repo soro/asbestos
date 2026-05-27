@@ -185,7 +185,7 @@ function openProjectPopup(
     coordinates: [number, number],
     site: ProjectFeatureProperties,
 ): void {
-    activePopup?.remove();
+    closeActivePopup();
 
     const popup = new maplibregl.Popup({ maxWidth: "360px" })
         .setLngLat(coordinates)
@@ -198,6 +198,16 @@ function openProjectPopup(
             activePopup = null;
         }
     });
+}
+
+function closeActivePopup(): boolean {
+    if (!activePopup) {
+        return false;
+    }
+
+    activePopup.remove();
+    activePopup = null;
+    return true;
 }
 
 function renderSearchResults(
@@ -325,6 +335,46 @@ export async function initMap(): Promise<void> {
                 searchInput.removeAttribute("aria-activedescendant");
             }
         }
+    }
+
+    function focusSearchField(selectText: boolean): void {
+        if (!searchInput) {
+            return;
+        }
+
+        searchInput.focus({ preventScroll: true });
+
+        if (selectText && searchInput.value) {
+            searchInput.select();
+        }
+
+        if (searchResults && searchInput.value && renderedSearchCount > 0) {
+            searchResults.hidden = false;
+            syncSearchControls(normalizeSearchQuery(searchInput.value));
+        }
+    }
+
+    function isTextEntryTarget(target: EventTarget | null): boolean {
+        if (!(target instanceof HTMLElement)) {
+            return false;
+        }
+
+        return target instanceof HTMLInputElement ||
+            target instanceof HTMLTextAreaElement ||
+            target instanceof HTMLSelectElement ||
+            target.isContentEditable;
+    }
+
+    function isEnterTarget(target: EventTarget | null): boolean {
+        if (!(target instanceof HTMLElement)) {
+            return false;
+        }
+
+        return isTextEntryTarget(target) ||
+            target instanceof HTMLButtonElement ||
+            target instanceof HTMLAnchorElement ||
+            target.getAttribute("role") === "button" ||
+            target.getAttribute("role") === "option";
     }
 
     function normalizeSearchQuery(value: string): string {
@@ -608,6 +658,12 @@ export async function initMap(): Promise<void> {
             });
 
             searchInput.addEventListener("keydown", (event) => {
+                if (event.key === "Escape" && activePopup) {
+                    event.preventDefault();
+                    closeActivePopup();
+                    return;
+                }
+
                 if (event.key === "ArrowDown" && renderedSearchCount > 0) {
                     event.preventDefault();
                     searchResults.hidden = false;
@@ -650,6 +706,31 @@ export async function initMap(): Promise<void> {
                     searchContainer instanceof HTMLElement &&
                     !searchContainer.contains(target)) {
                     hideSearchResults();
+                }
+            });
+
+            document.addEventListener("keydown", (event) => {
+                const key = event.key.toLowerCase();
+                if ((event.ctrlKey || event.metaKey) && key === "f") {
+                    event.preventDefault();
+                    focusSearchField(true);
+                    return;
+                }
+
+                if (event.key === "Escape" && activePopup) {
+                    event.preventDefault();
+                    closeActivePopup();
+                    return;
+                }
+
+                if (event.key === "Enter" &&
+                    !event.altKey &&
+                    !event.ctrlKey &&
+                    !event.metaKey &&
+                    !event.shiftKey &&
+                    !isEnterTarget(event.target)) {
+                    event.preventDefault();
+                    focusSearchField(false);
                 }
             });
         }

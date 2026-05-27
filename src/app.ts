@@ -54,6 +54,7 @@ app.use((req, res, next) => {
 
 app.use("/css", express.static(path.join(distDir, "css")));
 app.use("/js", express.static(path.join(distDir, "js")));
+app.use("/fonts", express.static(path.join(distDir, "fonts")));
 
 app.get(`/${BASEMAP_FILENAME}`, (_req, res) => {
     res.sendFile(path.join(distDir, BASEMAP_FILENAME));

@@ -1,4 +1,37 @@
+@font-face {
+  font-family: "Clarity City";
+  src: url("../fonts/clarity-city/ClarityCity-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Clarity City";
+  src: url("../fonts/clarity-city/ClarityCity-Medium.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Clarity City";
+  src: url("../fonts/clarity-city/ClarityCity-SemiBold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Clarity City";
+  src: url("../fonts/clarity-city/ClarityCity-Bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
 :root {
+  --font-ui: "Clarity City", Helvetica, Arial, sans-serif;
   --surface: #ffffff;
   --surface-soft: #f8fafc;
   --text: #111827;
@@ -25,7 +58,9 @@ body {
   flex-direction: column;
   background: var(--surface-soft);
   color: var(--text);
-  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: var(--font-ui);
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
 }
 
 .header {
@@ -44,7 +79,7 @@ body {
 .header h1 {
   margin: 0;
   font-size: 1.7rem;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.2;
   letter-spacing: 0;
   min-width: 0;
@@ -78,6 +113,8 @@ body {
   background: var(--surface);
   color: var(--text);
   font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4;
   box-sizing: border-box;
   margin-bottom: 0;
   appearance: none;
@@ -176,13 +213,15 @@ body {
 .result-title {
   display: block;
   color: var(--text);
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .result-address {
   display: block;
   margin-top: 2px;
   color: var(--muted);
+  font-size: 12px;
+  font-weight: 400;
 }
 
 #map-container {
@@ -197,6 +236,11 @@ body {
   inset: 0;
 }
 
+.maplibregl-map,
+.maplibregl-ctrl {
+  font-family: var(--font-ui);
+}
+
 .maplibregl-popup {
   width: min(360px, calc(100vw - 24px));
   max-width: min(360px, calc(100vw - 24px)) !important;
@@ -206,12 +250,13 @@ body {
 .maplibregl-popup-content {
   width: 100%;
   min-width: 0;
-  padding: 18px 40px 18px 20px;
+  padding: 18px 42px 18px 20px;
   border-radius: 8px;
   box-shadow: 0 18px 38px rgba(15, 23, 42, 0.18);
-  font-family: inherit;
+  font-family: var(--font-ui);
   font-size: 13px;
-  line-height: 1.45;
+  font-weight: 400;
+  line-height: 1.42;
   color: var(--text);
 }
 
@@ -262,43 +307,48 @@ body {
   margin-right: 10px;
   color: var(--text);
   font-size: 14px;
-  font-weight: 800;
-  line-height: 1.25;
+  font-weight: 700;
+  line-height: 1.28;
 }
 
 .project-popup__address {
-  margin-top: 7px;
+  margin-top: 8px;
   color: var(--muted);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.38;
   overflow-wrap: anywhere;
   word-break: break-word;
 }
 
 .project-popup__details {
   display: grid;
-  gap: 5px;
-  margin: 12px 0 0;
+  gap: 6px;
+  margin: 14px 0 0;
 }
 
 .project-popup__detail {
   display: grid;
-  grid-template-columns: 44px minmax(0, 1fr);
+  grid-template-columns: 46px minmax(0, 1fr);
   align-items: baseline;
   column-gap: 10px;
-  min-height: 18px;
+  min-height: 19px;
 }
 
 .project-popup__label {
   color: var(--muted);
-  font-size: 11px;
-  font-weight: 700;
+  font-size: 13px;
+  font-weight: 600;
+  font-variant-caps: normal;
   letter-spacing: 0;
-  line-height: 1.4;
-  text-transform: uppercase;
+  line-height: 1.35;
+  text-transform: none;
 }
 
 .project-popup__value {
   color: var(--text);
   font-size: 13px;
+  font-weight: 500;
   line-height: 1.35;
   overflow-wrap: anywhere;
   word-break: break-word;
@@ -318,6 +368,10 @@ body {
   .project-popup__title {
     font-size: 13px;
     line-height: 1.3;
+  }
+
+  .project-popup__address {
+    font-size: 11px;
   }
 
   .project-popup__detail {

@@ -24,6 +24,8 @@ const POPUP_EDGE_PADDING = 16;
 const POPUP_MIN_CONTENT_HEIGHT = 160;
 const POPUP_MAX_CONTENT_HEIGHT = 620;
 const POPUP_TIP_AND_SAFETY_SPACE = 36;
+const COMPRESSED_PROJECTS_URL = "projects.json.gz";
+const PROJECTS_URL = "projects.json";
 
 type BasemapMode = "pmtiles" | "raster";
 type MappedProject = NormalizedProject & { coordinates: ProjectCoordinates };
@@ -57,12 +59,43 @@ let hasRegisteredRasterServiceWorker = false;
 let activePopup: maplibregl.Popup | null = null;
 
 export async function getAllProjects(): Promise<NormalizedProject[]> {
-    const response = await fetch("projects.json");
+    const compressedProjects = await getCompressedProjects();
+    if (compressedProjects) {
+        return compressedProjects;
+    }
+
+    return fetchJsonProjects(PROJECTS_URL);
+}
+
+async function fetchJsonProjects(url: string): Promise<NormalizedProject[]> {
+    const response = await fetch(url);
     if (!response.ok) {
         throw new Error(`Failed to load project data (${response.status})`);
     }
 
     return response.json() as Promise<NormalizedProject[]>;
+}
+
+async function getCompressedProjects(): Promise<NormalizedProject[] | undefined> {
+    try {
+        const response = await fetch(COMPRESSED_PROJECTS_URL);
+        if (!response.ok || !response.body) {
+            return undefined;
+        }
+
+        if (response.headers.get("content-encoding")?.toLowerCase() === "gzip") {
+            return response.json() as Promise<NormalizedProject[]>;
+        }
+
+        if (typeof globalThis.DecompressionStream !== "function") {
+            return undefined;
+        }
+
+        const decompressedStream = response.body.pipeThrough(new DecompressionStream("gzip"));
+        return new Response(decompressedStream).json() as Promise<NormalizedProject[]>;
+    } catch {
+        return undefined;
+    }
 }
 
 function hasProjectCoordinates(project: NormalizedProject): project is MappedProject {

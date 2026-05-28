@@ -6,10 +6,11 @@
   "scripts": {
     "clean": "rimraf dist",
     "copy-assets": "mkdir -p dist/css dist/fonts && cp src/static/*.css node_modules/maplibre-gl/dist/maplibre-gl.css dist/css/ && cp -R src/static/fonts/. dist/fonts/ && cp src/static/index.html src/static/sw.js src/static/new-york.pmtiles.gz src/static/favicon.svg output.json projects.json dist/",
+    "prepare-project-payloads": "node scripts/prepare-project-payloads.mjs",
     "build:node": "tsc -p tsconfig.node.json",
     "build:client": "esbuild src/site/site.ts --bundle --minify --outfile=dist/js/site.js --format=iife --target=es2020",
-    "build:static": "npm run clean && npm run build:client && npm run copy-assets",
-    "build:full": "npm run clean && npm run build:node && npm run build:client && npm run copy-assets",
+    "build:static": "npm run clean && npm run build:client && npm run copy-assets && npm run prepare-project-payloads",
+    "build:full": "npm run clean && npm run build:node && npm run build:client && npm run copy-assets && npm run prepare-project-payloads",
     "build": "npm run build:static",
     "refresh-basemap": "npm run build:node && node dist/update-basemap.js",
     "scrape": "node dist/scrape.js",

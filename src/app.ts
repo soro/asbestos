@@ -77,6 +77,10 @@ app.get("/projects.json", (_req, res) => {
     res.sendFile(projectsFile);
 });
 
+app.get("/projects.json.gz", (_req, res) => {
+    res.type("application/gzip").sendFile(path.join(distDir, "projects.json.gz"));
+});
+
 app.get("/", (_req, res) => {
     res.sendFile(path.join(distDir, "index.html"));
 });

@@ -84,6 +84,8 @@ Single-project popups use a flat layout. Locations with multiple projects show a
 
 The production site is static and deployed to GitHub Pages. Data refreshes run in GitHub Actions on a schedule. The browser downloads static assets, `projects.json`, and a local PMTiles basemap.
 
+The static build leaves the committed `projects.json` readable for data diffs, then minifies `dist/projects.json` and emits `dist/projects.json.gz`. The frontend tries the gzip payload first with the browser's native decompression stream and falls back to plain `projects.json` when that is unavailable.
+
 The scheduled data workflow runs:
 
 ```text

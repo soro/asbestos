@@ -169,5 +169,158 @@
     ],
     "failedAt": "2026-05-27T16:47:40.789Z",
     "cacheVersion": 1
+  },
+  "33 CALVARY DRIVE W, NEW CITY / CLARKSTOWN, 10956, NY": {
+    "providers": [
+      "nys",
+      "census",
+      "nominatim"
+    ],
+    "failedAt": "2026-05-28T01:35:26.015Z",
+    "cacheVersion": 1
+  },
+  "JAMAICA CENTER PARSONS/ARCHER, JAMAICA-VAN WYCK BLVD., 179 ST., 169 ST., BRAIRWOOD STATIONS, SUTPHIN BLVD., QUEENS, 11432, NY": {
+    "providers": [
+      "nys",
+      "census",
+      "nominatim"
+    ],
+    "failedAt": "2026-05-28T01:36:16.181Z",
+    "cacheVersion": 1
+  },
+  "LIRR - HICKSVILLE TAXI STAND, HICKSVILLE, 11801, NY": {
+    "providers": [
+      "nys",
+      "census",
+      "nominatim"
+    ],
+    "failedAt": "2026-05-28T01:36:40.015Z",
+    "cacheVersion": 1
+  },
+  "1029 LYELL AVE, SYRACUSE, 13219, NY": {
+    "providers": [
+      "nys",
+      "census",
+      "nominatim"
+    ],
+    "failedAt": "2026-05-28T01:37:13.641Z",
+    "cacheVersion": 1
+  },
+  "LOCKHEED MARTIN EP-5, SYRACUSE, 13221, NY": {
+    "providers": [
+      "nys",
+      "census",
+      "nominatim"
+    ],
+    "failedAt": "2026-05-28T01:37:18.102Z",
+    "cacheVersion": 1
+  },
+  "AAC OFFICE, EAST ROCHESTER, 14445, NY": {
+    "providers": [
+      "nys",
+      "census",
+      "nominatim"
+    ],
+    "failedAt": "2026-05-28T01:37:38.947Z",
+    "cacheVersion": 1
+  },
+  "GENEVA GARDEN APARTMENTS - BLDG 2, GENEVA, 14456, NY": {
+    "providers": [
+      "nys",
+      "census",
+      "nominatim"
+    ],
+    "failedAt": "2026-05-28T01:37:42.965Z",
+    "cacheVersion": 1
+  },
+  "6096 NYS TOUTE 96A, ROMULUS, 14541, NY": {
+    "providers": [
+      "nys",
+      "census",
+      "nominatim"
+    ],
+    "failedAt": "2026-05-28T01:37:47.775Z",
+    "cacheVersion": 1
+  },
+  "CENTER FOR YOUTH SERVICES, INC, ROCHESTER, 14607, NY": {
+    "providers": [
+      "nys",
+      "census",
+      "nominatim"
+    ],
+    "failedAt": "2026-05-28T01:37:52.134Z",
+    "cacheVersion": 1
+  },
+  "ANDREWS TERRACE APARTMENTS, ROCHESTER, 14608, NY": {
+    "providers": [
+      "nys",
+      "census",
+      "nominatim"
+    ],
+    "failedAt": "2026-05-28T01:37:55.933Z",
+    "cacheVersion": 1
+  },
+  "APPLIED IMAGE, ROCHESTER, 14609, NY": {
+    "providers": [
+      "nys",
+      "census",
+      "nominatim"
+    ],
+    "failedAt": "2026-05-28T01:38:01.117Z",
+    "cacheVersion": 1
+  },
+  "RIT RITTER ARENA, ROCHESTER, 14623, NY": {
+    "providers": [
+      "nys",
+      "census",
+      "nominatim"
+    ],
+    "failedAt": "2026-05-28T01:38:05.731Z",
+    "cacheVersion": 1
+  },
+  "B820 (FORMER RADDISON), ROCHESTER, 14623, NY": {
+    "providers": [
+      "nys",
+      "census",
+      "nominatim"
+    ],
+    "failedAt": "2026-05-28T01:38:09.160Z",
+    "cacheVersion": 1
+  },
+  "HURLBUT NURSING HOME, ROCHESTER, 14623, NY": {
+    "providers": [
+      "nys",
+      "census",
+      "nominatim"
+    ],
+    "failedAt": "2026-05-28T01:38:12.379Z",
+    "cacheVersion": 1
+  },
+  "JAMESTOWN CITY SCHOOL, JAMESTOWN, 14701, NY": {
+    "providers": [
+      "nys",
+      "census",
+      "nominatim"
+    ],
+    "failedAt": "2026-05-28T01:38:16.377Z",
+    "cacheVersion": 1
+  },
+  "OVER SOUTH BRANCH CATATONK CREEK, EAST SPENCER NY, 14883, NY": {
+    "providers": [
+      "nys",
+      "census",
+      "nominatim"
+    ],
+    "failedAt": "2026-05-28T01:38:27.498Z",
+    "cacheVersion": 1
+  },
+  "UR JONES MEMORIAL HOSPITAL, WELLSVILLE, 14895, NY": {
+    "providers": [
+      "nys",
+      "census",
+      "nominatim"
+    ],
+    "failedAt": "2026-05-28T01:38:31.280Z",
+    "cacheVersion": 1
   }
 }

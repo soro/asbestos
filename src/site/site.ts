@@ -448,10 +448,21 @@ function openProjectPopup(
 ): void {
     closeActivePopup();
 
-    const popup = new maplibregl.Popup({ maxWidth: "430px" })
+    const content = createPopupContent(location);
+    const popup = new maplibregl.Popup({
+        maxWidth: "430px",
+        padding: {
+            top: 16,
+            right: 16,
+            bottom: 16,
+            left: 16,
+        },
+    })
         .setLngLat(coordinates)
-        .setDOMContent(createPopupContent(location))
+        .setDOMContent(content)
         .addTo(map);
+
+    repositionPopupOnContentResize(map, popup, content);
 
     activePopup = popup;
     popup.on("close", () => {
@@ -459,6 +470,61 @@ function openProjectPopup(
             activePopup = null;
         }
     });
+}
+
+function repositionPopupOnContentResize(map: maplibregl.Map, popup: maplibregl.Popup, content: HTMLElement): void {
+    if (!("ResizeObserver" in window)) {
+        return;
+    }
+
+    let frameId = 0;
+    const reposition = () => {
+        if (frameId) {
+            window.cancelAnimationFrame(frameId);
+        }
+
+        frameId = window.requestAnimationFrame(() => {
+            fitPopupContentToViewport(map, popup, content);
+            popup.setLngLat(popup.getLngLat());
+            frameId = 0;
+        });
+    };
+
+    const observer = new ResizeObserver(reposition);
+    observer.observe(content);
+    window.addEventListener("resize", reposition);
+    map.on("moveend", reposition);
+    reposition();
+
+    popup.on("close", () => {
+        observer.disconnect();
+        window.removeEventListener("resize", reposition);
+        map.off("moveend", reposition);
+        if (frameId) {
+            window.cancelAnimationFrame(frameId);
+        }
+    });
+}
+
+function fitPopupContentToViewport(map: maplibregl.Map, popup: maplibregl.Popup, content: HTMLElement): void {
+    const mapRect = map.getContainer().getBoundingClientRect();
+    const anchorPoint = map.project(popup.getLngLat());
+    const anchorY = mapRect.top + anchorPoint.y;
+    const edgePadding = 16;
+    const topLimit = Math.max(mapRect.top, edgePadding);
+    const bottomLimit = Math.min(mapRect.bottom, window.innerHeight - edgePadding);
+    const availableAbove = Math.max(0, anchorY - topLimit);
+    const availableBelow = Math.max(0, bottomLimit - anchorY);
+    const availableHeight = Math.max(availableAbove, availableBelow);
+    const popupContent = content.closest<HTMLElement>(".maplibregl-popup-content");
+    const popupContentStyle = popupContent ? window.getComputedStyle(popupContent) : null;
+    const popupChromeHeight = popupContentStyle
+        ? Number.parseFloat(popupContentStyle.paddingTop) + Number.parseFloat(popupContentStyle.paddingBottom)
+        : 36;
+    const popupTipAndSafetySpace = 36;
+    const maxContentHeight = Math.max(160, Math.min(620, availableHeight - popupChromeHeight - popupTipAndSafetySpace));
+
+    content.style.maxHeight = `${Math.floor(maxContentHeight)}px`;
 }
 
 function closeActivePopup(): boolean {

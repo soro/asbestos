@@ -314,11 +314,14 @@ body {
 }
 
 .project-popup {
+  box-sizing: border-box;
   width: min(360px, 100%);
   max-width: 100%;
   max-height: min(60vh, 620px);
   overflow-y: auto;
-  padding-right: 2px;
+  padding-right: 16px;
+  scrollbar-gutter: stable;
+  scrollbar-width: thin;
 }
 
 .maplibregl-ctrl-top-left:empty,
@@ -450,7 +453,7 @@ body {
   display: grid;
   gap: 4px;
   position: relative;
-  padding-right: 18px;
+  padding-right: 22px;
 }
 
 .project-popup__summary-content::before {
@@ -532,7 +535,7 @@ body {
 .project-popup__extended-summary {
   display: block;
   position: relative;
-  padding-right: 18px;
+  padding-right: 22px;
   cursor: pointer;
   list-style: none;
   color: var(--text);

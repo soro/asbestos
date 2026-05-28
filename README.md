@@ -19,7 +19,7 @@ DOL is treated as the primary source for project identity because it is the stat
 
 ## Data Model
 
-The main public dataset is `projects.json`. It is used by the frontend and by the download link in the application.
+The canonical public dataset is `projects.json`. It is committed as readable JSON, used by the download link in the application, and copied into the static build for the frontend.
 
 Each normalized project contains:
 
@@ -38,9 +38,14 @@ Generated data files:
 - `raw_output.json`: ignored intermediate NYS DOL scrape output for debugging scraper runs.
 - `output.json`: geocoded NYS DOL feed and input to the normalized build.
 - `acp7_output.json`: NYC DEP ACP7 feed normalized to one project per `TRU`.
-- `projects.json`: merged normalized dataset used by the site.
+- `projects.json`: merged normalized dataset used by the site, committed in readable form for reviewable data diffs.
 - `geocode_cache.json`: persistent cache of successful geocoder lookups.
 - `geocode_failure_cache.json`: persistent cache of addresses that failed all configured geocoders.
+
+Static build payloads:
+
+- `dist/projects.json`: minified copy of `projects.json`.
+- `dist/projects.json.gz`: precompressed gzip copy used by the frontend when browser support is available.
 
 ## Merge Policy
 
@@ -82,9 +87,9 @@ Single-project popups use a flat layout. Locations with multiple projects show a
 
 ## Technical Architecture
 
-The production site is static and deployed to GitHub Pages. Data refreshes run in GitHub Actions on a schedule. The browser downloads static assets, `projects.json`, and a local PMTiles basemap.
+The production site is static and deployed to GitHub Pages. Data refreshes run in GitHub Actions on a schedule. The browser downloads static assets, project data, and a local PMTiles basemap.
 
-The static build leaves the committed `projects.json` readable for data diffs, then minifies `dist/projects.json` and emits `dist/projects.json.gz`. The frontend tries the gzip payload first with the browser's native decompression stream and falls back to plain `projects.json` when that is unavailable.
+The static build leaves the committed `projects.json` readable for data diffs, then minifies `dist/projects.json` and emits `dist/projects.json.gz`. The frontend tries the gzip payload first with the browser's native `DecompressionStream` API and falls back to plain `projects.json` when the compressed payload or native decompression is unavailable. The download link continues to serve plain `projects.json` for portability.
 
 The scheduled data workflow runs:
 
@@ -108,6 +113,7 @@ The interface self-hosts Clarity City webfonts from VMware's archived Clarity Ci
 - `src/update-basemap.ts`: Rebuilds the clipped Protomaps basemap archive.
 - `src/app.ts`: Express server for local development and static file serving.
 - `src/site/site.ts`: MapLibre client for the searchable map UI.
+- `scripts/prepare-project-payloads.mjs`: Minifies and gzips the project dataset for the static build.
 
 ## Local Development
 
@@ -120,7 +126,7 @@ npm start
 
 Node.js 24 or newer is the supported runtime for local development and GitHub Actions.
 
-- `npm run build`: builds the static GitHub Pages artifact in `dist/`.
+- `npm run build`: builds the static GitHub Pages artifact in `dist/`, including the minified and gzip project payloads.
 - `npm run build:full`: builds the static site plus the local Node tools/server.
 - `npm start`: builds and starts the local Express server.
 

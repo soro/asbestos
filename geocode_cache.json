@@ -24109,5 +24109,2800 @@
     "lat": 42.440076000003,
     "lng": -76.484826000001,
     "provider": "nys"
+  },
+  "300 PARK AVENUE, NEW YORK, 10022, NY": {
+    "lat": 40.756959000003,
+    "lng": -73.974465000001,
+    "provider": "nys"
+  },
+  "455 MADISON AVENUE, MANHATTAN, 10022, NY": {
+    "lat": 40.757949000003,
+    "lng": -73.975351500001,
+    "provider": "nys"
+  },
+  "16 WEST 61ST STREET, NEW YORK, 10023, NY": {
+    "lat": 40.769937000003,
+    "lng": -73.982803500001,
+    "provider": "nys"
+  },
+  "20 WEST 74TH STREET, NEW YORK, 10023, NY": {
+    "lat": 40.777893000003,
+    "lng": -73.976130000001,
+    "provider": "nys"
+  },
+  "51 MANHATTAN AVENUE, NEW YORK, 10025, NY": {
+    "lat": 40.796334000003,
+    "lng": -73.963363500001,
+    "provider": "nys"
+  },
+  "275 WEST 96TH STREET, NEW YORK, 10025, NY": {
+    "lat": 40.795056000003,
+    "lng": -73.972224000001,
+    "provider": "nys"
+  },
+  "111 WEST 96TH STREET, NEW YORK, 10025, NY": {
+    "lat": 40.793355000003,
+    "lng": -73.968268500001,
+    "provider": "nys"
+  },
+  "163 WEST 125TH ST, NEW YORK, 10027, NY": {
+    "lat": 40.809348000003,
+    "lng": -73.947721500001,
+    "provider": "nys"
+  },
+  "1140 AMSTERDAM AVENUE, NEW YORK, 10027, NY": {
+    "lat": 40.807089000003,
+    "lng": -73.961091000001,
+    "provider": "nys"
+  },
+  "240 WEST 129TH STREET, NEW YORK, 10027, NY": {
+    "lat": 40.811985000003,
+    "lng": -73.948423500001,
+    "provider": "nys"
+  },
+  "1505 PARK AVENUE, NEW YORK, 10029, NY": {
+    "lat": 40.794966000003,
+    "lng": -73.945899000001,
+    "provider": "nys"
+  },
+  "310 EAST 113TH STREET, NEW YORK, 10029, NY": {
+    "lat": 40.794759000003,
+    "lng": -73.939005000001,
+    "provider": "nys"
+  },
+  "1573 MADISON AVENUE, MANHATTAN, 10029, NY": {
+    "lat": 40.793913000003,
+    "lng": -73.949098500001,
+    "provider": "nys"
+  },
+  "70 EAST 115TH ST, NEW YORK, 10029, NY": {
+    "lat": 40.798440000003,
+    "lng": -73.944549000001,
+    "provider": "nys"
+  },
+  "1410 PARK AVENUE, NEW YORK, 10029, NY": {
+    "lat": 40.792185000003,
+    "lng": -73.949031000001,
+    "provider": "nys"
+  },
+  "1695 MADISON AVE, NEW YORK, 10029, NY": {
+    "lat": 40.797747000003,
+    "lng": -73.946124000001,
+    "provider": "nys"
+  },
+  "1504 LEXINGTON AVENUE, NEW YORK, 10029, NY": {
+    "lat": 40.786713000003,
+    "lng": -73.950498000001,
+    "provider": "nys"
+  },
+  "160 CONVENT AVE, NEW YORK, 10031, NY": {
+    "lat": 40.819419000003,
+    "lng": -73.950169500001,
+    "provider": "nys"
+  },
+  "650 WEST 168TH STREET, NEW YORK, 10032, NY": {
+    "lat": 40.841829000003,
+    "lng": -73.941961500001,
+    "provider": "nys"
+  },
+  "622 WEST 168TH STREET, NEW YORK, 10032, NY": {
+    "lat": 40.841307000003,
+    "lng": -73.940647500001,
+    "provider": "nys"
+  },
+  "418 WEST 160TH STREET, MANHATTAN, 10032, NY": {
+    "lat": 40.834044000003,
+    "lng": -73.939225500001,
+    "provider": "nys"
+  },
+  "40 HAVEN AVENUE, NEW YORK, 10032, NY": {
+    "lat": 40.842927000003,
+    "lng": -73.943158500001,
+    "provider": "nys"
+  },
+  "475 WEST 155 STREET, MANHATTAN, 10032, NY": {
+    "lat": 40.831551000003,
+    "lng": -73.942407000001,
+    "provider": "nys"
+  },
+  "3961 10TH AVENUE, MANHATTAN, 10034, NY": {
+    "lat": 40.867200000003,
+    "lng": -73.916536500001,
+    "provider": "nys"
+  },
+  "650 ACADEMY STREET, MANHATTAN, 10034, NY": {
+    "lat": 40.865598000003,
+    "lng": -73.924762500001,
+    "provider": "nys"
+  },
+  "3961 10TH AVENUE, NEW YORK, 10034, NY": {
+    "lat": 40.867200000003,
+    "lng": -73.916536500001,
+    "provider": "nys"
+  },
+  "3961 TENTH AVENUE, NEW YORK, 10034, NY": {
+    "lat": 40.867200000003,
+    "lng": -73.916536500001,
+    "provider": "nys"
+  },
+  "50 PALADINO AVENUE, NEW YORK, 10035, NY": {
+    "lat": 40.798971000003,
+    "lng": -73.931031000001,
+    "provider": "nys"
+  },
+  "E. 125TH STREET & LEXINGTON AVENUE, NEW YORK, 10035, NY": {
+    "lat": 40.804371000003,
+    "lng": -73.937425500001,
+    "provider": "nys"
+  },
+  "80 PALADINO AVENUE, NEW YORK, 10035, NY": {
+    "lat": 40.797666000003,
+    "lng": -73.930149000001,
+    "provider": "nys"
+  },
+  "2325 2ND AVENUE, NEW YORK, 10035, NY": {
+    "lat": 40.799214000003,
+    "lng": -73.936395000001,
+    "provider": "nys"
+  },
+  "2327 2ND AVENUE, NEW YORK, 10035, NY": {
+    "lat": 40.799259000003,
+    "lng": -73.936354500001,
+    "provider": "nys"
+  },
+  "2329 2ND AVENUE, NEW YORK, 10035, NY": {
+    "lat": 40.799304000003,
+    "lng": -73.936318500001,
+    "provider": "nys"
+  },
+  "350 EAST 124TH STREET, NEW YORK, 10035, NY": {
+    "lat": 40.801104000003,
+    "lng": -73.933092000001,
+    "provider": "nys"
+  },
+  "90 PALADINO AVENUE, NEW YORK, 10035, NY": {
+    "lat": 40.797432000003,
+    "lng": -73.929829500001,
+    "provider": "nys"
+  },
+  "388 PEARL STREET, NEW YORK, 10038, NY": {
+    "lat": 40.710618000003,
+    "lng": -74.000200500001,
+    "provider": "nys"
+  },
+  "40 MADISON STREET, NEW YORK, 10038, NY": {
+    "lat": 40.711500000003,
+    "lng": -73.998688500001,
+    "provider": "nys"
+  },
+  "53 CATHERINE STREET, NEW YORK, 10038, NY": {
+    "lat": 40.711596828648,
+    "lng": -73.996754742335,
+    "provider": "nys"
+  },
+  "180 SOUTH STREET, NEW YORK, 10038, NY": {
+    "lat": 40.709160000003,
+    "lng": -73.998981000001,
+    "provider": "nys"
+  },
+  "182 SOUTH STREET, NEW YORK, 10038, NY": {
+    "lat": 40.709736000003,
+    "lng": -73.998499500001,
+    "provider": "nys"
+  },
+  "170 WILLIAM STREET, NEW YORK, 10038, NY": {
+    "lat": 40.710762000003,
+    "lng": -74.005132500001,
+    "provider": "nys"
+  },
+  "26 MADISON STREET, NEW YORK, 10038, NY": {
+    "lat": 40.711338000003,
+    "lng": -73.999467000001,
+    "provider": "nys"
+  },
+  "222 BROADWAY, NEW YORK, 10038, NY": {
+    "lat": 40.711023000003,
+    "lng": -74.008764000001,
+    "provider": "nys"
+  },
+  "54 CATHERINE SLIP, NEW YORK, 10038, NY": {
+    "lat": 40.711635000003,
+    "lng": -73.997208000001,
+    "provider": "nys"
+  },
+  "501 MAIN STREET, MANHATTAN, 10044, NY": {
+    "lat": 40.760820000003,
+    "lng": -73.951240500001,
+    "provider": "nys"
+  },
+  "5 EAST MAIN ST, ROOSEVELT ISLAND, 10044, NY": {
+    "lat": 40.672839014044,
+    "lng": -73.588346532236,
+    "provider": "nys"
+  },
+  "5 E MAIN STREET, MANHATTAN, 10044, NY": {
+    "lat": 40.763759027616,
+    "lng": -73.948038699342,
+    "provider": "nys"
+  },
+  "33 LIBERTY STREET, NEW YORK, 10045, NY": {
+    "lat": 40.708296000003,
+    "lng": -74.008836000001,
+    "provider": "nys"
+  },
+  "30 EAST 62D STREET, MANHATTAN, 10065, NY": {
+    "lat": 40.765257000003,
+    "lng": -73.969789500001,
+    "provider": "nys"
+  },
+  "301 EAST 79TH ST, NEW YORK, 10075, NY": {
+    "lat": 40.773276000003,
+    "lng": -73.954404000001,
+    "provider": "nys"
+  },
+  "69 EAST 79TH STREET, MANHATTAN, 10075, NY": {
+    "lat": 40.776120000003,
+    "lng": -73.961230500001,
+    "provider": "nys"
+  },
+  "409 EAST 79TH STREET, NEW YORK, 10075, NY": {
+    "lat": 40.772259000003,
+    "lng": -73.952055000001,
+    "provider": "nys"
+  },
+  "222 E. 80TH ST. 1F, NEW YORK, 10075, NY": {
+    "lat": 40.774419000003,
+    "lng": -73.955821500001,
+    "provider": "nys"
+  },
+  "3 EAST 78TH STREET, NEW YORK, 10075, NY": {
+    "lat": 40.776120000003,
+    "lng": -73.963489500001,
+    "provider": "nys"
+  },
+  "895 PARK AVE, NEW YORK, 10075, NY": {
+    "lat": 40.775328000003,
+    "lng": -73.960173000001,
+    "provider": "nys"
+  },
+  "2 EAST 78TH STREET, NEW YORK, 10075, NY": {
+    "lat": 40.776021000003,
+    "lng": -73.963782000001,
+    "provider": "nys"
+  },
+  "306 EAST 96TH STREET, NEW YORK, 10128, NY": {
+    "lat": 40.783824000003,
+    "lng": -73.946515500001,
+    "provider": "nys"
+  },
+  "225 EAST 95TH STREET, NEW YORK, 10128, NY": {
+    "lat": 40.784337000003,
+    "lng": -73.948257000001,
+    "provider": "nys"
+  },
+  "1065 PARK AVE, NEW YORK, 10128, NY": {
+    "lat": 40.780917000003,
+    "lng": -73.956321000001,
+    "provider": "nys"
+  },
+  "331 GRANDVIEW AVE., STATEN ISLAND, 10303, NY": {
+    "lat": 40.632615000003,
+    "lng": -74.164684500001,
+    "provider": "nys"
+  },
+  "168 BRABANT ST, STATEN ISLAND, 10303, NY": {
+    "lat": 40.631796000003,
+    "lng": -74.164320000001,
+    "provider": "nys"
+  },
+  "129 NORWAY AVENUE, STATEN ISLAND, 10305, NY": {
+    "lat": 40.595544000003,
+    "lng": -74.079319500001,
+    "provider": "nys"
+  },
+  "777 SEAVIEW AVE, STATEN ISLAND, 10305, NY": {
+    "lat": 40.582539000003,
+    "lng": -74.078554500001,
+    "provider": "nys"
+  },
+  "537 ANNADALE ROAD, STATEN ISLAND, 10312, NY": {
+    "lat": 40.549320000003,
+    "lng": -74.174485500001,
+    "provider": "nys"
+  },
+  "681 COURTLANDT AVENUE, BRONX, 10451, NY": {
+    "lat": 40.819815000003,
+    "lng": -73.918435500001,
+    "provider": "nys"
+  },
+  "281 EAST 153RD ST, BRONX, 10451, NY": {
+    "lat": 40.820400000003,
+    "lng": -73.920820500001,
+    "provider": "nys"
+  },
+  "300 MORRIS AVENUE, BRONX, 10451, NY": {
+    "lat": 40.812696000003,
+    "lng": -73.925559000001,
+    "provider": "nys"
+  },
+  "1930 ANDREWS AVENUE, BRONX, 10453, NY": {
+    "lat": 40.854573000003,
+    "lng": -73.913139000001,
+    "provider": "nys"
+  },
+  "164 WEST 174TH STREET, BRONX, 10453, NY": {
+    "lat": 40.846194000003,
+    "lng": -73.923219000001,
+    "provider": "nys"
+  },
+  "1531 UNIVERSITY AVENUE, BRONX, 10453, NY": {
+    "lat": 40.846068000003,
+    "lng": -73.922508000001,
+    "provider": "nys"
+  },
+  "205/207 ALEXANDER AVE., BRONX, 10454, NY": {
+    "lat": 40.809312000003,
+    "lng": -73.926256500001,
+    "provider": "nys"
+  },
+  "205/207 ALEXANDER AVENUE, BRONX, 10454, NY": {
+    "lat": 40.809312000003,
+    "lng": -73.926256500001,
+    "provider": "nys"
+  },
+  "350 EAST 143RD STREET, BRONX, 10454, NY": {
+    "lat": 40.812588000003,
+    "lng": -73.922188500001,
+    "provider": "nys"
+  },
+  "865 EAST 163RD STREET, BRONX, 10456, NY": {
+    "lat": 40.822001260955,
+    "lng": -73.899885957681,
+    "provider": "nys"
+  },
+  "1240 WEBSTER AVE, BRONX, 10456, NY": {
+    "lat": 40.832586000003,
+    "lng": -73.909156500001,
+    "provider": "nys"
+  },
+  "1358 WASHINGTON AVE, BRONX, 10456, NY": {
+    "lat": 40.834035000003,
+    "lng": -73.904697000001,
+    "provider": "nys"
+  },
+  "500 EAST 171ST STREET, BRONX, 10457, NY": {
+    "lat": 40.837041000003,
+    "lng": -73.902609000001,
+    "provider": "nys"
+  },
+  "2063 VALENTINE AVENUE, BRONX, 10457, NY": {
+    "lat": 40.852197000003,
+    "lng": -73.900296000001,
+    "provider": "nys"
+  },
+  "SHERIDAN AVENUE, BRONX, 10457, NY": {
+    "lat": 40.841247395403,
+    "lng": -73.911219128947,
+    "provider": "nys"
+  },
+  "1811 EASTCHESTER ROAD, BRONX, 10461, NY": {
+    "lat": 40.849398000003,
+    "lng": -73.845769500001,
+    "provider": "nys"
+  },
+  "1410 PELHAM PKWY SOUTH, BRONX, 10461, NY": {
+    "lat": 40.855392000003,
+    "lng": -73.847569500001,
+    "provider": "nys"
+  },
+  "1225 MORRIS PAARK AVE, BRONX, 10461, NY": {
+    "lat": 40.852818000003,
+    "lng": -73.846647000001,
+    "provider": "nys"
+  },
+  "782 LYDIG AVE, BRONX, 10462, NY": {
+    "lat": 40.854348000003,
+    "lng": -73.864417500001,
+    "provider": "nys"
+  },
+  "2798 RANDALL AVENUE, BRONX, 10465, NY": {
+    "lat": 40.823730000003,
+    "lng": -73.825249500001,
+    "provider": "nys"
+  },
+  "2830 SCHLEY AVENUE, BRONX, 10465, NY": {
+    "lat": 40.823136000003,
+    "lng": -73.822842000001,
+    "provider": "nys"
+  },
+  "2910 BRONX PARK EAST, BRONX, 10467, NY": {
+    "lat": 40.868424000003,
+    "lng": -73.870272000001,
+    "provider": "nys"
+  },
+  "815 PELHAM PARKWAY NORTH, BRONX, 10467, NY": {
+    "lat": 40.858335000003,
+    "lng": -73.863261000001,
+    "provider": "nys"
+  },
+  "WALLACE AVE, BRONX, 10467, NY": {
+    "lat": 40.865071664973,
+    "lng": -73.864476164784,
+    "provider": "nys"
+  },
+  "2385 OLINVILLE AVENUE, BRONX, 10467, NY": {
+    "lat": 40.860864000003,
+    "lng": -73.868679000001,
+    "provider": "nys"
+  },
+  "CEDAR AVENUE B/T WEST FORDHAM ROAD & LANDING ROAD, BRONX, 10468, NY": {
+    "lat": 40.862286000003,
+    "lng": -73.909903500001,
+    "provider": "nys"
+  },
+  "CEDAR AVENUE B/T WEST FORDHAM ROAD & WEST 179 STREET, BRONX, 10468, NY": {
+    "lat": 40.859685000003,
+    "lng": -73.914844500001,
+    "provider": "nys"
+  },
+  "2550 WEBB AVENUE, BRONX, 10468, NY": {
+    "lat": 40.867137000003,
+    "lng": -73.903270500001,
+    "provider": "nys"
+  },
+  "75 W 205 STREET, BRONX, 10468, NY": {
+    "lat": 40.878000000003,
+    "lng": -73.891507500001,
+    "provider": "nys"
+  },
+  "112TH - 120TH STREET AND 2ND AVE, NEW YORK, 10468, NY": {
+    "lat": 40.799583000003,
+    "lng": -73.935904500001,
+    "provider": "nys"
+  },
+  "2790 GOULDEN AVENUE, BRONX, 10468, NY": {
+    "lat": 40.871340000003,
+    "lng": -73.897078500001,
+    "provider": "nys"
+  },
+  "X078 @ 1400 NEEDHAM AVE, BRONX, 10469, NY": {
+    "lat": 40.878657000003,
+    "lng": -73.850710500001,
+    "provider": "nys"
+  },
+  "2455 WILLIAMSBRIDGE ROAD, BRONX, 10469, NY": {
+    "lat": 40.862115000003,
+    "lng": -73.858189500001,
+    "provider": "nys"
+  },
+  "2545 GUNTHER AVENUE, BRONX, 10469, NY": {
+    "lat": 40.864203000003,
+    "lng": -73.836306000001,
+    "provider": "nys"
+  },
+  "925 WARING ST, BRONX, 10469, NY": {
+    "lat": 40.861548000003,
+    "lng": -73.861060500001,
+    "provider": "nys"
+  },
+  "1670 WATSON AVENUE, BRONX, 10472, NY": {
+    "lat": 40.826628000003,
+    "lng": -73.871100000001,
+    "provider": "nys"
+  },
+  "48 CLASON POINT LANE SOUTH, BRONX, 10473, NY": {
+    "lat": 40.821471000003,
+    "lng": -73.869210000001,
+    "provider": "nys"
+  },
+  "324 STEPHENS AVENUE, BRONX, 10473, NY": {
+    "lat": 40.812507000003,
+    "lng": -73.853689500001,
+    "provider": "nys"
+  },
+  "1725 RANDALL AVENUE, BRONX, 10473, NY": {
+    "lat": 40.817304000003,
+    "lng": -73.866339000001,
+    "provider": "nys"
+  },
+  "1687 CROES PLACE, BRONX, 10473, NY": {
+    "lat": 40.820103000003,
+    "lng": -73.868935500001,
+    "provider": "nys"
+  },
+  "120 CASALS PL., BRONX, 10475, NY": {
+    "lat": 40.878396000003,
+    "lng": -73.823557500001,
+    "provider": "nys"
+  },
+  "900; 920 BAYCHESTER AVE., BRONX, 10475, NY": {
+    "lat": 40.877172000003,
+    "lng": -73.833183000001,
+    "provider": "nys"
+  },
+  "100; 120 CO-OP CITY BLVD., BRONX, 10475, NY": {
+    "lat": 40.871583000003,
+    "lng": -73.825236000001,
+    "provider": "nys"
+  },
+  "120 BENCHLEY PL., BRONX, 10475, NY": {
+    "lat": 40.874274000003,
+    "lng": -73.825150500001,
+    "provider": "nys"
+  },
+  "85 COX AVE, ARMONK, 10504, NY": {
+    "lat": 41.131197000003,
+    "lng": -73.704996000001,
+    "provider": "nys"
+  },
+  "2 LONG POND COURT, ARMONK, 10504, NY": {
+    "lat": 41.147352000003,
+    "lng": -73.670409000001,
+    "provider": "nys"
+  },
+  "15 UPLAND LN, ARMONK, 10504, NY": {
+    "lat": 41.147199000003,
+    "lng": -73.678932000001,
+    "provider": "nys"
+  },
+  "101 SPRINGHURST RD., BEDFORD HILLS, 10507, NY": {
+    "lat": 41.224410000003,
+    "lng": -73.700514000001,
+    "provider": "nys"
+  },
+  "268 MCLAIN ST, BEDFORD HILLS, 10507, NY": {
+    "lat": 41.221962000003,
+    "lng": -73.708956000001,
+    "provider": "nys"
+  },
+  "10 NORTH STREET, BEDFOR HILLS, 10507, NY": {
+    "lat": 41.238450000003,
+    "lng": -73.688904000001,
+    "provider": "nys"
+  },
+  "250 HARRIS ROAD, BEDFORD HILLS, 10507, NY": {
+    "lat": 41.241591000003,
+    "lng": -73.679931000001,
+    "provider": "nys"
+  },
+  "39 FIELDSTONE DRIVE, HARTSDALE, 10530, NY": {
+    "lat": 41.031765000003,
+    "lng": -73.791607500001,
+    "provider": "nys"
+  },
+  "138 WILLIS AVE, HAWTHORNE, 10532, NY": {
+    "lat": 41.098059000003,
+    "lng": -73.788588000001,
+    "provider": "nys"
+  },
+  "312 ELWOOD AVENUE, HAWTHORNE, 10532, NY": {
+    "lat": 41.105943000003,
+    "lng": -73.794933000001,
+    "provider": "nys"
+  },
+  "124 DEERTRACK LANE, IRVINGTON, 10533, NY": {
+    "lat": 41.049738000003,
+    "lng": -73.851597000001,
+    "provider": "nys"
+  },
+  "26 WILLOW ST., IRVINGTON, 10533, NY": {
+    "lat": 41.035851000003,
+    "lng": -73.871437500001,
+    "provider": "nys"
+  },
+  "165 CROTON LAKE ROAD, BEDFORD, 10536, NY": {
+    "lat": 41.250307428445,
+    "lng": -73.712253155743,
+    "provider": "nys"
+  },
+  "16 CORNWALL CT, KATONAH, 10536, NY": {
+    "lat": 41.292567000003,
+    "lng": -73.641928500001,
+    "provider": "nys"
+  },
+  "305 RICH AVENUE, MOUNT VERNON, 10552, NY": {
+    "lat": 40.921758000003,
+    "lng": -73.831405500001,
+    "provider": "nys"
+  },
+  "1 ALAMENDA PLACE, MOUNT VERNON, 10552, NY": {
+    "lat": 40.925538000003,
+    "lng": -73.821465000001,
+    "provider": "nys"
+  },
+  "226 LAWRENCE STREET, MOUNT VERNON, 10552, NY": {
+    "lat": 40.925718000003,
+    "lng": -73.820245500001,
+    "provider": "nys"
+  },
+  "EAST 5 STREET BETWEEN SENECA AVENUE & BEDFORD AVENUE, MT. VERNON, 10553, NY": {
+    "lat": 40.904344575495,
+    "lng": -73.822158728666,
+    "provider": "nys"
+  },
+  "ROUTE 116 OVER TITICUS RIVER, NORTH SALEM, 10560, NY": {
+    "lat": 41.326587977607,
+    "lng": -73.657044700444,
+    "provider": "nys"
+  },
+  "735 ANDERSON HILL ROAD, PURCHASE, 10577, NY": {
+    "lat": 41.052132000003,
+    "lng": -73.699420500001,
+    "provider": "nys"
+  },
+  "131 OLD WELL RD, PURCHASE, 10577, NY": {
+    "lat": 41.036463000003,
+    "lng": -73.740924000001,
+    "provider": "nys"
+  },
+  "2700 WESTCHESTER AVE, PURCHASE, 10577, NY": {
+    "lat": 41.012028000003,
+    "lng": -73.696189500001,
+    "provider": "nys"
+  },
+  "54 ISLAND DRIVE, RYE, 10580, NY": {
+    "lat": 40.981554000003,
+    "lng": -73.657408500001,
+    "provider": "nys"
+  },
+  "2 ROCKRIDGE RD.,, RYE, 10580, NY": {
+    "lat": 40.975245000003,
+    "lng": -73.675471500001,
+    "provider": "nys"
+  },
+  "100 COLLEGE AVENUE, SLEEPY HOLLOW, 10591, NY": {
+    "lat": 41.081544000003,
+    "lng": -73.863265500001,
+    "provider": "nys"
+  },
+  "39 NORTH BROADWAY, TARRYTOWN, 10591, NY": {
+    "lat": 41.077629000003,
+    "lng": -73.858167000001,
+    "provider": "nys"
+  },
+  "222 MARTLING AVENUE, TARRYTOWN, 10591, NY": {
+    "lat": 41.066820000003,
+    "lng": -73.853424000001,
+    "provider": "nys"
+  },
+  "72 ROLLING HILLS ROAD, THORNWOOD, 10594, NY": {
+    "lat": 41.116680000003,
+    "lng": -73.778008500001,
+    "provider": "nys"
+  },
+  "825 WESTLAKE DRIVE, THORNWOOD, 10594, NY": {
+    "lat": 41.110983000003,
+    "lng": -73.767379500001,
+    "provider": "nys"
+  },
+  "300 COLUMBUS AVENUE, VALHALLA, 10595, NY": {
+    "lat": 41.091408000003,
+    "lng": -73.776069000001,
+    "provider": "nys"
+  },
+  "19 WEST LAKE DRIVE, MT PLEASANT, 10595, NY": {
+    "lat": 41.082805720181,
+    "lng": -73.774605088521,
+    "provider": "nys"
+  },
+  "15 REEBACK DRIVE, VALHALLA, 10595, NY": {
+    "lat": 41.111658000003,
+    "lng": -73.756485000001,
+    "provider": "nys"
+  },
+  "1101 KITCHAWAN RD., YORKTOWN HEIGHTS, 10598, NY": {
+    "lat": 41.215950000003,
+    "lng": -73.806043500001,
+    "provider": "nys"
+  },
+  "180 YONKERS AVE, YONKERS, 10701, NY": {
+    "lat": 40.934988000003,
+    "lng": -73.881922500001,
+    "provider": "nys"
+  },
+  "186 YONKERS AVE, YONKERS, 10701, NY": {
+    "lat": 40.934925000003,
+    "lng": -73.881661500001,
+    "provider": "nys"
+  },
+  "967 NORTH BROADWAY, YONKERS, 10701, NY": {
+    "lat": 40.969431000003,
+    "lng": -73.885297500001,
+    "provider": "nys"
+  },
+  "135 LOCUST HILL AVENUE, YONKERS, 10701, NY": {
+    "lat": 40.938786000003,
+    "lng": -73.895418000001,
+    "provider": "nys"
+  },
+  "183 PALMER RD., YONKERS, 10701, NY": {
+    "lat": 40.943169000003,
+    "lng": -73.870474500001,
+    "provider": "nys"
+  },
+  "141 MCCLEAN AVE, YONKERS, 10701, NY": {
+    "lat": 40.916225581665,
+    "lng": -73.890805090966,
+    "provider": "nys"
+  },
+  "79-81 MAIN ST, YONKERS, 10701, NY": {
+    "lat": 40.934829480107,
+    "lng": -73.901839086739,
+    "provider": "nys"
+  },
+  "354-358 NEPPERHAN AVE., YONKERS, 10701, NY": {
+    "lat": 40.938579000003,
+    "lng": -73.885113000001,
+    "provider": "nys"
+  },
+  "55 BENNETT AVE, YONKERS, 10701, NY": {
+    "lat": 40.934997000003,
+    "lng": -73.868638500001,
+    "provider": "nys"
+  },
+  "34 PROSPECT STREET, NEW YORK, 10701, NY": {
+    "lat": 40.679766000003,
+    "lng": -73.976764500001,
+    "provider": "nys"
+  },
+  "2616 CENTRAL PARK AVE, YONKERS, 10710, NY": {
+    "lat": 40.985064000003,
+    "lng": -73.824673500001,
+    "provider": "nys"
+  },
+  "35 EAST GRASSY SPRAIN ROAD, YONKERS, 10710, NY": {
+    "lat": 40.954077000003,
+    "lng": -73.851718500001,
+    "provider": "nys"
+  },
+  "710 NOBLE, BRONX, 10740, NY": {
+    "lat": 40.819032000003,
+    "lng": -73.867095000001,
+    "provider": "nys"
+  },
+  "515 NORTH AVENUE, NEW ROCHELLE, 10801, NY": {
+    "lat": 40.920021000003,
+    "lng": -73.786162500001,
+    "provider": "nys"
+  },
+  "61 PARCOT AVENUE, NEW ROCHELLE, 10801, NY": {
+    "lat": 40.928022000003,
+    "lng": -73.796256000001,
+    "provider": "nys"
+  },
+  "1 PRYER MANOR ROAD, NEW ROCHELLE, 10801, NY": {
+    "lat": 40.917114000003,
+    "lng": -73.756188000001,
+    "provider": "nys"
+  },
+  "1000 PINE BROOK BLVD., NEW ROCHELLE, 10801, NY": {
+    "lat": 40.965795000003,
+    "lng": -73.780146000001,
+    "provider": "nys"
+  },
+  "89 CEDAR STREET, NEW ROCHELLE, 10801, NY": {
+    "lat": 40.915855237778,
+    "lng": -73.78003437156,
+    "provider": "nys"
+  },
+  "163 WOLFS LANE, PELHAM, 10803, NY": {
+    "lat": 40.907619000003,
+    "lng": -73.811659500001,
+    "provider": "nys"
+  },
+  "41 STILL RD, MONROE, 10950, NY": {
+    "lat": 41.317659000003,
+    "lng": -74.182842000001,
+    "provider": "nys"
+  },
+  "347 NELSON RD, MONROE, 10950, NY": {
+    "lat": 41.252112000003,
+    "lng": -74.264310000001,
+    "provider": "nys"
+  },
+  "4 VILLA LANE, MONSEY, 10952, NY": {
+    "lat": 41.156955000003,
+    "lng": -74.085210000001,
+    "provider": "nys"
+  },
+  "5 SHAW ROAD, MOUNTAINVILLE, 10953, NY": {
+    "lat": 41.4062933,
+    "lng": -74.0817369,
+    "provider": "nominatim"
+  },
+  "20 AGROW PLACE, NANUET, 10954, NY": {
+    "lat": 41.082921000003,
+    "lng": -73.994517000001,
+    "provider": "nys"
+  },
+  "74 NORTH PASCACK ROAD, NANUET, 10954, NY": {
+    "lat": 41.112333000003,
+    "lng": -74.030841000001,
+    "provider": "nys"
+  },
+  "80 WEST NYACK ROAD, NANUET, 10954, NY": {
+    "lat": 41.098266000003,
+    "lng": -74.004183000001,
+    "provider": "nys"
+  },
+  "18 SECOND AVENUE, NANUET, 10954, NY": {
+    "lat": 41.109012000003,
+    "lng": -74.035120500001,
+    "provider": "nys"
+  },
+  "151 CONGERS ROAD, NEW CITY, 10956, NY": {
+    "lat": 41.150943000003,
+    "lng": -73.970050500001,
+    "provider": "nys"
+  },
+  "106 RED HILL ROAD, NEW CITY, 10956, NY": {
+    "lat": 41.135715000003,
+    "lng": -74.010402000001,
+    "provider": "nys"
+  },
+  "220 SOUTH LITTLE TOR ROAD, NEW CITY, 10956, NY": {
+    "lat": 41.132646000003,
+    "lng": -74.000632500001,
+    "provider": "nys"
+  },
+  "4 FLOWER LN., VALLEY COTTAGE, 10989, NY": {
+    "lat": 41.128299000003,
+    "lng": -73.948324500001,
+    "provider": "nys"
+  },
+  "83 MAPLE AVE., WARWICK, 10990, NY": {
+    "lat": 41.271192000003,
+    "lng": -74.354121000001,
+    "provider": "nys"
+  },
+  "20 TOLEMAN RD, WASHINGTONVILLE, 10992, NY": {
+    "lat": 41.437336493999,
+    "lng": -74.158613365818,
+    "provider": "nys"
+  },
+  "12 RAILROAD AVENUE, WEST HAVERSTRAW, 10993, NY": {
+    "lat": 41.209803000003,
+    "lng": -73.986943500001,
+    "provider": "nys"
+  },
+  "140 SAMSONDALE AVENUE, WEST HAVERSTRAW, 10993, NY": {
+    "lat": 41.203191046945,
+    "lng": -73.973137390006,
+    "provider": "nys"
+  },
+  "750 MERRITT RD, WEST POINT, 10996, NY": {
+    "lat": 41.393097000003,
+    "lng": -73.962675000001,
+    "provider": "nys"
+  },
+  "606 THAYER RD, WEST POINT, 10996, NY": {
+    "lat": 41.388903000003,
+    "lng": -73.956982500001,
+    "provider": "nys"
+  },
+  "604 WILLIAM RD, WEST POINT, 10996, NY": {
+    "lat": 41.379947428264,
+    "lng": -73.959350913345,
+    "provider": "nys"
+  },
+  "300 STEAMBOAT ROAD, KINGS POINT, 11027, NY": {
+    "lat": 40.813776000003,
+    "lng": -73.763617500001,
+    "provider": "nys"
+  },
+  "123 WEBSTER AVENUE, MANHASSET, 11030, NY": {
+    "lat": 40.801203000003,
+    "lng": -73.697346000001,
+    "provider": "nys"
+  },
+  "260 SPARROW LANE, MANHASSET, 11030, NY": {
+    "lat": 40.782690000003,
+    "lng": -73.665603000001,
+    "provider": "nys"
+  },
+  "100 SHELTER ROCK RD, NEW HYDE PARK, 11040, NY": {
+    "lat": 40.764843000003,
+    "lng": -73.662826500001,
+    "provider": "nys"
+  },
+  "3366 HILLSIDE AVENUE, NEW HYDE PARK, 11040, NY": {
+    "lat": 40.752711000003,
+    "lng": -73.658862000001,
+    "provider": "nys"
+  },
+  "3370 HILLSIDE AVENUE, NEW HYDE PARK, 11040, NY": {
+    "lat": 40.752774000003,
+    "lng": -73.658515500001,
+    "provider": "nys"
+  },
+  "39-27 28TH STREET, QUEENS, 11101, NY": {
+    "lat": 40.753098000003,
+    "lng": -73.935837000001,
+    "provider": "nys"
+  },
+  "41-05 10TH STREET, QUEENS, 11101, NY": {
+    "lat": 40.755539634655,
+    "lng": -73.945709879774,
+    "provider": "nys"
+  },
+  "41-05 VERNON BLVD., QUEENS, 11101, NY": {
+    "lat": 40.756291297831,
+    "lng": -73.947375589673,
+    "provider": "nys"
+  },
+  "41-12 VERNON BLVD., QUEENS, 11101, NY": {
+    "lat": 40.754853000003,
+    "lng": -73.947681000001,
+    "provider": "nys"
+  },
+  "40-11 12TH STREET, QUEENS, 11101, NY": {
+    "lat": 40.754619000003,
+    "lng": -73.943086500001,
+    "provider": "nys"
+  },
+  "44-01 11TH STREET, QUEENS, 11101, NY": {
+    "lat": 40.749923484211,
+    "lng": -73.949129046232,
+    "provider": "nys"
+  },
+  "4-24 ASTORIA BLVD, QUEENS, 11102, NY": {
+    "lat": 40.772619000003,
+    "lng": -73.933155000001,
+    "provider": "nys"
+  },
+  "4-24- ASTORIA BLVD, QUEENS, 11102, NY": {
+    "lat": 40.772619000003,
+    "lng": -73.933155000001,
+    "provider": "nys"
+  },
+  "2-10 ASTORIA BLVD., QUEENS, 11102, NY": {
+    "lat": 40.772502000003,
+    "lng": -73.936165500001,
+    "provider": "nys"
+  },
+  "1-25 ASTORIA BOULEVARD, QUEENS, 11102, NY": {
+    "lat": 40.773942000003,
+    "lng": -73.935891000001,
+    "provider": "nys"
+  },
+  "2-04 ASTORIA BLVD, QUEENS, 11102, NY": {
+    "lat": 40.773659158667,
+    "lng": -73.936157716019,
+    "provider": "nys"
+  },
+  "4-10 27TH AVENUE, QUEENS, 11102, NY": {
+    "lat": 40.774212000003,
+    "lng": -73.933051500001,
+    "provider": "nys"
+  },
+  "1-20 ASTORIA BLVD., QUEENS, 11102, NY": {
+    "lat": 40.772790000003,
+    "lng": -73.936813500001,
+    "provider": "nys"
+  },
+  "1-25 ASTORIA BLVD., QUEENS, 11102, NY": {
+    "lat": 40.773942000003,
+    "lng": -73.935891000001,
+    "provider": "nys"
+  },
+  "4-03 ASTORIA BLVD., QUEENS, 11102, NY": {
+    "lat": 40.773116501161,
+    "lng": -73.933827911884,
+    "provider": "nys"
+  },
+  "35-35 21ST STREET, QUEENS, 11106, NY": {
+    "lat": 40.760064000003,
+    "lng": -73.935427500001,
+    "provider": "nys"
+  },
+  "35-37 12TH STREET, QUEENS, 11106, NY": {
+    "lat": 40.761162000003,
+    "lng": -73.937974500001,
+    "provider": "nys"
+  },
+  "33-09 35TH AVE, QUEENS, 11106, NY": {
+    "lat": 40.774797000003,
+    "lng": -73.753146000001,
+    "provider": "nys"
+  },
+  "34-05 12TH STREET, QUEENS, 11106, NY": {
+    "lat": 40.764102040766,
+    "lng": -73.936988404743,
+    "provider": "nys"
+  },
+  "48 GARDEN PLACE, BROOKLYN, 11201, NY": {
+    "lat": 40.691970000003,
+    "lng": -73.996699500001,
+    "provider": "nys"
+  },
+  "283 ADAMAS STREET, BROOKLYN, 11201, NY": {
+    "lat": 40.694733000003,
+    "lng": -73.988505000001,
+    "provider": "nys"
+  },
+  "360 ADAMS STREET, BROOKLYN, 11201, NY": {
+    "lat": 40.693896000003,
+    "lng": -73.989211500001,
+    "provider": "nys"
+  },
+  "347 BALTIC STREET, BROOKLYN, 11201, NY": {
+    "lat": 40.684572000003,
+    "lng": -73.990863000001,
+    "provider": "nys"
+  },
+  "314 PACIFIC STREET, BROOKLYN, 11201, NY": {
+    "lat": 40.687317000003,
+    "lng": -73.988145000001,
+    "provider": "nys"
+  },
+  "172 PEARL STREET, BROOKLYN, 11201, NY": {
+    "lat": 40.699575000003,
+    "lng": -73.987920000001,
+    "provider": "nys"
+  },
+  "24 MONROE PLACE, BROOKLYN, 11201, NY": {
+    "lat": 40.696362000003,
+    "lng": -73.992370500001,
+    "provider": "nys"
+  },
+  "330 HUDSON WALK, BROOKLYN, 11201, NY": {
+    "lat": 40.694445000003,
+    "lng": -73.981098000001,
+    "provider": "nys"
+  },
+  "30-32 WILLOW PLACE, BROOKLYN, 11201, NY": {
+    "lat": 40.692717000003,
+    "lng": -73.998144000001,
+    "provider": "nys"
+  },
+  "27 BRIDGE STREET, BROOKLYN, 11201, NY": {
+    "lat": 40.703886000003,
+    "lng": -73.984491000001,
+    "provider": "nys"
+  },
+  "284 BALTIC STREET, BROOKLYN, 11201, NY": {
+    "lat": 40.685328000003,
+    "lng": -73.993338000001,
+    "provider": "nys"
+  },
+  "100 REMSEN STREET, BROOKLYN, 11201, NY": {
+    "lat": 40.693977000003,
+    "lng": -73.994449500001,
+    "provider": "nys"
+  },
+  "1959 73RD STREET, BROOKLYN, 11204, NY": {
+    "lat": 40.612536000003,
+    "lng": -73.991205000001,
+    "provider": "nys"
+  },
+  "5601 16 AVENUE, BROOKLYN, 11204, NY": {
+    "lat": 40.626729000003,
+    "lng": -73.989670500001,
+    "provider": "nys"
+  },
+  "1840 72ND STREET, BROOKLYN, 11204, NY": {
+    "lat": 40.614417000003,
+    "lng": -73.993266000001,
+    "provider": "nys"
+  },
+  "6701 20 AVENUE, BROOKLYN, 11204, NY": {
+    "lat": 40.614966000003,
+    "lng": -73.987159500001,
+    "provider": "nys"
+  },
+  "146 NORTH ELLIOT WALK, BROOKLYN, 11205, NY": {
+    "lat": 40.694067000003,
+    "lng": -73.977592500001,
+    "provider": "nys"
+  },
+  "222 CLINTON AVENUE, BROOKLYN, 11205, NY": {
+    "lat": 40.691349000003,
+    "lng": -73.968723000001,
+    "provider": "nys"
+  },
+  "86 CARLTON AVENUE, BROOKLYN, 11205, NY": {
+    "lat": 40.694994000003,
+    "lng": -73.974010500001,
+    "provider": "nys"
+  },
+  "325 CLASSON AVENUE, BROOKLYN, 11205, NY": {
+    "lat": 40.690026000003,
+    "lng": -73.959939000001,
+    "provider": "nys"
+  },
+  "395 DEKALB AVENUE, BROOKLYN, 11205, NY": {
+    "lat": 40.690332000003,
+    "lng": -73.961923500001,
+    "provider": "nys"
+  },
+  "135 WASHINGTON WALK, BROOKLYN, 11205, NY": {
+    "lat": 40.693761000003,
+    "lng": -73.974105000001,
+    "provider": "nys"
+  },
+  "260 FRANKLIN AVENUE, BROOKLYN, 11205, NY": {
+    "lat": 40.690125000003,
+    "lng": -73.957846500001,
+    "provider": "nys"
+  },
+  "225 ADELPHI STREET, BROOKLYN, 11205, NY": {
+    "lat": 40.691034000003,
+    "lng": -73.971265500001,
+    "provider": "nys"
+  },
+  "195, BROOKLYN, 11205, NY": {
+    "lat": 40.673159529685,
+    "lng": -73.944545296162,
+    "provider": "nys"
+  },
+  "210 CLINTON AVENUE, BROOKLYN, 11205, NY": {
+    "lat": 40.691862000003,
+    "lng": -73.968840000001,
+    "provider": "nys"
+  },
+  "554 FLUSHING AVENUE, BROOKLYN, 11206, NY": {
+    "lat": 40.699314000003,
+    "lng": -73.951276500001,
+    "provider": "nys"
+  },
+  "105 NOSTRAND AVENUE, BROOKLYN, 11206, NY": {
+    "lat": 40.696299000003,
+    "lng": -73.951879500001,
+    "provider": "nys"
+  },
+  "123 NOSTRAND AVENUE, BROOKLYN, 11206, NY": {
+    "lat": 40.695768000003,
+    "lng": -73.951515000001,
+    "provider": "nys"
+  },
+  "35 NOSTRAND AVE, BROOKLYN, 11206, NY": {
+    "lat": 40.698540000003,
+    "lng": -73.952793000001,
+    "provider": "nys"
+  },
+  "474 MARCY AVENUE, BROOKLYN, 11206, NY": {
+    "lat": 40.698432000003,
+    "lng": -73.950768000001,
+    "provider": "nys"
+  },
+  "196 THROOP AVE, BROOKLYN, 11206, NY": {
+    "lat": 40.697847000003,
+    "lng": -73.944135000001,
+    "provider": "nys"
+  },
+  "542 FLUSHING AVENUE, BROOKLYN, 11206, NY": {
+    "lat": 40.698648000003,
+    "lng": -73.951767000001,
+    "provider": "nys"
+  },
+  "68 MARCUS GARVEY BOULEVARD, BROOKLYN, 11206, NY": {
+    "lat": 40.696884000003,
+    "lng": -73.941102000001,
+    "provider": "nys"
+  },
+  "370 BUSHWICK AVENUE, BROOKLYN, 11206, NY": {
+    "lat": 40.703463000003,
+    "lng": -73.938856500001,
+    "provider": "nys"
+  },
+  "81 BEAVER STREET, BROOKLYN, 11206, NY": {
+    "lat": 40.699456331388,
+    "lng": -73.936410160171,
+    "provider": "nys"
+  },
+  "101 NOSTRAND AVENUE, BROOKLYN, 11206, NY": {
+    "lat": 40.696452000003,
+    "lng": -73.952181000001,
+    "provider": "nys"
+  },
+  "642 PARK AVENUE, BROOKLYN, 11206, NY": {
+    "lat": 40.697262000003,
+    "lng": -73.949931000001,
+    "provider": "nys"
+  },
+  "482 MARCY AVENUE, BROOKLYN, 11206, NY": {
+    "lat": 40.698441000003,
+    "lng": -73.950201000001,
+    "provider": "nys"
+  },
+  "542 MARCY AVENUE, BROOKLYN, 11206, NY": {
+    "lat": 40.696398000003,
+    "lng": -73.949778000001,
+    "provider": "nys"
+  },
+  "185 JEFFERSON STREET, BROOKLYN, 11206, NY": {
+    "lat": 40.701618000003,
+    "lng": -73.929078000001,
+    "provider": "nys"
+  },
+  "110 HUNBOLDT STREET, BROOKLYN, 11206, NY": {
+    "lat": 40.704984000003,
+    "lng": -73.940904000001,
+    "provider": "nys"
+  },
+  "207 BUSHWICK AVE, BROOKLYN, 11206, NY": {
+    "lat": 40.708773000003,
+    "lng": -73.939801500001,
+    "provider": "nys"
+  },
+  "824/808 PARK AVENUE, BROOKLYN, 11206, NY": {
+    "lat": 40.697811000003,
+    "lng": -73.942731000001,
+    "provider": "nys"
+  },
+  "160 BOERUM STREET, BROOKLYN, 11206, NY": {
+    "lat": 40.705884000003,
+    "lng": -73.942101000001,
+    "provider": "nys"
+  },
+  "1031 MYRTLE AVENUE, BROOKLYN, 11206, NY": {
+    "lat": 40.696731000003,
+    "lng": -73.940053500001,
+    "provider": "nys"
+  },
+  "31 NOSTRAND AVENUE, BROOKLYN, 11206, NY": {
+    "lat": 40.698801000003,
+    "lng": -73.952586000001,
+    "provider": "nys"
+  },
+  "601 PARK AVENUE, BROOKLYN, 11206, NY": {
+    "lat": 40.698243000003,
+    "lng": -73.951654500001,
+    "provider": "nys"
+  },
+  "270 STANLEY AVENUE, BROOKLYN, 11207, NY": {
+    "lat": 40.653648000003,
+    "lng": -73.896412500001,
+    "provider": "nys"
+  },
+  "665 NEW LOTS AVE, BROOKLYN, 11207, NY": {
+    "lat": 40.665123000003,
+    "lng": -73.886008500001,
+    "provider": "nys"
+  },
+  "455 FOUNTAIN AVENUE, BROOKLYN, 11208, NY": {
+    "lat": 40.668831000003,
+    "lng": -73.872900000001,
+    "provider": "nys"
+  },
+  "1266 SUTTER AVE., BROOKLYN, 11208, NY": {
+    "lat": 40.672287000003,
+    "lng": -73.871563500001,
+    "provider": "nys"
+  },
+  "528 RIDGEWOOD AVENUE, BROOKLYN, 11208, NY": {
+    "lat": 40.686048000003,
+    "lng": -73.869471000001,
+    "provider": "nys"
+  },
+  "54 HIGHLAND PLACE, BROOKLYN, 11208, NY": {
+    "lat": 40.684050000003,
+    "lng": -73.882012500001,
+    "provider": "nys"
+  },
+  "2630 LINDEN BOULEVARD, BROOKLYN, 11208, NY": {
+    "lat": 40.668210000003,
+    "lng": -73.866973500001,
+    "provider": "nys"
+  },
+  "2781 PITKIN AVENUE, BROOKLYN, 11208, NY": {
+    "lat": 40.675932000003,
+    "lng": -73.869655500001,
+    "provider": "nys"
+  },
+  "750 ELDERT LANE, BROOKLYN, 11208, NY": {
+    "lat": 40.671693000003,
+    "lng": -73.864156500001,
+    "provider": "nys"
+  },
+  "752 ELDERT LANE, BROOKLYN, 11208, NY": {
+    "lat": 40.671684000003,
+    "lng": -73.864219500001,
+    "provider": "nys"
+  },
+  "754 ELDERT LANE, BROOKLYN, 11208, NY": {
+    "lat": 40.671594000003,
+    "lng": -73.864273500001,
+    "provider": "nys"
+  },
+  "756 ELDERT LANE, BROOKLYN, 11208, NY": {
+    "lat": 40.671612000003,
+    "lng": -73.864192500001,
+    "provider": "nys"
+  },
+  "758 ELDERT LANE, BROOKLYN, 11208, NY": {
+    "lat": 40.671621000003,
+    "lng": -73.864138500001,
+    "provider": "nys"
+  },
+  "770 ELDERT LANE, BROOKLYN, 11208, NY": {
+    "lat": 40.671144000003,
+    "lng": -73.864260000001,
+    "provider": "nys"
+  },
+  "2839 BEDFORD AVE, BROOKLYN, 11210, NY": {
+    "lat": 40.632822000003,
+    "lng": -73.952581500001,
+    "provider": "nys"
+  },
+  "1954 FLATBUSH AVENUE, BROOKLYN, 11210, NY": {
+    "lat": 40.622148000003,
+    "lng": -73.936633500001,
+    "provider": "nys"
+  },
+  "257 NORTH 6TH STREET, BROOKLYN, 11211, NY": {
+    "lat": 40.715208000003,
+    "lng": -73.954777500001,
+    "provider": "nys"
+  },
+  "311 OSBORN STREET, BROOKLYN, 11212, NY": {
+    "lat": 40.664790000003,
+    "lng": -73.907392500001,
+    "provider": "nys"
+  },
+  "210 CHESTER ST, BROOKLYN, 11212, NY": {
+    "lat": 40.666581000003,
+    "lng": -73.911105000001,
+    "provider": "nys"
+  },
+  "619 ROCKAWAY AVE, BROOKLYN, 11212, NY": {
+    "lat": 40.664682000003,
+    "lng": -73.909201500001,
+    "provider": "nys"
+  },
+  "1590 EAST NEW YORK AVENUE, BROOKLYN, 11212, NY": {
+    "lat": 40.672242000003,
+    "lng": -73.909039500001,
+    "provider": "nys"
+  },
+  "145 ROCKAWAY PKWY, BROOKLYN, 11212, NY": {
+    "lat": 40.663296000003,
+    "lng": -73.922179500001,
+    "provider": "nys"
+  },
+  "1580 EAST NEW YORK AVENUE, BROOKLYN, 11212, NY": {
+    "lat": 40.672251000003,
+    "lng": -73.909656000001,
+    "provider": "nys"
+  },
+  "345 LIVONIA AVENUE, BROOKLYN, 11212, NY": {
+    "lat": 40.663584000003,
+    "lng": -73.904940000001,
+    "provider": "nys"
+  },
+  "111 BRISTOL STREET, BROOKLYN, 11212, NY": {
+    "lat": 40.667985000003,
+    "lng": -73.912086000001,
+    "provider": "nys"
+  },
+  "1598 STERLING PL, BROOKLYN, 11213, NY": {
+    "lat": 40.671099000003,
+    "lng": -73.925937000001,
+    "provider": "nys"
+  },
+  "208 ROCHETSER AVE, BROOKLYN, 11213, NY": {
+    "lat": 40.672035000003,
+    "lng": -73.928182500001,
+    "provider": "nys"
+  },
+  "1474 PARK PLACE AVE, BROOKLYN, 11213, NY": {
+    "lat": 40.672143000003,
+    "lng": -73.928628000001,
+    "provider": "nys"
+  },
+  "1468 PARK PLACE, NEW YORK, 11213, NY": {
+    "lat": 40.672152000003,
+    "lng": -73.928812500001,
+    "provider": "nys"
+  },
+  "1191 PARK PLACE, BROOKLYN, 11213, NY": {
+    "lat": 40.672944000003,
+    "lng": -73.937691000001,
+    "provider": "nys"
+  },
+  "1224 PARK PLACE, BROOKLYN, 11213, NY": {
+    "lat": 40.672584000003,
+    "lng": -73.937259000001,
+    "provider": "nys"
+  },
+  "1430 BERGEN STREET, BROOKLYN, 11213, NY": {
+    "lat": 40.675131000003,
+    "lng": -73.936597500001,
+    "provider": "nys"
+  },
+  "130 ROCHESTER AVENUE, BROOKLYN, 11213, NY": {
+    "lat": 40.674528000003,
+    "lng": -73.927980000001,
+    "provider": "nys"
+  },
+  "188 ROCHESTER AVE, BROOKLYN, 11213, NY": {
+    "lat": 40.672620000003,
+    "lng": -73.928259000001,
+    "provider": "nys"
+  },
+  "1760 ATLANTIC AVENUE, BROOKLYN, 11213, NY": {
+    "lat": 40.677309000003,
+    "lng": -73.932025500001,
+    "provider": "nys"
+  },
+  "1234 ST. JOHNS PLACE, BROOKLYN, 11213, NY": {
+    "lat": 40.670703000003,
+    "lng": -73.937461500001,
+    "provider": "nys"
+  },
+  "1580 DEAN STREET, BROOKLYN, 11213, NY": {
+    "lat": 40.675896000003,
+    "lng": -73.934955000001,
+    "provider": "nys"
+  },
+  "87 BAY 49 STREET, BROOKLYN, 11214, NY": {
+    "lat": 40.587615000003,
+    "lng": -73.985656500001,
+    "provider": "nys"
+  },
+  "2360 BENSON AVE, BROOKLYN, 11214, NY": {
+    "lat": 40.597623000003,
+    "lng": -73.991727000001,
+    "provider": "nys"
+  },
+  "760 PROSPECT PLACE, BROOKLYN, 11216, NY": {
+    "lat": 40.674249000003,
+    "lng": -73.951326000001,
+    "provider": "nys"
+  },
+  "1391 BEDFORD AVE, BROOKLYN, 11216, NY": {
+    "lat": 40.675590000003,
+    "lng": -73.953126000001,
+    "provider": "nys"
+  },
+  "1275 FULTON STREET, BROOKLYN, 11216, NY": {
+    "lat": 40.680567000003,
+    "lng": -73.950327000001,
+    "provider": "nys"
+  },
+  "BETWEEN 7TH AVENUE STATION & PROSPECT PARK STATION, BROOKLYN, 11217, NY": {
+    "lat": 40.665699000003,
+    "lng": -73.975932000001,
+    "provider": "nys"
+  },
+  "450 PACIFIC STREET, BROOKLYN, 11217, NY": {
+    "lat": 40.685103000003,
+    "lng": -73.982632500001,
+    "provider": "nys"
+  },
+  "475 STATE STREET, BROOKLYN, 11217, NY": {
+    "lat": 40.685949000003,
+    "lng": -73.979937000001,
+    "provider": "nys"
+  },
+  "29 FT GREENE, BROOKLYN, 11217, NY": {
+    "lat": 40.688649000003,
+    "lng": -73.976719500001,
+    "provider": "nys"
+  },
+  "29 FT. GREENE PLACE, BROOKLYN, 11217, NY": {
+    "lat": 40.688649000003,
+    "lng": -73.976719500001,
+    "provider": "nys"
+  },
+  "182 BOND STREET, BROOKLYN, 11217, NY": {
+    "lat": 40.684104000003,
+    "lng": -73.987002000001,
+    "provider": "nys"
+  },
+  "244 BOND STREET, BROOKLYN, 11217, NY": {
+    "lat": 40.682142000003,
+    "lng": -73.988383500001,
+    "provider": "nys"
+  },
+  "423 ATLANTIC, BROOKLYN, 11217, NY": {
+    "lat": 40.686714000003,
+    "lng": -73.983816000001,
+    "provider": "nys"
+  },
+  "642 BALTIC STREET, BROOKLYN, 11217, NY": {
+    "lat": 40.680009000003,
+    "lng": -73.979820000001,
+    "provider": "nys"
+  },
+  "185 NEVINS STREET, BROOKLYN, 11217, NY": {
+    "lat": 40.682601000003,
+    "lng": -73.984441500001,
+    "provider": "nys"
+  },
+  "175 HOYT STREET, BROOKLYN, 11217, NY": {
+    "lat": 40.684923000003,
+    "lng": -73.988518500001,
+    "provider": "nys"
+  },
+  "91 SHERMAN STREET, BROOKLYN, 11218, NY": {
+    "lat": 40.656429000003,
+    "lng": -73.975239000001,
+    "provider": "nys"
+  },
+  "102 CORTELYOU ROAD, BROOKLYN, 11218, NY": {
+    "lat": 40.637844000003,
+    "lng": -73.978281000001,
+    "provider": "nys"
+  },
+  "36-58 DAHILL ROAD, BROOKLYN, 11218, NY": {
+    "lat": 40.646088000003,
+    "lng": -73.981336500001,
+    "provider": "nys"
+  },
+  "1366 39TH ST, BROOKLYN, 11218, NY": {
+    "lat": 40.639635000003,
+    "lng": -73.984891500001,
+    "provider": "nys"
+  },
+  "GREENPOINT TO CHURCH AVE STATIONS, BROOKLYN, 11218, NY": {
+    "lat": 40.644543613723,
+    "lng": -73.975287245268,
+    "provider": "nys"
+  },
+  "125 STUYVESANT AVENUE, BROOKLYN, 11221, NY": {
+    "lat": 40.691232000003,
+    "lng": -73.933528500001,
+    "provider": "nys"
+  },
+  "357 MARCUS GARVEY BLVD, BROOKLYN, 11221, NY": {
+    "lat": 40.684923000003,
+    "lng": -73.938280500001,
+    "provider": "nys"
+  },
+  "800 BUSHWICK AVENUE, BROOKLYN, 11221, NY": {
+    "lat": 40.694625000003,
+    "lng": -73.927764000001,
+    "provider": "nys"
+  },
+  "616 QUINCY STREET, BROOKLYN, 11221, NY": {
+    "lat": 40.688559000003,
+    "lng": -73.935414000001,
+    "provider": "nys"
+  },
+  "415 AVENUE S, BROOKLYN, 11223, NY": {
+    "lat": 40.602294000003,
+    "lng": -73.970086500001,
+    "provider": "nys"
+  },
+  "300 PUTNAM AVENUE, BROOKLYN, 11223, NY": {
+    "lat": 40.684059000003,
+    "lng": -73.948932000001,
+    "provider": "nys"
+  },
+  "2304 WEST 8TH STREET, BROOKLYN, 11223, NY": {
+    "lat": 40.591323000003,
+    "lng": -73.979833500001,
+    "provider": "nys"
+  },
+  "3178 BAYVIEW AVENUE, BROOKLYN, 11224, NY": {
+    "lat": 40.579164000003,
+    "lng": -73.998999000001,
+    "provider": "nys"
+  },
+  "191 MAPLE STREET, BROOKLYN, 11225, NY": {
+    "lat": 40.660704000003,
+    "lng": -73.954476000001,
+    "provider": "nys"
+  },
+  "49 CROWN STREET, BROOKLYN, 11225, NY": {
+    "lat": 40.667481000003,
+    "lng": -73.960285500001,
+    "provider": "nys"
+  },
+  "400 EMPIRE BOULEVARD, BROOKLYN, 11225, NY": {
+    "lat": 40.663899000003,
+    "lng": -73.948374000001,
+    "provider": "nys"
+  },
+  "99 EMPIRE BOULEVARD, BROOKLYN, 11225, NY": {
+    "lat": 40.663486006344,
+    "lng": -73.95883278483,
+    "provider": "nys"
+  },
+  "976 PRESIDENT STREET, BROOKLYN, 11225, NY": {
+    "lat": 40.669101000003,
+    "lng": -73.960524000001,
+    "provider": "nys"
+  },
+  "901 CLASSON AVENUE, BROOKLYN, 11225, NY": {
+    "lat": 40.669371000003,
+    "lng": -73.961874000001,
+    "provider": "nys"
+  },
+  "1150 CARROLL STREET, BROOKLYN, 11225, NY": {
+    "lat": 40.667148000003,
+    "lng": -73.951830000001,
+    "provider": "nys"
+  },
+  "267 RUTLAND RD, BROOKLYN, 11225, NY": {
+    "lat": 40.659444000003,
+    "lng": -73.951933500001,
+    "provider": "nys"
+  },
+  "330 CROWN STREET, BROOKLYN, 11225, NY": {
+    "lat": 40.666050000003,
+    "lng": -73.949215500001,
+    "provider": "nys"
+  },
+  "188 LINCOLN ROAD, BROOKLYN, 11225, NY": {
+    "lat": 40.661073000003,
+    "lng": -73.956402000001,
+    "provider": "nys"
+  },
+  "2218 BATCHELDER STREET, BROOKLYN, 11229, NY": {
+    "lat": 40.598010000003,
+    "lng": -73.938942000001,
+    "provider": "nys"
+  },
+  "3004 AVENUE V, BROOKLYN, 11229, NY": {
+    "lat": 40.598334000003,
+    "lng": -73.938199500001,
+    "provider": "nys"
+  },
+  "3117 AVENUE W, BROOKLYN, 11229, NY": {
+    "lat": 40.597155000003,
+    "lng": -73.934019000001,
+    "provider": "nys"
+  },
+  "2323 BATCHELDER STREET, BROOKLYN, 11229, NY": {
+    "lat": 40.595607000003,
+    "lng": -73.937718000001,
+    "provider": "nys"
+  },
+  "3663 NOSTRAND AVENUE, BROOKLYN, 11229, NY": {
+    "lat": 40.594716000003,
+    "lng": -73.939954500001,
+    "provider": "nys"
+  },
+  "2334 BATCHELDER ST, BROOKLYN, 11229, NY": {
+    "lat": 40.595526000003,
+    "lng": -73.938478500001,
+    "provider": "nys"
+  },
+  "1600 AVENUE L, BROOKLYN, 11230, NY": {
+    "lat": 40.620447000003,
+    "lng": -73.958989500001,
+    "provider": "nys"
+  },
+  "1120 EAST 10TH STREET, BROOKLYN, 11230, NY": {
+    "lat": 40.621572000003,
+    "lng": -73.965757500001,
+    "provider": "nys"
+  },
+  "1101 AVENUE J, BROOKLYN, 11230, NY": {
+    "lat": 40.624929000003,
+    "lng": -73.964911500001,
+    "provider": "nys"
+  },
+  "450 COLUMBIA STREET, BROOKLYN, 11231, NY": {
+    "lat": 40.676247000003,
+    "lng": -74.007567000001,
+    "provider": "nys"
+  },
+  "87 LORRAINE STREET, BROOKLYN, 11231, NY": {
+    "lat": 40.674483000003,
+    "lng": -74.006185500001,
+    "provider": "nys"
+  },
+  "149 RICHARDS STREET, BROOKLYN, 11231, NY": {
+    "lat": 40.676337000003,
+    "lng": -74.010667500001,
+    "provider": "nys"
+  },
+  "36 WEST 9TH STREET, BROOKLYN, 11231, NY": {
+    "lat": 40.676463000003,
+    "lng": -74.005569000001,
+    "provider": "nys"
+  },
+  "829 HICKS STREET, BROOKLYN, 11231, NY": {
+    "lat": 40.674501000003,
+    "lng": -74.005551000001,
+    "provider": "nys"
+  },
+  "39 CENTRE MALL, BROOKLYN, 11231, NY": {
+    "lat": 40.675788000003,
+    "lng": -74.005555500001,
+    "provider": "nys"
+  },
+  "161 BUSH STREET, BROOKLYN, 11231, NY": {
+    "lat": 40.674483000003,
+    "lng": -74.003008500001,
+    "provider": "nys"
+  },
+  "147 RICHARDS STREET, BROOKLYN, 11231, NY": {
+    "lat": 40.676454000003,
+    "lng": -74.010519000001,
+    "provider": "nys"
+  },
+  "795 HICKS STREET, BROOKLYN, 11231, NY": {
+    "lat": 40.675572000003,
+    "lng": -74.004741000001,
+    "provider": "nys"
+  },
+  "549-561 41ST STREET, BROOKLYN, 11232, NY": {
+    "lat": 40.649418000003,
+    "lng": -74.003404500001,
+    "provider": "nys"
+  },
+  "468 40TH STREET, BROOKLYN, 11232, NY": {
+    "lat": 40.650948000003,
+    "lng": -74.005078500001,
+    "provider": "nys"
+  },
+  "332 42ND STREET, BROOKLYN, 11232, NY": {
+    "lat": 40.651641000003,
+    "lng": -74.009272500001,
+    "provider": "nys"
+  },
+  "11 53RD STREET, BROOKLYN, 11232, NY": {
+    "lat": 40.650714000003,
+    "lng": -74.023929000001,
+    "provider": "nys"
+  },
+  "653 KINGSBOROUGH 6TH WALK, BROOKLYN, 11233, NY": {
+    "lat": 40.674780000003,
+    "lng": -73.922508000001,
+    "provider": "nys"
+  },
+  "121 SARATOGA AVENUE, BROOKLYN, 11233, NY": {
+    "lat": 40.682232000003,
+    "lng": -73.916811000001,
+    "provider": "nys"
+  },
+  "329 PATCHEN AVENUE, BROOKLYN, 11233, NY": {
+    "lat": 40.680009000003,
+    "lng": -73.924416000001,
+    "provider": "nys"
+  },
+  "342 BAINBRIDGE STREET, BROOKLYN, 11233, NY": {
+    "lat": 40.681593000003,
+    "lng": -73.923025500001,
+    "provider": "nys"
+  },
+  "326 BAINBRIDGE AVENUE, BROOKLYN, 11233, NY": {
+    "lat": 40.681251000003,
+    "lng": -73.923763500001,
+    "provider": "nys"
+  },
+  "2424 BATCHELDER STREET, BROOKLYN, 11235, NY": {
+    "lat": 40.593492000003,
+    "lng": -73.937799000001,
+    "provider": "nys"
+  },
+  "1720 SHEEPSHEAD BAY ROAD, BROOKLYN, 11235, NY": {
+    "lat": 40.585572000003,
+    "lng": -73.951762500001,
+    "provider": "nys"
+  },
+  "3000 AVENUE X, BROOKLYN, 11235, NY": {
+    "lat": 40.593726000003,
+    "lng": -73.936966500001,
+    "provider": "nys"
+  },
+  "2540 BATCHELDER STREET, BROOKLYN, 11235, NY": {
+    "lat": 40.590594000003,
+    "lng": -73.937610000001,
+    "provider": "nys"
+  },
+  "2525 HARING STREET, BROOKLYN, 11235, NY": {
+    "lat": 40.591395000003,
+    "lng": -73.939000500001,
+    "provider": "nys"
+  },
+  "103-07 FLATLANDS AVENUE, BROOKLYN, 11236, NY": {
+    "lat": 40.64137161441,
+    "lng": -73.904191121846,
+    "provider": "nys"
+  },
+  "106-09 GLENWOOD ROAD, BROOKLYN, 11236, NY": {
+    "lat": 40.646808000003,
+    "lng": -73.680781500001,
+    "provider": "nys"
+  },
+  "10515 FLATLANDS 3RD ST, BROOKLYN, 11236, NY": {
+    "lat": 40.644090000003,
+    "lng": -73.890058500001,
+    "provider": "nys"
+  },
+  "671 EAST 105TH STREET, BROOKLYN, 11236, NY": {
+    "lat": 40.649400000003,
+    "lng": -73.896327000001,
+    "provider": "nys"
+  },
+  "956 EAST 82 ST, BROOKLYN, 11236, NY": {
+    "lat": 40.635288000003,
+    "lng": -73.910731500001,
+    "provider": "nys"
+  },
+  "166 NORTH 12TH ST, BROOKLYN, 11249, NY": {
+    "lat": 40.720806000003,
+    "lng": -73.955268000001,
+    "provider": "nys"
+  },
+  "40-25 COLLEGE POINT BLVD., QUEENS, 11354, NY": {
+    "lat": 40.757409000003,
+    "lng": -73.833570000001,
+    "provider": "nys"
+  },
+  "132-05 AVERY AVENUE, QUEENS, 11355, NY": {
+    "lat": 40.752499009931,
+    "lng": -73.832088421482,
+    "provider": "nys"
+  },
+  "43-07 149TH ST, QUEENS, 11355, NY": {
+    "lat": 40.757879170374,
+    "lng": -73.813848786257,
+    "provider": "nys"
+  },
+  "131-38, QUEENS, 11355, NY": {
+    "lat": 40.751689500003,
+    "lng": -73.835824500001,
+    "provider": "nys"
+  },
+  "15-25 COLLEGE POINT BLVD, QUEENS, 11356, NY": {
+    "lat": 40.783338000003,
+    "lng": -73.845715500001,
+    "provider": "nys"
+  },
+  "13-20 124TH STREET, QUEENS, 11356, NY": {
+    "lat": 40.786459542916,
+    "lng": -73.843936524375,
+    "provider": "nys"
+  },
+  "MANOR ROAD, DOUGLASTON, 11363, NY": {
+    "lat": 40.776622155736,
+    "lng": -73.749572499446,
+    "provider": "nys"
+  },
+  "222-05 56TH AVENUE, BAYSIDE, 11364, NY": {
+    "lat": 40.753911119466,
+    "lng": -73.756732975098,
+    "provider": "nys"
+  },
+  "221-15 58 AVENUE, QUEENS, 11364, NY": {
+    "lat": 40.751190000003,
+    "lng": -73.757394000001,
+    "provider": "nys"
+  },
+  "61-15 OCEANIA STREET, QUEENS, 11364, NY": {
+    "lat": 40.744683000003,
+    "lng": -73.766992500001,
+    "provider": "nys"
+  },
+  "201-02 53RD AVENUE, QUEENS, 11364, NY": {
+    "lat": 40.748989864395,
+    "lng": -73.777249036114,
+    "provider": "nys"
+  },
+  "67- 24 PARSONS BLVD., QUEENS, 11365, NY": {
+    "lat": 40.733388000003,
+    "lng": -73.812082500001,
+    "provider": "nys"
+  },
+  "162-12 76TH AVE, QUEENS, 11366, NY": {
+    "lat": 40.725477000003,
+    "lng": -73.806124500001,
+    "provider": "nys"
+  },
+  "65-30 KISSENA BLVD, QUEENS, 11367, NY": {
+    "lat": 40.735863000003,
+    "lng": -73.815750000001,
+    "provider": "nys"
+  },
+  "70-29 KISSENA BLVD., QUEENS, 11367, NY": {
+    "lat": 40.730931000003,
+    "lng": -73.814638500001,
+    "provider": "nys"
+  },
+  "66-20 KISSENA BOULEVARD, FLUSHING, 11367, NY": {
+    "lat": 40.734963000003,
+    "lng": -73.816690500001,
+    "provider": "nys"
+  },
+  "131-21 NORTHERN BOULEVARD, QUEENS, 11368, NY": {
+    "lat": 40.775418000003,
+    "lng": -73.731042000001,
+    "provider": "nys"
+  },
+  "127-16 NORTHERN BLVD, QUEENS, 11368, NY": {
+    "lat": 40.761909000003,
+    "lng": -73.842993000001,
+    "provider": "nys"
+  },
+  "LA GUARDIA AIRPORT, QUEENS, 11371, NY": {
+    "lat": 40.771152538378,
+    "lng": -73.866333461344,
+    "provider": "nys"
+  },
+  "31-09 49TH STREET, QUEENS, 11377, NY": {
+    "lat": 40.757634287918,
+    "lng": -73.910073788732,
+    "provider": "nys"
+  },
+  "50-14 31ST AVENUE, QUEENS, 11377, NY": {
+    "lat": 40.756689000003,
+    "lng": -73.909485000001,
+    "provider": "nys"
+  },
+  "68-29 JAY AVENUE GARAGE, QUEENS, 11378, NY": {
+    "lat": 40.728942000003,
+    "lng": -73.896237000001,
+    "provider": "nys"
+  },
+  "68-29 JAY AVENUE REAR, QUEENS, 11378, NY": {
+    "lat": 40.728942000003,
+    "lng": -73.896237000001,
+    "provider": "nys"
+  },
+  "132-55 RIDGEDALE STREET, QUEENS, 11413, NY": {
+    "lat": 40.682025000003,
+    "lng": -73.753132500001,
+    "provider": "nys"
+  },
+  "162-27 85TH ST, QUEENS, 11414, NY": {
+    "lat": 40.652298000003,
+    "lng": -73.845693000001,
+    "provider": "nys"
+  },
+  "82-01 101ST AVENUE, QUEENS, 11416, NY": {
+    "lat": 40.681207934485,
+    "lng": -73.856998278963,
+    "provider": "nys"
+  },
+  "93-11 101 AVENUE, QUEENS, 11416, NY": {
+    "lat": 40.684005000003,
+    "lng": -73.847502000001,
+    "provider": "nys"
+  },
+  "203-17 HILLSIDE AVENUE, QUEENS, 11427, NY": {
+    "lat": 40.787919000003,
+    "lng": -73.731991500001,
+    "provider": "nys"
+  },
+  "230-17 HILLSIDE AVENUE, QUEENS, 11427, NY": {
+    "lat": 40.733694000003,
+    "lng": -73.738723500001,
+    "provider": "nys"
+  },
+  "92-96 220TH STREET, QUEENS, 11428, NY": {
+    "lat": 40.722918289156,
+    "lng": -73.736193296534,
+    "provider": "nys"
+  },
+  "102-12 216ST, QUEENS VILLAGE, 11429, NY": {
+    "lat": 40.713030000003,
+    "lng": -73.742796000001,
+    "provider": "nys"
+  },
+  "LIRR OVER VAN WYCK EXPRESSWAY, JAMAICA, 11430, NY": {
+    "lat": 40.675472690059,
+    "lng": -73.801761091514,
+    "provider": "nys"
+  },
+  "94-20 GUY BREWER R. BLDV, QUEENS, 11433, NY": {
+    "lat": 40.701816000003,
+    "lng": -73.796004000001,
+    "provider": "nys"
+  },
+  "108-35 167TH STREET, QUEENS, 11433, NY": {
+    "lat": 40.697239036889,
+    "lng": -73.787098472481,
+    "provider": "nys"
+  },
+  "132-31 BENNET CT, QUEENS, 11434, NY": {
+    "lat": 40.677912000003,
+    "lng": -73.761061500001,
+    "provider": "nys"
+  },
+  "83 AVENUE/QUEENS BLVD., QUEENS, 11435, NY": {
+    "lat": 40.706842453467,
+    "lng": -73.81688558572,
+    "provider": "nys"
+  },
+  "117-11 SUTPHIN BLVD, QUEENS, 11436, NY": {
+    "lat": 40.680234000003,
+    "lng": -73.791868500001,
+    "provider": "nys"
+  },
+  "56 CATHEDRAL AVENUE, GARDEN CITY, 11530, NY": {
+    "lat": 40.723398000003,
+    "lng": -73.642635000001,
+    "provider": "nys"
+  },
+  "1 EDUCATION DRIVE, GARDEN CITY, 11530, NY": {
+    "lat": 40.729824000003,
+    "lng": -73.592392500001,
+    "provider": "nys"
+  },
+  "ONE EDUCATIONAL DRIVE, GARDEN CITY, 11530, NY": {
+    "lat": 40.729824000003,
+    "lng": -73.592392500001,
+    "provider": "nys"
+  },
+  "10 SUNRISE HIGHWAY, ROCKVILLE CENTRE, 11570, NY": {
+    "lat": 40.656015000003,
+    "lng": -73.655761500001,
+    "provider": "nys"
+  },
+  "579 MERRICK ROAD, ROCKVILLE CENTRE, 11570, NY": {
+    "lat": 40.654476000003,
+    "lng": -73.631893500001,
+    "provider": "nys"
+  },
+  "ONE HEALTHY WAY, OCEANSIDE, 11572, NY": {
+    "lat": 40.651299000003,
+    "lng": -73.631070000001,
+    "provider": "nys"
+  },
+  "7-01 BAY 32 ST, QUEENS, 11691, NY": {
+    "lat": 40.600856922749,
+    "lng": -73.76807074249,
+    "provider": "nys"
+  },
+  "14-64 BEACH CHANNEL DRIVE, QUEENS, 11691, NY": {
+    "lat": 40.610322000003,
+    "lng": -73.753042500001,
+    "provider": "nys"
+  },
+  "385 NEW YORK 109, WEST BABYLON, 11704, NY": {
+    "lat": 40.728627096187,
+    "lng": -73.35343475367,
+    "provider": "nys"
+  },
+  "7 DAVE LANE, SOUTH SETAUKET, 11720, NY": {
+    "lat": 40.884138000003,
+    "lng": -73.085463000001,
+    "provider": "nys"
+  },
+  "545 CLAYTON STREET, CENTRAL ISLIP, 11722, NY": {
+    "lat": 40.787064000003,
+    "lng": -73.193454000001,
+    "provider": "nys"
+  },
+  "2530 BROAD HOLLOW ROAD, FARMINGDALE, 11735, NY": {
+    "lat": 40.733088607851,
+    "lng": -73.423449564699,
+    "provider": "nys"
+  },
+  "7140 REPUBLIC AIRPORT, FARMINGDALE, 11735, NY": {
+    "lat": 40.724856000003,
+    "lng": -73.419781500001,
+    "provider": "nys"
+  },
+  "815 BROAD HOLLOW ROAD, FARMINGDALE, 11735, NY": {
+    "lat": 40.731759000003,
+    "lng": -73.422076500001,
+    "provider": "nys"
+  },
+  "38 FLEETWOOD DR, FARMINGVILLE, 11738, NY": {
+    "lat": 40.836195000003,
+    "lng": -73.015177500001,
+    "provider": "nys"
+  },
+  "5 TALISMAN DRIVE, DIX HILLS, 11746, NY": {
+    "lat": 40.804011000003,
+    "lng": -73.331617500001,
+    "provider": "nys"
+  },
+  "1 CRAIG B. GARIEPY AVENUE, ISLIP TERRACE, 11752, NY": {
+    "lat": 40.747842000003,
+    "lng": -73.183617000001,
+    "provider": "nys"
+  },
+  "97 N. CEDAR STREET, MASSAPEQUA, 11758, NY": {
+    "lat": 40.701969000003,
+    "lng": -73.456902000001,
+    "provider": "nys"
+  },
+  "17 PLYMOUTH ROAD, MASSAPEQUA, 11758, NY": {
+    "lat": 40.671558000003,
+    "lng": -73.449004500001,
+    "provider": "nys"
+  },
+  "15 TOPAZ DR, LAKE RONKONKOMA, 11779, NY": {
+    "lat": 40.830714000003,
+    "lng": -73.079149500001,
+    "provider": "nys"
+  },
+  "132 HEALTH SCIENCE CENTER DRIVE, STONY BRROK, 11794, NY": {
+    "lat": 40.904133289526,
+    "lng": -73.114296503752,
+    "provider": "nys"
+  },
+  "126 HEALTH SCIENCE CENTER DRIVE, STONY BRROK, 11794, NY": {
+    "lat": 40.904134665258,
+    "lng": -73.114367697887,
+    "provider": "nys"
+  },
+  "23 EASTPORT MANOR ROAD, EASTPORT, 11941, NY": {
+    "lat": 40.827915000003,
+    "lng": -72.733635000001,
+    "provider": "nys"
+  },
+  "720 FRONT STREET, GREENPORT, 11944, NY": {
+    "lat": 41.101857000003,
+    "lng": -72.369400500001,
+    "provider": "nys"
+  },
+  "20 SOUTH VALLEY ROAD, HAMPTON BAYS, 11946, NY": {
+    "lat": 40.885848000003,
+    "lng": -72.487089000001,
+    "provider": "nys"
+  },
+  "248 MONTAUK HIGHWAY, HAMPTON BAYS, 11946, NY": {
+    "lat": 40.866993000003,
+    "lng": -72.548640000001,
+    "provider": "nys"
+  },
+  "1412 MONTAUK HWY, MASTIC, 11950, NY": {
+    "lat": 40.804740000003,
+    "lng": -72.848641500001,
+    "provider": "nys"
+  },
+  "114 EAST SHORE RD WEST, CAROGA LAKE, 12032, NY": {
+    "lat": 43.139610000003,
+    "lng": -74.485863000001,
+    "provider": "nys"
+  },
+  "1 TIGER CIRCLE, COHOES, 12047, NY": {
+    "lat": 42.774993000003,
+    "lng": -73.718991000001,
+    "provider": "nys"
+  },
+  "347 OLD LOUDEN RD, LATHAM, 12110, NY": {
+    "lat": 42.757938000003,
+    "lng": -73.752894000001,
+    "provider": "nys"
+  },
+  "15 RIDGE PLACE, LATHAM, 12110, NY": {
+    "lat": 42.751800000003,
+    "lng": -73.753006500001,
+    "provider": "nys"
+  },
+  "87 UPPER RD., MECHANICVILLE, 12118, NY": {
+    "lat": 42.959505620345,
+    "lng": -73.801690998662,
+    "provider": "nys"
+  },
+  "131 S THIRD ST, NORTHVILLE, 12134, NY": {
+    "lat": 43.224228000003,
+    "lng": -74.175804000001,
+    "provider": "nys"
+  },
+  "1450 CORLISS PARK, TROY, 12182, NY": {
+    "lat": 42.788241000003,
+    "lng": -73.664379000001,
+    "provider": "nys"
+  },
+  "1450 CORLISS PARK BUILDING, TROT, 12182, NY": {
+    "lat": 42.788241000003,
+    "lng": -73.664379000001,
+    "provider": "nys"
+  },
+  "325 WESTERN AVE., ALBANY, 12203, NY": {
+    "lat": 42.663681000003,
+    "lng": -73.781032500001,
+    "provider": "nys"
+  },
+  "46 ADIRONDACK STREET, ALBANY, 12203, NY": {
+    "lat": 42.670629000003,
+    "lng": -73.818207000001,
+    "provider": "nys"
+  },
+  "44 HOLLAND AVENUE, ALBANY, 12208, NY": {
+    "lat": 42.647859000003,
+    "lng": -73.774183500001,
+    "provider": "nys"
+  },
+  "1134 NEW SCOTLAND RD, ALBANY, 12208, NY": {
+    "lat": 42.649020000003,
+    "lng": -73.838974500001,
+    "provider": "nys"
+  },
+  "44 HOLLAND AVE, ALBANY, 12208, NY": {
+    "lat": 42.647859000003,
+    "lng": -73.774183500001,
+    "provider": "nys"
+  },
+  "1400 WASHINGTON AVE EXT., ALBANY, 12208, NY": {
+    "lat": 42.689511000003,
+    "lng": -73.820236500001,
+    "provider": "nys"
+  },
+  "2022 FERGUSON STREET, SCHENECTADY, 12303, NY": {
+    "lat": 42.776100000003,
+    "lng": -73.950093000001,
+    "provider": "nys"
+  },
+  "2072 CURRY ROAD, SCHENECTADY, 12303, NY": {
+    "lat": 42.775333824147,
+    "lng": -73.952783645602,
+    "provider": "nys"
+  },
+  "2240 CENTRAL AVENUE, SCHENECTADY, 12304, NY": {
+    "lat": 42.763914000003,
+    "lng": -73.886175000001,
+    "provider": "nys"
+  },
+  "500 BALLTOWN ROAD, SCHENECTADY, 12304, NY": {
+    "lat": 42.777792000003,
+    "lng": -73.893334500001,
+    "provider": "nys"
+  },
+  "116 MERILINA AVE, KINGSTON, 12401, NY": {
+    "lat": 41.933043000003,
+    "lng": -74.032996500001,
+    "provider": "nys"
+  },
+  "118 MERILINA AVE, KINGSTON, 12401, NY": {
+    "lat": 41.934663000003,
+    "lng": -74.031876000001,
+    "provider": "nys"
+  },
+  "67 WALL ST, KINGSTON, 12401, NY": {
+    "lat": 41.925969000003,
+    "lng": -74.014911000001,
+    "provider": "nys"
+  },
+  "90 QUARRY ROAD, CATSTKILL, 12414, NY": {
+    "lat": 42.311215763801,
+    "lng": -73.905162351974,
+    "provider": "nys"
+  },
+  "18 STACK DRIVE, BEACON, 12508, NY": {
+    "lat": 41.523588000003,
+    "lng": -73.948972500001,
+    "provider": "nys"
+  },
+  "360 SHORE ROAD, CORNWALL, 12518, NY": {
+    "lat": 41.453091000003,
+    "lng": -74.019991500001,
+    "provider": "nys"
+  },
+  "314 MOUNTAIN RD, CORNWALL-ON-HUDSON, 12520, NY": {
+    "lat": 41.423166000003,
+    "lng": -74.012454000001,
+    "provider": "nys"
+  },
+  "64 OLD BALMVILLE RD, NEWBURGH, 12550, NY": {
+    "lat": 41.529429000003,
+    "lng": -74.014105500001,
+    "provider": "nys"
+  },
+  "19 WOODLAND PATH, QUEENSBURY, 12804, NY": {
+    "lat": 43.297893000003,
+    "lng": -73.710108000001,
+    "provider": "nys"
+  },
+  "INTERSTATE 87 NB BRIDGE OVER E. SCHROON RIVER ROAD, LAKE GEORGE, 12824, NY": {
+    "lat": 43.517019461426,
+    "lng": -73.744897045577,
+    "provider": "nys"
+  },
+  "INTERSTATE 87 SB BRIDGE OVER LAMB HILL ROAD, BOLTON, 12824, NY": {
+    "lat": 43.540765398881,
+    "lng": -73.730502030004,
+    "provider": "nys"
+  },
+  "82 CHURCH STREET, GRANVILLE, 12832, NY": {
+    "lat": 43.399449000003,
+    "lng": -73.259869500001,
+    "provider": "nys"
+  },
+  "529 TOM MILLER ROAD, PLATTSBURGH, 12901, NY": {
+    "lat": 44.704350000003,
+    "lng": -73.526958000001,
+    "provider": "nys"
+  },
+  "SUNY PLATTSBURGH, PLATTSBURGH, 12901, NY": {
+    "lat": 44.657432625915,
+    "lng": -73.441155854843,
+    "provider": "nys"
+  },
+  "101 BROAD ST, PLATTSBURGH, 12901, NY": {
+    "lat": 44.694477000003,
+    "lng": -73.466059500001,
+    "provider": "nys"
+  },
+  "101 BROAD ST., PLATTSBURGH, 12901, NY": {
+    "lat": 44.694477000003,
+    "lng": -73.466059500001,
+    "provider": "nys"
+  },
+  "33 PULASKI ST, AUBURN, 13021, NY": {
+    "lat": 42.941142000003,
+    "lng": -76.573620000001,
+    "provider": "nys"
+  },
+  "135 STATE ST, AUBURN, 13021, NY": {
+    "lat": 42.935409000003,
+    "lng": -76.571014500001,
+    "provider": "nys"
+  },
+  "737 NYS ROUTE 49, CLEVELAND, 13048, NY": {
+    "lat": 43.228116000003,
+    "lng": -75.838009500001,
+    "provider": "nys"
+  },
+  "62 SOUTH STREET, MORRISVILLE, 13048, NY": {
+    "lat": 42.894286227948,
+    "lng": -75.638689953416,
+    "provider": "nys"
+  },
+  "483 BAY ST, FAIR HAVEN, 13064, NY": {
+    "lat": 43.314741000003,
+    "lng": -76.710411000001,
+    "provider": "nys"
+  },
+  "723 WEST ONONDAGA, MANLIUS, 13066, NY": {
+    "lat": 42.9962056,
+    "lng": -75.9887857,
+    "provider": "nominatim"
+  },
+  "5100 HIGHBRIDGE STREET, FAYETTEVILLE, 13066, NY": {
+    "lat": 43.016895000003,
+    "lng": -76.007731500001,
+    "provider": "nys"
+  },
+  "4819 SALINA ST, PULSAKI, 13142, NY": {
+    "lat": 43.565679606382,
+    "lng": -76.126878469901,
+    "provider": "nys"
+  },
+  "2416 MOSHER ROAD, SCIPIO CENTER, 13147, NY": {
+    "lat": 42.824853000003,
+    "lng": -76.580374500001,
+    "provider": "nys"
+  },
+  "26 EAST GENESEE ST., SKANEATELES, 13152, NY": {
+    "lat": 42.945597000003,
+    "lng": -76.428454500001,
+    "provider": "nys"
+  },
+  "129 WOODBURY AVENUE, SYRACUSE, 13206, NY": {
+    "lat": 43.076178000003,
+    "lng": -76.122225000001,
+    "provider": "nys"
+  },
+  "614 S. CROUSE AVE #200, SYRACUSE, 13210, NY": {
+    "lat": 43.043778000003,
+    "lng": -76.137223500001,
+    "provider": "nys"
+  },
+  "100 RESERVOIR ROAD, HERKIMER, 13350, NY": {
+    "lat": 43.031988000003,
+    "lng": -75.008043000001,
+    "provider": "nys"
+  },
+  "501 SOUTH WASHINGTON ST, HERKIMER, 13350, NY": {
+    "lat": 43.020027000003,
+    "lng": -74.980084500001,
+    "provider": "nys"
+  },
+  "6468 TILLMAN RD, LOWVILLE, 13367, NY": {
+    "lat": 43.836750000003,
+    "lng": -75.422218500001,
+    "provider": "nys"
+  },
+  "7765 WAGNER RD, LOWVILLE, 13367, NY": {
+    "lat": 43.837686000003,
+    "lng": -75.417867000001,
+    "provider": "nys"
+  },
+  "1 REVERE PARK, ROME, 13440, NY": {
+    "lat": 43.207438190093,
+    "lng": -75.432134972671,
+    "provider": "nys"
+  },
+  "720 RAILROAD ST., ROME, 13440, NY": {
+    "lat": 43.204761000003,
+    "lng": -75.443440500001,
+    "provider": "nys"
+  },
+  "290 THOMPSON BLVD., WATERTOWN, 13601, NY": {
+    "lat": 43.960491000003,
+    "lng": -75.902746500001,
+    "provider": "nys"
+  },
+  "44 PIERREPONT AVE, POTSDAM, 13676, NY": {
+    "lat": 44.663787000003,
+    "lng": -74.978415000001,
+    "provider": "nys"
+  },
+  "9 CANAL STREET, POTSDAM, 13676, NY": {
+    "lat": 44.673696000003,
+    "lng": -74.988711000001,
+    "provider": "nys"
+  },
+  "CLIFTON FINE HOSPITAL, STAR LAKE, 13690, NY": {
+    "lat": 44.1623031,
+    "lng": -75.0564134,
+    "provider": "nominatim"
+  },
+  "1 ACADEMY STREET, CANDOR, 13743, NY": {
+    "lat": 42.229017000003,
+    "lng": -76.337149500001,
+    "provider": "nys"
+  },
+  "SUNY MAIN ROAD 1, DELHI, 13753, NY": {
+    "lat": 42.266403000003,
+    "lng": -74.922268500001,
+    "provider": "nys"
+  },
+  "14784 NY-30, DOWNSVILLE, 13755, NY": {
+    "lat": 42.077646000003,
+    "lng": -74.998066500001,
+    "provider": "nys"
+  },
+  "205 WOODLAWN DR, VESTAL, 13850, NY": {
+    "lat": 42.085818000003,
+    "lng": -76.045878000001,
+    "provider": "nys"
+  },
+  "729 MAIN ST, VESTAL, 13850, NY": {
+    "lat": 42.077529000003,
+    "lng": -76.051260000001,
+    "provider": "nys"
+  },
+  "700 ELLICOTT ST, BATAVIA, 14020, NY": {
+    "lat": 42.982812000003,
+    "lng": -78.166458000001,
+    "provider": "nys"
+  },
+  "127 NORTH STREET, BATAVIA, 14020, NY": {
+    "lat": 43.005078000003,
+    "lng": -78.176596500001,
+    "provider": "nys"
+  },
+  "10355 MAIN ST, CLARENCE, 14031, NY": {
+    "lat": 42.978942000003,
+    "lng": -78.603615000001,
+    "provider": "nys"
+  },
+  "8750 ALLEGANY ROAD, PEMBROKE, 14036, NY": {
+    "lat": 42.990903000003,
+    "lng": -78.404359500001,
+    "provider": "nys"
+  },
+  "58 ALLEGHANY ROAD, CORFU, 14036, NY": {
+    "lat": 42.961275000003,
+    "lng": -78.406744500001,
+    "provider": "nys"
+  },
+  "58 ALLEGHANY ROAD, PEMBROKE, 14036, NY": {
+    "lat": 42.961275000003,
+    "lng": -78.406744500001,
+    "provider": "nys"
+  },
+  "350 UPPER MOUNTAIN RAOD, LOCKPORT, 14094, NY": {
+    "lat": 43.169256000003,
+    "lng": -78.731986500001,
+    "provider": "nys"
+  },
+  "384 EAST AVENUE, LOCKPORT, 14094, NY": {
+    "lat": 43.174656000003,
+    "lng": -78.674989500001,
+    "provider": "nys"
+  },
+  "491 HIGH ST, LOCKPORT, 14094, NY": {
+    "lat": 43.163055000003,
+    "lng": -78.677959500001,
+    "provider": "nys"
+  },
+  "160 PASSAIC AVENUE, LOCKPORT, 14094, NY": {
+    "lat": 43.174539000003,
+    "lng": -78.705832500001,
+    "provider": "nys"
+  },
+  "41 W. TUPPER ST, BUFFALO, 14202, NY": {
+    "lat": 42.893739000003,
+    "lng": -78.873583500001,
+    "provider": "nys"
+  },
+  "ONE M&T PLAZA, BUFFALO, 14203, NY": {
+    "lat": 42.883703541329,
+    "lng": -78.874051504,
+    "provider": "nys"
+  },
+  "1836 BROADWAY, BUFFALO, 14212, NY": {
+    "lat": 42.900192000003,
+    "lng": -78.804369000001,
+    "provider": "nys"
+  },
+  "468 EMSILE RD., BUFFALO, 14212, NY": {
+    "lat": 42.889263588886,
+    "lng": -78.848954066306,
+    "provider": "nys"
+  },
+  "115 HERMAN ST, BUFFALO, 14212, NY": {
+    "lat": 42.895098000003,
+    "lng": -78.844387500001,
+    "provider": "nys"
+  },
+  "684 GRANT ST, BUFFLO, 14213, NY": {
+    "lat": 42.932763000003,
+    "lng": -78.889005000001,
+    "provider": "nys"
+  },
+  "1 ROBERT RICH WAY, BUFFALO, 14213, NY": {
+    "lat": 42.915128704304,
+    "lng": -78.902656265927,
+    "provider": "nys"
+  },
+  "1500 MAPLE EAST ROAD, WILLIAMSVILLE, 14221, NY": {
+    "lat": 42.991176798723,
+    "lng": -78.733214548933,
+    "provider": "census"
+  },
+  "250 N. FOREST ROAD, WILLIAMSVILLE, 14221, NY": {
+    "lat": 42.967485000003,
+    "lng": -78.760426500001,
+    "provider": "nys"
+  },
+  "46 DAN TROY DRIVE, WILLIMASVILLE, 14221, NY": {
+    "lat": 42.989116627858,
+    "lng": -78.73499017749,
+    "provider": "nys"
+  },
+  "325 WALDEN AVE, BUFFALO, 14221, NY": {
+    "lat": 42.903261000003,
+    "lng": -78.823939500001,
+    "provider": "nys"
+  },
+  "1400 MILLERSPORT HIGHWAY, BUFFALO, 14221, NY": {
+    "lat": 42.989382000003,
+    "lng": -78.791328000001,
+    "provider": "nys"
+  },
+  "28 AMHERSTON DR., WILLIAMSVILLE, 14221, NY": {
+    "lat": 42.964631111169,
+    "lng": -78.708732336941,
+    "provider": "nys"
+  },
+  "80 DEVILLE CIRCLE, BUFFALO, 14221, NY": {
+    "lat": 42.981012000003,
+    "lng": -78.755818500001,
+    "provider": "nys"
+  },
+  "300 BROMPTON ROAD, WILLIAMSVILLE, 14221, NY": {
+    "lat": 42.974775000003,
+    "lng": -78.709036500001,
+    "provider": "nys"
+  },
+  "5057 COUNTY ROAD 16, CANANDIAGUA, 14424, NY": {
+    "lat": 42.776523000003,
+    "lng": -77.319103500001,
+    "provider": "nys"
+  },
+  "4262 LINCOLNWOOD DRIVE, CANANDIAGUA, 14424, NY": {
+    "lat": 42.81742735383,
+    "lng": -77.261527875894,
+    "provider": "nys"
+  },
+  "5625 BUNNELL RD, CANANDAIGUA, 14424, NY": {
+    "lat": 42.819399000003,
+    "lng": -77.330092500001,
+    "provider": "nys"
+  },
+  "119 EASTERN BLVD, CANANDIAGUA, 14424, NY": {
+    "lat": 42.877854097096,
+    "lng": -77.264788338877,
+    "provider": "nys"
+  },
+  "3985 STATE ROUTE 5, CANANDIAGUA, 14424, NY": {
+    "lat": 42.871240955013,
+    "lng": -77.237969966259,
+    "provider": "nys"
+  },
+  "10 CLYDE ROAD, LYONS, 14489, NY": {
+    "lat": 43.064370000003,
+    "lng": -76.984546500001,
+    "provider": "nys"
+  },
+  "22 SHULER STREET, LYONS, 14489, NY": {
+    "lat": 43.059006000003,
+    "lng": -76.990545000001,
+    "provider": "nys"
+  },
+  "1190 NY 21, MANCHESTER, 14504, NY": {
+    "lat": 42.978796489316,
+    "lng": -77.225661171635,
+    "provider": "nys"
+  },
+  "30 BONADONNA AVE, MT. MORRIS, 14510, NY": {
+    "lat": 42.713073000003,
+    "lng": -77.874363000001,
+    "provider": "nys"
+  },
+  "102 HOPE AVE., NEWARK, 14513, NY": {
+    "lat": 43.042725000003,
+    "lng": -77.110227000001,
+    "provider": "nys"
+  },
+  "EASTMAN SCHOOL OF MUSIC, ROCHESTER, 14604, NY": {
+    "lat": 43.157479,
+    "lng": -77.6011308,
+    "provider": "nominatim"
+  },
+  "100 BORINQUEN PLAZA, ROCHESTER, 14605, NY": {
+    "lat": 43.170651000003,
+    "lng": -77.612593500001,
+    "provider": "nys"
+  },
+  "13 VIENNA STREET, ROCHESTER, 14605, NY": {
+    "lat": 43.169175000003,
+    "lng": -77.606352000001,
+    "provider": "nys"
+  },
+  "GENERAL MOTORS COMPONENTS HOLDINGS, ROCHESTER, 14606, NY": {
+    "lat": 43.1815829,
+    "lng": -77.6563837,
+    "provider": "nominatim"
+  },
+  "L3HARRIS TECHNOLOGIES, ROCHESTER, 14606, NY": {
+    "lat": 43.175036487554,
+    "lng": -77.621636017214,
+    "provider": "nys"
+  },
+  "1356 LYELL AVE, ROCHESTER, 14606, NY": {
+    "lat": 43.164723295702,
+    "lng": -77.661228163146,
+    "provider": "nys"
+  },
+  "178 WILDWOOD DR., ROCHESTER,, 14616, NY": {
+    "lat": 43.228278000003,
+    "lng": -77.651343000001,
+    "provider": "nys"
+  },
+  "4 VELLEY BROOK CIRCLE, ROCHESTER, 14616, NY": {
+    "lat": 43.233651000003,
+    "lng": -77.640484500001,
+    "provider": "nys"
+  },
+  "1119 JOSEPH AVENUE, ROCHESTER, 14621, NY": {
+    "lat": 43.185951000003,
+    "lng": -77.608642500001,
+    "provider": "nys"
+  },
+  "ROCHESTER GENERAL HOSPITAL, ROCHESTER, 14621, NY": {
+    "lat": 43.194005580196,
+    "lng": -77.586725373585,
+    "provider": "nys"
+  },
+  "WILSON CENTER, ROCHESTER, 14621, NY": {
+    "lat": 43.168810361452,
+    "lng": -77.600223537187,
+    "provider": "nys"
+  },
+  "LAKE AVE., ROCHESTER, 14621, NY": {
+    "lat": 43.233393741519,
+    "lng": -77.62496266014,
+    "provider": "nys"
+  },
+  "145 MIDLAND AVE, ROCHESTER, 14621, NY": {
+    "lat": 43.185204000003,
+    "lng": -77.579604000001,
+    "provider": "nys"
+  },
+  "47 LOOMIS ST, ROCHESTER, 14621, NY": {
+    "lat": 43.177338000003,
+    "lng": -77.606883000001,
+    "provider": "nys"
+  },
+  "262 HUTCHINSON RD, ROCHESTER, 14627, NY": {
+    "lat": 43.126722000003,
+    "lng": -77.629140000001,
+    "provider": "nys"
+  },
+  "601 ELMWOOD AVE, ROCHESTER, 14642, NY": {
+    "lat": 43.122915000003,
+    "lng": -77.624307000001,
+    "provider": "nys"
+  },
+  "1669 LAKE AVE, ROCHESTER, 14652, NY": {
+    "lat": 43.197525000003,
+    "lng": -77.628600000001,
+    "provider": "nys"
+  },
+  "1669 LAKE AVE., ROCHESTER, 14652, NY": {
+    "lat": 43.197525000003,
+    "lng": -77.628600000001,
+    "provider": "nys"
+  },
+  "LINCOLN ELEMENTARY SCHOOL, JAMESTOWN, 14701, NY": {
+    "lat": 42.0917346,
+    "lng": -79.2540886,
+    "provider": "nominatim"
+  },
+  "106 N. PORTAGE RD, WESTFIELD, 14787, NY": {
+    "lat": 42.326849116513,
+    "lng": -79.582579050386,
+    "provider": "nys"
+  },
+  "WELCH FIELD-POOL HOUSE - 3RD AND UNION STREET, WESTFIELD, 14787, NY": {
+    "lat": 42.317757000003,
+    "lng": -79.572514500001,
+    "provider": "nys"
+  },
+  "100 N PORTAGE ST, WESTFIELD, 14787, NY": {
+    "lat": 42.326028000003,
+    "lng": -79.582734000001,
+    "provider": "nys"
+  },
+  "10 UPPER COLLEGE DRIVE, ALFRED, 14802, NY": {
+    "lat": 42.258375000003,
+    "lng": -77.795806500001,
+    "provider": "nys"
+  },
+  "1430 RYAN RD, ALMOND, 14804, NY": {
+    "lat": 42.331770000003,
+    "lng": -77.804473500001,
+    "provider": "nys"
+  },
+  "17 OLIVER ST, AVOCA, 14809, NY": {
+    "lat": 42.411843000003,
+    "lng": -77.416362000001,
+    "provider": "nys"
+  },
+  "76 VETERANS AVE, BATH, 14810, NY": {
+    "lat": 42.343776000003,
+    "lng": -77.347309500001,
+    "provider": "nys"
+  },
+  "340 TOWER RD., ITHACA, 14853, NY": {
+    "lat": 42.447870000003,
+    "lng": -76.474071000001,
+    "provider": "nys"
+  },
+  "198 WING DRIVE, ITHACA, 14853, NY": {
+    "lat": 42.447321000003,
+    "lng": -76.472131500001,
+    "provider": "nys"
+  },
+  "113 HO PLAZA, ITHACA, 14853, NY": {
+    "lat": 42.445773000003,
+    "lng": -76.484565000001,
+    "provider": "nys"
+  },
+  "4177 MIAN STREET, MILLPORT, 14864, NY": {
+    "lat": 42.259401000003,
+    "lng": -76.835506500001,
+    "provider": "nys"
+  },
+  "108 NORTH CATHERINE ST, MONTOUR FALLS, 14865, NY": {
+    "lat": 42.347691000003,
+    "lng": -76.845010500001,
+    "provider": "nys"
+  },
+  "100 W CHEMUNG ST, PAINTED POST, 14870, NY": {
+    "lat": 42.157368000003,
+    "lng": -77.089441500001,
+    "provider": "nys"
+  },
+  "3162 SWAMP COLLEGE ROAD, TRUMANSBURG, 14886, NY": {
+    "lat": 42.510294000003,
+    "lng": -76.623223500001,
+    "provider": "nys"
   }
 }

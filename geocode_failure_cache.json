@@ -322,5 +322,149 @@
     ],
     "failedAt": "2026-05-28T01:38:31.280Z",
     "cacheVersion": 1
+  },
+  "BUILDING 49, JFK INTERNATIONAL AIRPORT, JAMAICA, 11430, NY": {
+    "providers": [
+      "nys",
+      "census",
+      "nominatim"
+    ],
+    "failedAt": "2026-05-29T01:47:01.747Z",
+    "cacheVersion": 1
+  },
+  "JFK AIRPORT TERMINAL 6, QUEENS, 11430, NY": {
+    "providers": [
+      "nys",
+      "census",
+      "nominatim"
+    ],
+    "failedAt": "2026-05-29T01:47:05.082Z",
+    "cacheVersion": 1
+  },
+  "SOUTH HARDSTAND (OFF SERVICE ROAD), JFK AIRPORT, JAMAICA, 11430, NY": {
+    "providers": [
+      "nys",
+      "census",
+      "nominatim"
+    ],
+    "failedAt": "2026-05-29T01:47:08.350Z",
+    "cacheVersion": 1
+  },
+  "JFK INTERNATIONAL AIRPORT, JAMAICA, 11430, NY": {
+    "providers": [
+      "nys",
+      "census",
+      "nominatim"
+    ],
+    "failedAt": "2026-05-29T01:47:11.601Z",
+    "cacheVersion": 1
+  },
+  "ERIE BLVD HYDROPOWER LP, GANSEVOORT, 12831, NY": {
+    "providers": [
+      "nys",
+      "census",
+      "nominatim"
+    ],
+    "failedAt": "2026-05-29T01:47:32.653Z",
+    "cacheVersion": 1
+  },
+  "CVPH - R BUILDING, PLATTSBURGH, 12901, NY": {
+    "providers": [
+      "nys",
+      "census",
+      "nominatim"
+    ],
+    "failedAt": "2026-05-29T01:47:37.366Z",
+    "cacheVersion": 1
+  },
+  "PLATTSBURGH CITY SCHOOL DISTRICT, PLATTSBURGH, 12901, NY": {
+    "providers": [
+      "nys",
+      "census",
+      "nominatim"
+    ],
+    "failedAt": "2026-05-29T01:47:42.223Z",
+    "cacheVersion": 1
+  },
+  "U.S.A.F. ROME RESEARCH SITE, ROME, 13441, NY": {
+    "providers": [
+      "nys",
+      "census",
+      "nominatim"
+    ],
+    "failedAt": "2026-05-29T01:47:53.793Z",
+    "cacheVersion": 1
+  },
+  "EVERGREEN PARK APARTMENTS, POTSDAM, 13676, NY": {
+    "providers": [
+      "nys",
+      "census",
+      "nominatim"
+    ],
+    "failedAt": "2026-05-29T01:47:58.943Z",
+    "cacheVersion": 1
+  },
+  "4231 STATE HIGWAY 3, STAR LAKE, 13690, NY": {
+    "providers": [
+      "nys",
+      "census",
+      "nominatim"
+    ],
+    "failedAt": "2026-05-29T01:48:05.574Z",
+    "cacheVersion": 1
+  },
+  "FF THOMPSON HOSPITAL, CANAN, 14424, NY": {
+    "providers": [
+      "nys",
+      "census",
+      "nominatim"
+    ],
+    "failedAt": "2026-05-29T01:48:17.959Z",
+    "cacheVersion": 1
+  },
+  "WAYNE COUNTY CLERK'S BUILDING, LYONS, 14489, NY": {
+    "providers": [
+      "nys",
+      "census",
+      "nominatim"
+    ],
+    "failedAt": "2026-05-29T01:48:23.317Z",
+    "cacheVersion": 1
+  },
+  "THE ARC WAYNE, NEWARK, 14513, NY": {
+    "providers": [
+      "nys",
+      "census",
+      "nominatim"
+    ],
+    "failedAt": "2026-05-29T01:48:28.643Z",
+    "cacheVersion": 1
+  },
+  "ROC RIVERSIDE CONVENTION CENTER, ROCHESTER, 14604, NY": {
+    "providers": [
+      "nys",
+      "census",
+      "nominatim"
+    ],
+    "failedAt": "2026-05-29T01:48:32.460Z",
+    "cacheVersion": 1
+  },
+  "U OF R - MELIORA HALL, ROCHESTER, 14642, NY": {
+    "providers": [
+      "nys",
+      "census",
+      "nominatim"
+    ],
+    "failedAt": "2026-05-29T01:48:42.984Z",
+    "cacheVersion": 1
+  },
+  "JAMESTOWN CITY SCHOOLS, JAMESTOWN, 14701, NY": {
+    "providers": [
+      "nys",
+      "census",
+      "nominatim"
+    ],
+    "failedAt": "2026-05-29T01:48:47.273Z",
+    "cacheVersion": 1
   }
 }

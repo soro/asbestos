@@ -466,5 +466,23 @@
     ],
     "failedAt": "2026-05-29T01:48:47.273Z",
     "cacheVersion": 1
+  },
+  "BETWEEN SHEEPSHEAD BAY STATION & BRIGHTON BEACH STATION, BROOKLYN, 11235, NY": {
+    "providers": [
+      "nys",
+      "census",
+      "nominatim"
+    ],
+    "failedAt": "2026-05-30T01:39:05.936Z",
+    "cacheVersion": 1
+  },
+  "ROUTE 31, OGDEN, 14559, NY": {
+    "providers": [
+      "nys",
+      "census",
+      "nominatim"
+    ],
+    "failedAt": "2026-05-30T01:39:18.708Z",
+    "cacheVersion": 1
   }
 }

@@ -27649,5 +27649,90 @@
     "lat": 42.090903000003,
     "lng": -76.816939500001,
     "provider": "nys"
+  },
+  "MANHATTAN PLAZA TUNNEL, MANHATTAN, 10006, NY": {
+    "lat": 40.709898554084,
+    "lng": -73.991957043045,
+    "provider": "nys"
+  },
+  "612 EAST 13TH STREET, MANHATTAN, 10009, NY": {
+    "lat": 40.728619170425,
+    "lng": -73.978362473853,
+    "provider": "nys"
+  },
+  "270 EAST 167TH STREET, BRONX, 10456, NY": {
+    "lat": 40.832460000003,
+    "lng": -73.913940000001,
+    "provider": "nys"
+  },
+  "2790 SCHLEY AVENUE, BRONX, 10465, NY": {
+    "lat": 40.822497000003,
+    "lng": -73.824160500001,
+    "provider": "nys"
+  },
+  "1815 BRUCKNER AVENUE, BRONX, 10472, NY": {
+    "lat": 40.826502000003,
+    "lng": -73.864341000001,
+    "provider": "nys"
+  },
+  "1836 WATSON AVENUE, BRONX, 10472, NY": {
+    "lat": 40.826916000003,
+    "lng": -73.863675000001,
+    "provider": "nys"
+  },
+  "506 N MIDLAND AVE, NYACK, 10960, NY": {
+    "lat": 41.108418000003,
+    "lng": -73.921239000001,
+    "provider": "nys"
+  },
+  "118 STERLING PLACE, BROOKLYN, 11217, NY": {
+    "lat": 40.677318000003,
+    "lng": -73.974537000001,
+    "provider": "nys"
+  },
+  "1925 ORIENTAL BLVD, BROOKLYN, 11235, NY": {
+    "lat": 40.578876000003,
+    "lng": -73.934500500001,
+    "provider": "nys"
+  },
+  "16 AVIS DR, LATHAM, 12110, NY": {
+    "lat": 42.751017000003,
+    "lng": -73.776631500001,
+    "provider": "nys"
+  },
+  "1821 ALTAMONT AVENUE, SCHENECTADY, 12303, NY": {
+    "lat": 42.781680000003,
+    "lng": -73.952842500001,
+    "provider": "nys"
+  },
+  "114 MONTCALM STREET, TICONDEROGA, 12883, NY": {
+    "lat": 43.848324000003,
+    "lng": -73.423791000001,
+    "provider": "nys"
+  },
+  "729 DAVIDSON STREET, WATERTOWN, 13601, NY": {
+    "lat": 43.985421000003,
+    "lng": -75.908673000001,
+    "provider": "nys"
+  },
+  "SUNY COLLEGE POTSDAM, POTSDAM, 13676, NY": {
+    "lat": 44.661926383732,
+    "lng": -74.973699439919,
+    "provider": "nys"
+  },
+  "209 CLAYTON AVE. #2492, VESTAL, 13850, NY": {
+    "lat": 42.085386000003,
+    "lng": -76.048605000001,
+    "provider": "nys"
+  },
+  "337 JONES ROAD, VESTAL, 13850, NY": {
+    "lat": 42.063777000003,
+    "lng": -76.044510000001,
+    "provider": "nys"
+  },
+  "624 CLINTON STREET, BUFFALO, 14210, NY": {
+    "lat": 42.881625000003,
+    "lng": -78.851223000001,
+    "provider": "nys"
   }
 }

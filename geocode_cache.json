@@ -27734,5 +27734,190 @@
     "lat": 42.881625000003,
     "lng": -78.851223000001,
     "provider": "nys"
+  },
+  "83 CHAMBERS STREET, MANHATTAN, 10007, NY": {
+    "lat": 40.714623000003,
+    "lng": -74.007004500001,
+    "provider": "nys"
+  },
+  "10701 AVENUE D, BROOKLYN, 10013, NY": {
+    "lat": 40.655070000003,
+    "lng": -73.900575000001,
+    "provider": "nys"
+  },
+  "675 HUDSON STREET, NEW YORK, 10014, NY": {
+    "lat": 40.740408000003,
+    "lng": -74.005411500001,
+    "provider": "nys"
+  },
+  "263 WEST END AVENUE, NEW YORK, 10023, NY": {
+    "lat": 40.780089000003,
+    "lng": -73.984500000001,
+    "provider": "nys"
+  },
+  "54 RIVERSIDE DRIVE, NEW YORK, 10024, NY": {
+    "lat": 40.784121000003,
+    "lng": -73.982970000001,
+    "provider": "nys"
+  },
+  "206 W 92ND STREET, NEW YORK, 10025, NY": {
+    "lat": 40.791726000003,
+    "lng": -73.972989000001,
+    "provider": "nys"
+  },
+  "1049 PARK AVENUE, NEW YORK, 10028, NY": {
+    "lat": 40.780548000003,
+    "lng": -73.956631500001,
+    "provider": "nys"
+  },
+  "120 EAST END AVENUE, NEW YORK, 10028, NY": {
+    "lat": 40.774482000003,
+    "lng": -73.945521000001,
+    "provider": "nys"
+  },
+  "385 5TH AVENUE, NEW YORK, 10029, NY": {
+    "lat": 40.749534000003,
+    "lng": -73.983546000001,
+    "provider": "nys"
+  },
+  "219 EAST 109TH STREET, NEW YORK, 10029, NY": {
+    "lat": 40.793094000003,
+    "lng": -73.942006500001,
+    "provider": "nys"
+  },
+  "1850 LEXINGTON AVENUE, NEW YORK, 10029, NY": {
+    "lat": 40.797657000003,
+    "lng": -73.942650000001,
+    "provider": "nys"
+  },
+  "1131 LEXINGTON AVENUE, NEW YORK, 10075, NY": {
+    "lat": 40.774563000003,
+    "lng": -73.959012000001,
+    "provider": "nys"
+  },
+  "1133 LEXINGTON AVE, NEW YORK, 10075, NY": {
+    "lat": 40.774608000003,
+    "lng": -73.958985000001,
+    "provider": "nys"
+  },
+  "150 EAST 79TH ST, NEW YORK, 10075, NY": {
+    "lat": 40.774752000003,
+    "lng": -73.958791500001,
+    "provider": "nys"
+  },
+  "152 EAST 79TH ST, NEW YORK, 10075, NY": {
+    "lat": 40.774734000003,
+    "lng": -73.958746500001,
+    "provider": "nys"
+  },
+  "183 CONTINENTAL PL., STATEN ISLAND, 10303, NY": {
+    "lat": 40.630590000003,
+    "lng": -74.162974500001,
+    "provider": "nys"
+  },
+  "105 WEST TREMONT AVE, BRONX, 10453, NY": {
+    "lat": 40.850325000003,
+    "lng": -73.912882500001,
+    "provider": "nys"
+  },
+  "107 WEST TREMONT AVE, BRONX, 10453, NY": {
+    "lat": 40.850307000003,
+    "lng": -73.913008500001,
+    "provider": "nys"
+  },
+  "1072 TELLER AVENUE, BRONX, 10456, NY": {
+    "lat": 40.829301000003,
+    "lng": -73.913224500001,
+    "provider": "nys"
+  },
+  "3420 GILES PL, BRONX, 10463, NY": {
+    "lat": 40.880529000003,
+    "lng": -73.897366500001,
+    "provider": "nys"
+  },
+  "3201 KINGSBRIDGE AVE, BRONX, 10463, NY": {
+    "lat": 40.881447000003,
+    "lng": -73.905615000001,
+    "provider": "nys"
+  },
+  "130 W KINGSBRIDGE RD, BRONX, 10468, NY": {
+    "lat": 40.868676000003,
+    "lng": -73.904998500001,
+    "provider": "nys"
+  },
+  "6 MULBERRY ROAD, BRIARCLIFF MANOR, 10510, NY": {
+    "lat": 41.157873000003,
+    "lng": -73.836081000001,
+    "provider": "nys"
+  },
+  "26 SCOTT DR., NEW CITY, 10956, NY": {
+    "lat": 41.145795000003,
+    "lng": -73.974037500001,
+    "provider": "nys"
+  },
+  "888 PARK AVENUE, BROOKLYN, 11206, NY": {
+    "lat": 40.698477000003,
+    "lng": -73.939482000001,
+    "provider": "nys"
+  },
+  "393 BROOK AVENUE, BAY SHORE, 11706, NY": {
+    "lat": 40.740885000003,
+    "lng": -73.253920500001,
+    "provider": "nys"
+  },
+  "121 SAXTON STREET, PATCHOGUE, 11772, NY": {
+    "lat": 40.784571000003,
+    "lng": -73.003315500001,
+    "provider": "nys"
+  },
+  "55 ARCH LANE, HICKSVILLE, 11801, NY": {
+    "lat": 40.753800000003,
+    "lng": -73.545070500001,
+    "provider": "nys"
+  },
+  "28 ELLIOT DR, HICKSVILLE, 11801, NY": {
+    "lat": 40.746708000003,
+    "lng": -73.506910500001,
+    "provider": "nys"
+  },
+  "515 LOUDON ROAD, LATHAM, 12211, NY": {
+    "lat": 42.716250000003,
+    "lng": -73.749987000001,
+    "provider": "nys"
+  },
+  "1400 WASHINGTON AVE., A;BANY, 12222, NY": {
+    "lat": 40.835284848436,
+    "lng": -73.904596939756,
+    "provider": "nys"
+  },
+  "8 ABBEY RD., HYDE PARK, 12538, NY": {
+    "lat": 41.762556000003,
+    "lng": -73.875712500001,
+    "provider": "nys"
+  },
+  "138 DORN RD., LAGRANGEVILLE, 12540, NY": {
+    "lat": 41.636790000003,
+    "lng": -73.699110000001,
+    "provider": "nys"
+  },
+  "41 ACADEMY ST, PINE PLAINS, 12567, NY": {
+    "lat": 41.975964000003,
+    "lng": -73.651032000001,
+    "provider": "nys"
+  },
+  "26 PATRICIA PL, MONTICELLO, 12701, NY": {
+    "lat": 41.645259000003,
+    "lng": -74.698519500001,
+    "provider": "nys"
+  },
+  "3588 DELAWARE AVE, KENMORE, 14217, NY": {
+    "lat": 42.981813000003,
+    "lng": -78.872908500001,
+    "provider": "nys"
+  },
+  "24 NORTON STREET, HONEOYE FALLS, 14472, NY": {
+    "lat": 42.952788000003,
+    "lng": -77.595525000001,
+    "provider": "nys"
   }
 }

@@ -28319,5 +28319,80 @@
     "lat": 43.185681000003,
     "lng": -77.731699500001,
     "provider": "nys"
+  },
+  "22 EAST 10TH STREET, NEW YORK, 10003, NY": {
+    "lat": 40.732848000003,
+    "lng": -73.994323500001,
+    "provider": "nys"
+  },
+  "20 CHESTNUT STREET, RYE, 10580, NY": {
+    "lat": 40.980429000003,
+    "lng": -73.687801500001,
+    "provider": "nys"
+  },
+  "60 SCHRIEVER LN., NEW CITY, 10956, NY": {
+    "lat": 41.141565000003,
+    "lng": -73.996524000001,
+    "provider": "nys"
+  },
+  "190 BAYVIEW ROAD, MANHASSET, 11030, NY": {
+    "lat": 40.811661000003,
+    "lng": -73.703389500001,
+    "provider": "nys"
+  },
+  "999B HERRICKS ROAD, NEW HYDE PARK, 11040, NY": {
+    "lat": 40.759020000003,
+    "lng": -73.660414500001,
+    "provider": "nys"
+  },
+  "485 RUGBY ROAD, BROOKLYN, 11226, NY": {
+    "lat": 40.637871000003,
+    "lng": -73.964547000001,
+    "provider": "nys"
+  },
+  "101-16 77TH ST, OZONE PARK, 11416, NY": {
+    "lat": 40.679487000003,
+    "lng": -73.860646500001,
+    "provider": "nys"
+  },
+  "1542 BELLMORE AVENUE, NORTH BELLMORE, 11710, NY": {
+    "lat": 40.683663000003,
+    "lng": -73.539832500001,
+    "provider": "nys"
+  },
+  "2600 SOUTH BISMARCK AVE, NORTH BELLMORE, 11710, NY": {
+    "lat": 40.695957000003,
+    "lng": -73.537411500001,
+    "provider": "nys"
+  },
+  "28 OAKTREE LANE, LEVITTOWN, 11756, NY": {
+    "lat": 40.729779000003,
+    "lng": -73.539297000001,
+    "provider": "nys"
+  },
+  "2334-36 CAMPBELL AVE., SCHENECTADY, 12306, NY": {
+    "lat": 42.800418000003,
+    "lng": -73.971549000001,
+    "provider": "nys"
+  },
+  "70 FORBUS STREET, POUGHKEEPSIE, 12603, NY": {
+    "lat": 41.694840000003,
+    "lng": -73.913674500001,
+    "provider": "nys"
+  },
+  "55 COLLEGE AVENUE, POUGHKEEPSIE, 12603, NY": {
+    "lat": 41.692599000003,
+    "lng": -73.912027500001,
+    "provider": "nys"
+  },
+  "8528 MAIN STREET, HONEOYE, 14471, NY": {
+    "lat": 42.790428000003,
+    "lng": -77.502924000001,
+    "provider": "nys"
+  },
+  "1561 LONG POND ROAD, ROCHESTER, 14626, NY": {
+    "lat": 43.191369000003,
+    "lng": -77.704483500001,
+    "provider": "nys"
   }
 }

@@ -493,5 +493,14 @@
     ],
     "failedAt": "2026-06-02T01:48:56.538Z",
     "cacheVersion": 1
+  },
+  "U.S.A.F. ROME RESEARCH LAB, ROME, 13441, NY": {
+    "providers": [
+      "nys",
+      "census",
+      "nominatim"
+    ],
+    "failedAt": "2026-06-07T01:48:11.028Z",
+    "cacheVersion": 1
   }
 }

@@ -28734,5 +28734,235 @@
     "lat": 42.861708000003,
     "lng": -77.110407000001,
     "provider": "nys"
+  },
+  "186 MAINE AVENUE, STATEN ISLAND, 10314, NY": {
+    "lat": 40.620375000003,
+    "lng": -74.130084000001,
+    "provider": "nys"
+  },
+  "600 ST ANN'S AVENUE, BRONX, 10455, NY": {
+    "lat": 40.814973000003,
+    "lng": -73.912293000001,
+    "provider": "nys"
+  },
+  "1052 TELLER AVENUE, BRONX, 10456, NY": {
+    "lat": 40.828779000003,
+    "lng": -73.913526000001,
+    "provider": "nys"
+  },
+  "1056 FINDLAY AVE, BRONX, 10456, NY": {
+    "lat": 40.829193000003,
+    "lng": -73.914327000001,
+    "provider": "nys"
+  },
+  "1373 WASHINGTON AVE, BRONX, 10456, NY": {
+    "lat": 40.834584000003,
+    "lng": -73.905498000001,
+    "provider": "nys"
+  },
+  "3630 THIRD AVE, BRONX, 10456, NY": {
+    "lat": 40.833792000003,
+    "lng": -73.904121000001,
+    "provider": "nys"
+  },
+  "2300 SOUTHERN BOULEVARD, BRONX, 10460, NY": {
+    "lat": 40.851045000003,
+    "lng": -73.881801000001,
+    "provider": "nys"
+  },
+  "1970 WEST FARMS ROAD, BRONX, 10460, NY": {
+    "lat": 40.839192000003,
+    "lng": -73.880280000001,
+    "provider": "nys"
+  },
+  "2225 WESTCHESTER AVENUE, RYE, 10580, NY": {
+    "lat": 41.012307000003,
+    "lng": -73.704262500001,
+    "provider": "nys"
+  },
+  "808 CENTRAL PARK AVENUE, YONKERS, 10704, NY": {
+    "lat": 40.926976389637,
+    "lng": -73.857113967813,
+    "provider": "nys"
+  },
+  "2000 ROUTE 302, CIRCLEVILLE, 10919, NY": {
+    "lat": 41.520150000003,
+    "lng": -74.384734500001,
+    "provider": "nys"
+  },
+  "1940 BENSON AVENUE, BROOKLYN, 11214, NY": {
+    "lat": 40.603023000003,
+    "lng": -74.001510000001,
+    "provider": "nys"
+  },
+  "21 MATTHEW'S PLACE, BROOKLYN, 11236, NY": {
+    "lat": 40.633317000003,
+    "lng": -73.895769000001,
+    "provider": "nys"
+  },
+  "456 MERRICK RD, LYNBROOK, 11563, NY": {
+    "lat": 40.658418000003,
+    "lng": -73.677991500001,
+    "provider": "nys"
+  },
+  "44 GRAND HAVEN DRIVE, COMMACK, 11725, NY": {
+    "lat": 40.833333000003,
+    "lng": -73.304977500001,
+    "provider": "nys"
+  },
+  "212 SMITH ROAD, LAKE RONKONKOMA, 11779, NY": {
+    "lat": 40.838931000003,
+    "lng": -73.101478500001,
+    "provider": "nys"
+  },
+  "3487 ST STEPHEN LN, WANTAGH, 11793, NY": {
+    "lat": 40.682682000003,
+    "lng": -73.504890000001,
+    "provider": "nys"
+  },
+  "1141 ALBANY ST., SCHENECTADY, 12304, NY": {
+    "lat": 42.799329000003,
+    "lng": -73.926711000001,
+    "provider": "nys"
+  },
+  "35 ALCAZAR AVE, KINGSTON, 12401, NY": {
+    "lat": 41.931954000003,
+    "lng": -74.032362000001,
+    "provider": "nys"
+  },
+  "18 EAST O'REILLY STREET, KINGSTON, 12401, NY": {
+    "lat": 41.927841000003,
+    "lng": -73.996915500001,
+    "provider": "nys"
+  },
+  "64 EAST MAIN ST., PAWLING, 12564, NY": {
+    "lat": 41.561406000003,
+    "lng": -73.595713500001,
+    "provider": "nys"
+  },
+  "283 MANSION STREET, POUGHKEEPSIE, 12601, NY": {
+    "lat": 41.705514000003,
+    "lng": -73.915227000001,
+    "provider": "nys"
+  },
+  "1798 CREEK ROAD, CROWN POINT, 12928, NY": {
+    "lat": 43.950213000003,
+    "lng": -73.457181000001,
+    "provider": "nys"
+  },
+  "90 NORTH STREET, AUBURN, 13021, NY": {
+    "lat": 42.936444000003,
+    "lng": -76.564903500001,
+    "provider": "nys"
+  },
+  "6230 EAST MOLLOY ROAD, EAST SYRACUSE, 13057, NY": {
+    "lat": 43.098876000003,
+    "lng": -76.089672000001,
+    "provider": "nys"
+  },
+  "287 GEORGE ROAD, FREEVILLE, 13068, NY": {
+    "lat": 42.497253000003,
+    "lng": -76.328109000001,
+    "provider": "nys"
+  },
+  "116 VOLNEY STREET, PHEONIX, 13135, NY": {
+    "lat": 43.239240000003,
+    "lng": -76.298175000001,
+    "provider": "nys"
+  },
+  "298 NORWOOD AVE, SYRACUSE, 13206, NY": {
+    "lat": 43.073343000003,
+    "lng": -76.109679000001,
+    "provider": "nys"
+  },
+  "14 HOEFLER AVE, ILION, 13357, NY": {
+    "lat": 43.013007000003,
+    "lng": -75.032662500001,
+    "provider": "nys"
+  },
+  "28 GENESEE ST, NEW BERLIN, 13411, NY": {
+    "lat": 42.624342000003,
+    "lng": -75.329676000001,
+    "provider": "nys"
+  },
+  "4 OXFORD ROAD, NEW HARTFORD, 13413, NY": {
+    "lat": 43.072137000003,
+    "lng": -75.287605500001,
+    "provider": "nys"
+  },
+  "131 EAST MAIN STREET, WATERVILLE, 13480, NY": {
+    "lat": 42.931341000003,
+    "lng": -75.378595500001,
+    "provider": "nys"
+  },
+  "48 COURT ST., CANTON, 13617, NY": {
+    "lat": 44.598294000003,
+    "lng": -75.167955000001,
+    "provider": "nys"
+  },
+  "3020 MECHANIC ST, COPENHAGEN, 13626, NY": {
+    "lat": 43.892343000003,
+    "lng": -75.677193000001,
+    "provider": "nys"
+  },
+  "8772 FACTORY ST, EVANS MILLS, 13637, NY": {
+    "lat": 44.09229036835,
+    "lng": -75.810409165436,
+    "provider": "nys"
+  },
+  "817 MAIN ST, DUNKIRK, 14048, NY": {
+    "lat": 42.472521000003,
+    "lng": -79.327183500001,
+    "provider": "nys"
+  },
+  "520 OAKWOOD AVE., EAST AURORA, 14052, NY": {
+    "lat": 42.765984000003,
+    "lng": -78.615549000001,
+    "provider": "nys"
+  },
+  "57 SOUTH MAIN STREET, ELBA, 14058, NY": {
+    "lat": 43.074495000003,
+    "lng": -78.188998500001,
+    "provider": "nys"
+  },
+  "80 METCALF ST, NEW YORK, 14206, NY": {
+    "lat": 42.881283000003,
+    "lng": -78.836953500001,
+    "provider": "nys"
+  },
+  "2995 RIVER ROAD, BUFFALO, 14207, NY": {
+    "lat": 42.962247000003,
+    "lng": -78.918930000001,
+    "provider": "nys"
+  },
+  "334 CRESCENT AVE, BUFFALO, 14214, NY": {
+    "lat": 42.936597000003,
+    "lng": -78.845836500001,
+    "provider": "nys"
+  },
+  "35 HOLLYBROOK DRIVE, WILLIAMSVILLE, 14221, NY": {
+    "lat": 42.984378000003,
+    "lng": -78.716164500001,
+    "provider": "nys"
+  },
+  "851 MAPLE ROAD, WILLIAMSVILLE, 14221, NY": {
+    "lat": 42.990971704304,
+    "lng": -78.755900322949,
+    "provider": "nys"
+  },
+  "101 MIAMI PARKWAY, CHEEKTAWAGA, 14225, NY": {
+    "lat": 42.920298000003,
+    "lng": -78.761290500001,
+    "provider": "nys"
+  },
+  "27 BARNFIELD ROAD, PITTSFORD, 14534, NY": {
+    "lat": 43.069905000003,
+    "lng": -77.578798500001,
+    "provider": "nys"
+  },
+  "103 WILLARD AVE., JAMESTOWN, 14701, NY": {
+    "lat": 42.097608000003,
+    "lng": -79.225101000001,
+    "provider": "nys"
   }
 }

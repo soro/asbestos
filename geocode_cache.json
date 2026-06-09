@@ -29249,5 +29249,95 @@
     "lat": 43.147611000003,
     "lng": -77.566054500001,
     "provider": "nys"
+  },
+  "2731, 2733, 2735 SAMPSONS AVE, BRONX, 10465, NY": {
+    "lat": 40.819167000003,
+    "lng": -73.824241500001,
+    "provider": "nys"
+  },
+  "2743,2745 SAMPSON AVE, BRONX, 10465, NY": {
+    "lat": 40.819104000003,
+    "lng": -73.823895000001,
+    "provider": "nys"
+  },
+  "315 BRENVOORT LN, RYE, 10580, NY": {
+    "lat": 40.945914000003,
+    "lng": -73.710193500001,
+    "provider": "nys"
+  },
+  "11 MARGET ANN LN., SUFFERN, 10901, NY": {
+    "lat": 41.143311000003,
+    "lng": -74.094871500001,
+    "provider": "nys"
+  },
+  "10 LOLLYPINE LANE, MEDFORD, 11763, NY": {
+    "lat": 40.812930000003,
+    "lng": -72.973849500001,
+    "provider": "nys"
+  },
+  "17 GREENPORT AVE, MEDFORD, 11763, NY": {
+    "lat": 40.808322000003,
+    "lng": -73.009174500001,
+    "provider": "nys"
+  },
+  "43 LISO DR, MT SINAI, 11766, NY": {
+    "lat": 40.946256000003,
+    "lng": -73.006897500001,
+    "provider": "nys"
+  },
+  "111 LEXINGTON ROAD,, SHIRLEY, 11967, NY": {
+    "lat": 40.787064000003,
+    "lng": -72.858465000001,
+    "provider": "nys"
+  },
+  "234 HUDSON ST, CORNWALL-ON-HUDSON, 12520, NY": {
+    "lat": 41.444892000003,
+    "lng": -74.014978500001,
+    "provider": "nys"
+  },
+  "8 FREDERICK DRIVE, SARATOGA SPRINGS, 12866, NY": {
+    "lat": 43.076466000003,
+    "lng": -73.805346000001,
+    "provider": "nys"
+  },
+  "2048 ALBANY RD., FRANKFORT, 13340, NY": {
+    "lat": 43.024356000003,
+    "lng": -75.180528000001,
+    "provider": "nys"
+  },
+  "138 HICKORY HILL ROAD, WILLIAMSVILLE, 14221, NY": {
+    "lat": 42.995493000003,
+    "lng": -78.734502000001,
+    "provider": "nys"
+  },
+  "4618 GREENBRIAR DRIVE, CANANDAIGUA, 14424, NY": {
+    "lat": 42.811335000003,
+    "lng": -77.260482000001,
+    "provider": "nys"
+  },
+  "1425 PORTLAND AVENUE, ROCHESTER, 14621, NY": {
+    "lat": 43.191531000003,
+    "lng": -77.585589000001,
+    "provider": "nys"
+  },
+  "417 NORTON STREET, ROCHESTER, 14621, NY": {
+    "lat": 43.186284000003,
+    "lng": -77.612391000001,
+    "provider": "nys"
+  },
+  "1069 JOSEPH AVENUE, ROCHESTER, 14621, NY": {
+    "lat": 43.185429000003,
+    "lng": -77.609619000001,
+    "provider": "nys"
+  },
+  "203 EAST MAIN ST., WESTFIELD, 14787, NY": {
+    "lat": 42.329322000003,
+    "lng": -79.568775000001,
+    "provider": "nys"
+  },
+  "735 BEARTOWN ROAD, PAINTED POST, 14870, NY": {
+    "lat": 42.144489000003,
+    "lng": -77.176624500001,
+    "provider": "nys"
   }
 }

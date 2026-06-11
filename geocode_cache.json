@@ -29339,5 +29339,365 @@
     "lat": 42.144489000003,
     "lng": -77.176624500001,
     "provider": "nys"
+  },
+  "923 5TH AVENUE, MANHATTAN, 10021, NY": {
+    "lat": 40.773276000003,
+    "lng": -73.966243500001,
+    "provider": "nys"
+  },
+  "506 E75TH STREET, NEW YORK, 10021, NY": {
+    "lat": 40.768479000003,
+    "lng": -73.951798500001,
+    "provider": "nys"
+  },
+  "530 EAST 76TH STREET, NEW YORK, 10021, NY": {
+    "lat": 40.768515000003,
+    "lng": -73.949922000001,
+    "provider": "nys"
+  },
+  "300 EAST 54TH ST, MANHATTAN, 10022, NY": {
+    "lat": 40.757094000003,
+    "lng": -73.966365000001,
+    "provider": "nys"
+  },
+  "425 EAST 58TH STREET, NEW YORK, 10022, NY": {
+    "lat": 40.758435000003,
+    "lng": -73.960636500001,
+    "provider": "nys"
+  },
+  "165 WEST END AVENUE, MANHATTAN, 10023, NY": {
+    "lat": 40.777128000003,
+    "lng": -73.986871500001,
+    "provider": "nys"
+  },
+  "10 WEST 68TH STREET, NEW YORK, 10023, NY": {
+    "lat": 40.773726000003,
+    "lng": -73.978227000001,
+    "provider": "nys"
+  },
+  "310 WEST 86TH STREET, NEW YORK, 10024, NY": {
+    "lat": 40.789116000003,
+    "lng": -73.978789500001,
+    "provider": "nys"
+  },
+  "411 WEST 115TH STREET, NEW YORK, 10025, NY": {
+    "lat": 40.805811000003,
+    "lng": -73.960492500001,
+    "provider": "nys"
+  },
+  "55 LA SALLE STREET, NEW YORK, 10027, NY": {
+    "lat": 40.813218000003,
+    "lng": -73.957149000001,
+    "provider": "nys"
+  },
+  "75 LA SALLE STREET, NEW YORK, 10027, NY": {
+    "lat": 40.813587000003,
+    "lng": -73.958004000001,
+    "provider": "nys"
+  },
+  "170 CLAREMONT AVENUE, NEW YORK, 10027, NY": {
+    "lat": 40.813929000003,
+    "lng": -73.960695000001,
+    "provider": "nys"
+  },
+  "405 W 125TH STREET, NEW YORK, 10027, NY": {
+    "lat": 40.811796000003,
+    "lng": -73.954215000001,
+    "provider": "nys"
+  },
+  "200 WEST 131ST STREET, NEW YORK, 10027, NY": {
+    "lat": 40.812651000003,
+    "lng": -73.946317500001,
+    "provider": "nys"
+  },
+  "610 EAST 83RD STREET, NEW YORK, 10028, NY": {
+    "lat": 40.772556000003,
+    "lng": -73.945440000001,
+    "provider": "nys"
+  },
+  "1694 MADISON AVE, NEW YORK, 10029, NY": {
+    "lat": 40.798062000003,
+    "lng": -73.946934000001,
+    "provider": "nys"
+  },
+  "1345 5TH AVE, NEW YORK, 10029, NY": {
+    "lat": 40.798395000003,
+    "lng": -73.947748500001,
+    "provider": "nys"
+  },
+  "65 EAST 99TH STREET, NEW YORK, 10029, NY": {
+    "lat": 40.789017000003,
+    "lng": -73.951537500001,
+    "provider": "nys"
+  },
+  "131 EAST 104TH STREET, NEW YORK, 10029, NY": {
+    "lat": 40.791222000003,
+    "lng": -73.947582000001,
+    "provider": "nys"
+  },
+  "435 EAST 120TH STREET, MANHATTAN, 10035, NY": {
+    "lat": 40.798188000003,
+    "lng": -73.931494500001,
+    "provider": "nys"
+  },
+  "1180 6TH AVENUE, MANHATTAN, 10036, NY": {
+    "lat": 40.794961731815,
+    "lng": -73.964076551407,
+    "provider": "nys"
+  },
+  "414 MORRIS AVENUE, BRONX, 10451, NY": {
+    "lat": 40.815477000003,
+    "lng": -73.923466500001,
+    "provider": "nys"
+  },
+  "1857-1859 WALTON AVENUE, BRONX, 10453, NY": {
+    "lat": 40.848561000003,
+    "lng": -73.909777500001,
+    "provider": "nys"
+  },
+  "2160 WALTON AVE, BRONX, 10453, NY": {
+    "lat": 40.855581000003,
+    "lng": -73.904386500001,
+    "provider": "nys"
+  },
+  "INTERSECTION OF CEDAR AVENUE & WEST 179 STREET & WEST FORDHAM ROAD, BRONX, 10453, NY": {
+    "lat": 40.592673000003,
+    "lng": -73.970631000001,
+    "provider": "nys"
+  },
+  "225 WILLIS AVE., BRONX, 10454, NY": {
+    "lat": 40.808826000003,
+    "lng": -73.923448500001,
+    "provider": "nys"
+  },
+  "353 EAST 141ST STREET, BRONX, 10454, NY": {
+    "lat": 40.811868000003,
+    "lng": -73.922692500001,
+    "provider": "nys"
+  },
+  "383 EAST 143RD STREET, BRONX, 10454, NY": {
+    "lat": 40.812669000003,
+    "lng": -73.920735000001,
+    "provider": "nys"
+  },
+  "383 EAST 141ST ST, BRONX, 10454, NY": {
+    "lat": 40.811472000003,
+    "lng": -73.921716000001,
+    "provider": "nys"
+  },
+  "289 EAST 139TH STREET, BRONX, 10454, NY": {
+    "lat": 40.811157000003,
+    "lng": -73.925379000001,
+    "provider": "nys"
+  },
+  "620 EAST 137TH STREET, BRONX, 10454, NY": {
+    "lat": 40.804920000003,
+    "lng": -73.916271000001,
+    "provider": "nys"
+  },
+  "2592 3RD AVE, BRONX, 10454, NY": {
+    "lat": 40.811715000003,
+    "lng": -73.925734500001,
+    "provider": "nys"
+  },
+  "1204 FRANKLIN AVENUE, BRONX, 10456, NY": {
+    "lat": 40.829841000003,
+    "lng": -73.903707000001,
+    "provider": "nys"
+  },
+  "2475 ST. RAYMOND AVENUE, BRONX, 10461, NY": {
+    "lat": 40.840452000003,
+    "lng": -73.848343500001,
+    "provider": "nys"
+  },
+  "49 WEST 225TH STREET, NEW YORK, 10463, NY": {
+    "lat": 40.874031000003,
+    "lng": -73.907752500001,
+    "provider": "nys"
+  },
+  "2785 SAMPSON AVENUE, BRONX, 10465, NY": {
+    "lat": 40.819446000003,
+    "lng": -73.822095000001,
+    "provider": "nys"
+  },
+  "2830 SCHELEY AVENUE, BRONX, 10465, NY": {
+    "lat": 40.823136000003,
+    "lng": -73.822842000001,
+    "provider": "nys"
+  },
+  "3233 WHITE PLAINS RD, BRONX, 10466, NY": {
+    "lat": 40.872366000003,
+    "lng": -73.867329000001,
+    "provider": "nys"
+  },
+  "3970 WHITE PLAINS RD., BRONX, 10466, NY": {
+    "lat": 40.887621000003,
+    "lng": -73.860358500001,
+    "provider": "nys"
+  },
+  "4025 LACONIA AVE, BRONX, 10466, NY": {
+    "lat": 40.885893000003,
+    "lng": -73.848402000001,
+    "provider": "nys"
+  },
+  "1635 EAST 233RD ST, BRONX, 10466, NY": {
+    "lat": 40.888323000003,
+    "lng": -73.826775000001,
+    "provider": "nys"
+  },
+  "1925 SCHIEFFELIN AVENUE, BRONX, 10466, NY": {
+    "lat": 40.884885000003,
+    "lng": -73.843677000001,
+    "provider": "nys"
+  },
+  "1170 E 229TH DRIVE SOUTH, BRONX, 10466, NY": {
+    "lat": 40.885299000003,
+    "lng": -73.844662500001,
+    "provider": "nys"
+  },
+  "111 EAST 210TH STREET, BRONX, 10467, NY": {
+    "lat": 40.879872000003,
+    "lng": -73.879897500001,
+    "provider": "nys"
+  },
+  "740 GUN HILL ROAD, BRONX, 10467, NY": {
+    "lat": 40.876578000003,
+    "lng": -73.865218500001,
+    "provider": "nys"
+  },
+  "3710 BARNES AVENUE, BRONX, 10467, NY": {
+    "lat": 40.880853000003,
+    "lng": -73.860655500001,
+    "provider": "nys"
+  },
+  "2225 BRONXWOOD AVENUE, BRONX, 10469, NY": {
+    "lat": 40.858443000003,
+    "lng": -73.862586000001,
+    "provider": "nys"
+  },
+  "947 CASTLE HILL AVENUE, BRONX, 10473, NY": {
+    "lat": 40.826601000003,
+    "lng": -73.850035500001,
+    "provider": "nys"
+  },
+  "68 CLASON POINT LANE NORTH, BRONX, 10473, NY": {
+    "lat": 40.821939000003,
+    "lng": -73.869790500001,
+    "provider": "nys"
+  },
+  "826 METCALF AVENUE, BRONX, 10473, NY": {
+    "lat": 40.821201000003,
+    "lng": -73.870443000001,
+    "provider": "nys"
+  },
+  "1665 LAFAYETTE AVENUE, BRONX, 10473, NY": {
+    "lat": 40.820616000003,
+    "lng": -73.870128000001,
+    "provider": "nys"
+  },
+  "300 WHITE OAK LANE, SCARSDALE, 10538, NY": {
+    "lat": 41.000814000003,
+    "lng": -73.809261000001,
+    "provider": "nys"
+  },
+  "3401 OLD YORKTOWN ROAD, YORKTOWN HEIGHTS, 10598, NY": {
+    "lat": 41.322087000003,
+    "lng": -73.816326000001,
+    "provider": "nys"
+  },
+  "89 SANFORDVILLE ROAD, WARWICK, 10990, NY": {
+    "lat": 41.253138000003,
+    "lng": -74.388222000001,
+    "provider": "nys"
+  },
+  "181 SUYDAM STREET, BROOKLYN, 11221, NY": {
+    "lat": 40.699969214401,
+    "lng": -73.925944747374,
+    "provider": "nys"
+  },
+  "70 SOUTH WOOD ROAD, SYOSSET, 11791, NY": {
+    "lat": 40.828959000003,
+    "lng": -73.482462000001,
+    "provider": "nys"
+  },
+  "152 WOODSIDE AVE, BRAODALBIN, 12025, NY": {
+    "lat": 43.089012000003,
+    "lng": -74.197822500001,
+    "provider": "nys"
+  },
+  "173 LAKE HILL ROAD, BURNT HILLS, 12027, NY": {
+    "lat": 42.907608000003,
+    "lng": -73.907752500001,
+    "provider": "nys"
+  },
+  "73 S MAIN ST, CARLOS, 12033, NY": {
+    "lat": 42.528168000003,
+    "lng": -73.757421000001,
+    "provider": "nys"
+  },
+  "4166 STATE ROUTE 28, BOICEVILLE, 12412, NY": {
+    "lat": 42.009714000003,
+    "lng": -74.268162000001,
+    "provider": "nys"
+  },
+  "76 BLUEBIRD ROAD, SOUTH GLENS FALLS, 12803, NY": {
+    "lat": 43.274322000003,
+    "lng": -73.631466000001,
+    "provider": "nys"
+  },
+  "10 PERSHING ROAD, QUEENSBURTY, 12804, NY": {
+    "lat": 43.316100000003,
+    "lng": -73.666836000001,
+    "provider": "nys"
+  },
+  "1732 FYLER ROAD, CHITTENANGO, 13037, NY": {
+    "lat": 43.086591000003,
+    "lng": -75.875265000001,
+    "provider": "nys"
+  },
+  "147 W SENECA STREET, OSWEGO, 13126, NY": {
+    "lat": 43.456185000003,
+    "lng": -76.523188500001,
+    "provider": "nys"
+  },
+  "552 MAIN STREET, PHOENIX, 13135, NY": {
+    "lat": 43.235280000003,
+    "lng": -76.304538000001,
+    "provider": "nys"
+  },
+  "459 PULASKI ST., SYRACUSE, 13204, NY": {
+    "lat": 43.061526000003,
+    "lng": -76.176081000001,
+    "provider": "nys"
+  },
+  "40 GLENN ROAD, APALACHIN, 13732, NY": {
+    "lat": 42.055326000003,
+    "lng": -76.126410000001,
+    "provider": "nys"
+  },
+  "390 MAIN STREET, BUFFALO, 14202, NY": {
+    "lat": 42.884838000003,
+    "lng": -78.874983000001,
+    "provider": "nys"
+  },
+  "4490 LAKE AVENUE, BUFFALO, 14219, NY": {
+    "lat": 42.797385000003,
+    "lng": -78.811168500001,
+    "provider": "nys"
+  },
+  "180 SIXTH STREET, ROCHESTER, 14605, NY": {
+    "lat": 43.170210000003,
+    "lng": -77.582322000001,
+    "provider": "nys"
+  },
+  "194 FIELD STREET, ROCHESTER, 14620, NY": {
+    "lat": 43.138683000003,
+    "lng": -77.587933500001,
+    "provider": "nys"
+  },
+  "127 PARK ST., SHERMAN, 14781, NY": {
+    "lat": 42.161238000003,
+    "lng": -79.593682500001,
+    "provider": "nys"
   }
 }

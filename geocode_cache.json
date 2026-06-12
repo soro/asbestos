@@ -29699,5 +29699,145 @@
     "lat": 42.161238000003,
     "lng": -79.593682500001,
     "provider": "nys"
+  },
+  "169 EAST 79TH STREET, NEW YORK, 10075, NY": {
+    "lat": 40.774815000003,
+    "lng": -73.958143500001,
+    "provider": "nys"
+  },
+  "167 EAST 79TH STREET, NEW YORK, 10075, NY": {
+    "lat": 40.774842000003,
+    "lng": -73.958193000001,
+    "provider": "nys"
+  },
+  "150 EAST 93RD STREET, NEW YORK, 10128, NY": {
+    "lat": 40.783725000003,
+    "lng": -73.952082000001,
+    "provider": "nys"
+  },
+  "255 UNION AVENUE, HARRISON, 10528, NY": {
+    "lat": 40.981374000003,
+    "lng": -73.737139500001,
+    "provider": "nys"
+  },
+  "137 CROTON AVE, MOUNT KISCO, 10549, NY": {
+    "lat": 41.213925000003,
+    "lng": -73.735258500001,
+    "provider": "nys"
+  },
+  "265 CLOVE ROAD, NEW ROCHELLE, 10801, NY": {
+    "lat": 40.928445000003,
+    "lng": -73.793470500001,
+    "provider": "nys"
+  },
+  "31-01 20TH AVE, ASTORIA, 11105, NY": {
+    "lat": 40.779695569218,
+    "lng": -73.906124547329,
+    "provider": "nys"
+  },
+  "114 FORT GREENE PLACE, BROOKLYN, 11217, NY": {
+    "lat": 40.686138000003,
+    "lng": -73.976526000001,
+    "provider": "nys"
+  },
+  "162 DEAN STREET, BROOKLYN, 11217, NY": {
+    "lat": 40.685985000003,
+    "lng": -73.986790500001,
+    "provider": "nys"
+  },
+  "1311 GLENWOD RD., BROOKLYN, 11230, NY": {
+    "lat": 40.632390000003,
+    "lng": -73.964236500001,
+    "provider": "nys"
+  },
+  "147-02 41 AVENUE, QUEENS, 11355, NY": {
+    "lat": 40.76144342591,
+    "lng": -73.81798500858,
+    "provider": "nys"
+  },
+  "40-10 99TH STREET, QUEENS, 11368, NY": {
+    "lat": 40.749057000003,
+    "lng": -73.866532500001,
+    "provider": "nys"
+  },
+  "14621 JAMAICA AVENUE, JAMAICA, 11435, NY": {
+    "lat": 40.701851067451,
+    "lng": -73.808590161427,
+    "provider": "nys"
+  },
+  "WADING RIVER RD & NY-25A, WADING RIVER, 11792, NY": {
+    "lat": 40.943952000003,
+    "lng": -72.842094000001,
+    "provider": "nys"
+  },
+  "93 LEEWIS AVENUE, BROOKLYN, 12206, NY": {
+    "lat": 40.694175000003,
+    "lng": -73.937052000001,
+    "provider": "nys"
+  },
+  "10 HILLSIDE LAKE ROAD, WAPPINGERS FALLS, 12590, NY": {
+    "lat": 41.617287000003,
+    "lng": -73.800796500001,
+    "provider": "nys"
+  },
+  "36 LAUREL AVE, SOUTH FALLSBURG, 12779, NY": {
+    "lat": 41.711841000003,
+    "lng": -74.628652500001,
+    "provider": "nys"
+  },
+  "559 EAST MAIN STREET, MALONE, 12953, NY": {
+    "lat": 44.850015000003,
+    "lng": -74.283129000001,
+    "provider": "nys"
+  },
+  "44 RAILROAD STREET, MALONE, 12953, NY": {
+    "lat": 44.850699000003,
+    "lng": -74.298393000001,
+    "provider": "nys"
+  },
+  "220 N. PETERBORO ST., CANASTOTA, 13032, NY": {
+    "lat": 43.081893000003,
+    "lng": -75.749998500001,
+    "provider": "nys"
+  },
+  "74 COLD BROOK ST, POLAND, 13431, NY": {
+    "lat": 43.228836000003,
+    "lng": -75.058069500001,
+    "provider": "nys"
+  },
+  "929 HILLCREST AVE, UTICA, 13502, NY": {
+    "lat": 43.088085000003,
+    "lng": -75.268534500001,
+    "provider": "nys"
+  },
+  "45 COUNTY RD 42, MASSENA, 13662, NY": {
+    "lat": 44.939907000003,
+    "lng": -74.876409000001,
+    "provider": "nys"
+  },
+  "631 HICKORY, ANGOLA, 14006, NY": {
+    "lat": 42.645258000003,
+    "lng": -79.061854500001,
+    "provider": "nys"
+  },
+  "3338 E MAIN ST, ATTICA, 14011, NY": {
+    "lat": 42.858513000003,
+    "lng": -78.264157500001,
+    "provider": "nys"
+  },
+  "68 STURBRIDGE LANE, PITTSFORD, 14534, NY": {
+    "lat": 43.043112000003,
+    "lng": -77.491390500001,
+    "provider": "nys"
+  },
+  "417 ALUMNI ROAD, ROCHESTER, 14611, NY": {
+    "lat": 43.127784000003,
+    "lng": -77.631502500001,
+    "provider": "nys"
+  },
+  "7907 KINGSBURY HILL RD., FRANKL.INVILLE, 14737, NY": {
+    "lat": 42.345945000003,
+    "lng": -78.444517500001,
+    "provider": "nys"
   }
 }

@@ -502,5 +502,14 @@
     ],
     "failedAt": "2026-06-07T01:48:11.028Z",
     "cacheVersion": 1
+  },
+  "W. RIVER ROAD 42°29'49.1\"N 78°03'45.3\"W, HUME, 14745, NY": {
+    "providers": [
+      "nys",
+      "census",
+      "nominatim"
+    ],
+    "failedAt": "2026-06-13T01:48:43.824Z",
+    "cacheVersion": 1
   }
 }

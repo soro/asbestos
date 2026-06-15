@@ -30259,5 +30259,175 @@
     "lat": 42.585861123232,
     "lng": -76.210225049598,
     "provider": "nys"
+  },
+  "145 WEST 28TH STREET, MANHATTAN, 10001, NY": {
+    "lat": 40.746987000003,
+    "lng": -73.992519000001,
+    "provider": "nys"
+  },
+  "555 FDR DRIVE, NEW YORK, 10002, NY": {
+    "lat": 40.716792000003,
+    "lng": -73.976251500001,
+    "provider": "nys"
+  },
+  "111 5TH AVENUE, NEW YORK, 10003, NY": {
+    "lat": 40.738635000003,
+    "lng": -73.991488500001,
+    "provider": "nys"
+  },
+  "40 IRVING PLACE, MANHATTAN, 10003, NY": {
+    "lat": 40.735548000003,
+    "lng": -73.987452000001,
+    "provider": "nys"
+  },
+  "118 AVENUE D, NEW YORK, 10009, NY": {
+    "lat": 40.723830000003,
+    "lng": -73.975410000001,
+    "provider": "nys"
+  },
+  "363 EAST 76TH STREET, MANHATTAN, 10021, NY": {
+    "lat": 40.770612000003,
+    "lng": -73.954363500001,
+    "provider": "nys"
+  },
+  "1365 5THE AVE, NEW YORK, 10029, NY": {
+    "lat": 40.798840284993,
+    "lng": -73.947713090069,
+    "provider": "nys"
+  },
+  "1734 MADISON AVE, NEW YORK, 10029, NY": {
+    "lat": 40.799079000003,
+    "lng": -73.946205000001,
+    "provider": "nys"
+  },
+  "245 PARK AVENUE, MANHATTAN, 10167, NY": {
+    "lat": 40.754862000003,
+    "lng": -73.975243500001,
+    "provider": "nys"
+  },
+  "930 WILLOWBROOK ROAD, STATEN ISLAND, 10314, NY": {
+    "lat": 40.602798000003,
+    "lng": -74.143188000001,
+    "provider": "nys"
+  },
+  "33 FERNDALE AVE, STATEN ISLAND, 10314, NY": {
+    "lat": 40.592763000003,
+    "lng": -74.158636500001,
+    "provider": "nys"
+  },
+  "340 ALEXANDER AVENUE, BRONX, 10454, NY": {
+    "lat": 40.812399000003,
+    "lng": -73.923079500001,
+    "provider": "nys"
+  },
+  "380 EAST 143RD STREET, BRONX, 10454, NY": {
+    "lat": 40.812174000003,
+    "lng": -73.921203000001,
+    "provider": "nys"
+  },
+  "946 BOSTON POST ROAD, RYE, 10580, NY": {
+    "lat": 40.976757000003,
+    "lng": -73.685560500001,
+    "provider": "nys"
+  },
+  "27-17 216TH STREET, BAYSIDE, 11360, NY": {
+    "lat": 40.778921094736,
+    "lng": -73.771410678682,
+    "provider": "nys"
+  },
+  "97-04 63RD RD, FOREST HILLS, 11374, NY": {
+    "lat": 40.730956685499,
+    "lng": -73.860693174359,
+    "provider": "nys"
+  },
+  "130-44 232ND ST, JAMAICA, 11413, NY": {
+    "lat": 40.679834967635,
+    "lng": -73.735370139157,
+    "provider": "nys"
+  },
+  "89-21 127TH ST, RICHMOND HILL, 11418, NY": {
+    "lat": 40.699140060937,
+    "lng": -73.822880240922,
+    "provider": "nys"
+  },
+  "172-19 LIBERTY AVENUE, JAMAICA, 11433, NY": {
+    "lat": 40.704534000003,
+    "lng": -73.785388500001,
+    "provider": "nys"
+  },
+  "1 FOREST AVENUE, GLEN COVE, 11542, NY": {
+    "lat": 40.871259000003,
+    "lng": -73.628482500001,
+    "provider": "nys"
+  },
+  "154 TARDY LN S, WANTAGH, 11793, NY": {
+    "lat": 40.698180000003,
+    "lng": -73.501816500001,
+    "provider": "nys"
+  },
+  "13 OYSTER SHORES ROAD, EAST HAMPTON, 11937, NY": {
+    "lat": 41.000688000003,
+    "lng": -72.188815500001,
+    "provider": "nys"
+  },
+  "333 NY-351, AVERILL PARK, 12018, NY": {
+    "lat": 42.663555000003,
+    "lng": -73.582231500001,
+    "provider": "nys"
+  },
+  "122 BELZANO DR., JOHNSTOWN, 12095, NY": {
+    "lat": 43.020189000003,
+    "lng": -74.342011500001,
+    "provider": "nys"
+  },
+  "112 DELAWARE AVE, TROY, 12180, NY": {
+    "lat": 42.711255000003,
+    "lng": -73.681447500001,
+    "provider": "nys"
+  },
+  "300 KINGS MALL CT, KINGSTON, 12401, NY": {
+    "lat": 41.963589000003,
+    "lng": -73.987501500001,
+    "provider": "nys"
+  },
+  "52 FERNDALE-LOOMIS RD, LIBERTY, 12754, NY": {
+    "lat": 41.789007000003,
+    "lng": -74.777512500001,
+    "provider": "nys"
+  },
+  "1600 ARMORY DRIVE, UTICA, 13501, NY": {
+    "lat": 43.079805000003,
+    "lng": -75.212590500001,
+    "provider": "nys"
+  },
+  "9 OGDEN ST, BINGHAMTON, 13901, NY": {
+    "lat": 42.117786000003,
+    "lng": -75.900172500001,
+    "provider": "nys"
+  },
+  "792 ERIE STATION RD., RUSH, 14543, NY": {
+    "lat": 43.040547000003,
+    "lng": -77.660217000001,
+    "provider": "nys"
+  },
+  "555 PLYMOUTH AVE, ROCHESTER, 14608, NY": {
+    "lat": 43.162542000003,
+    "lng": -77.624122500001,
+    "provider": "nys"
+  },
+  "234 FULTON ST., JAMESTOWN, 14701, NY": {
+    "lat": 42.102855000003,
+    "lng": -79.237485000001,
+    "provider": "nys"
+  },
+  "11884 HICKLING ROAD, CORNING, 14830, NY": {
+    "lat": 42.124485653212,
+    "lng": -76.979814979233,
+    "provider": "nys"
+  },
+  "777 SOUTH MAIN STREET, ELMIRA, 14904, NY": {
+    "lat": 42.068988000003,
+    "lng": -76.796820000001,
+    "provider": "nys"
   }
 }

@@ -30429,5 +30429,135 @@
     "lat": 42.068988000003,
     "lng": -76.796820000001,
     "provider": "nys"
+  },
+  "1090 AMSTERDAM AVENUE, NEW YORK, 10025, NY": {
+    "lat": 40.805190000003,
+    "lng": -73.962481500001,
+    "provider": "nys"
+  },
+  "M030 @ 144-176 EAST 128TH STREET, NEW YORK, 10035, NY": {
+    "lat": 40.805684604625,
+    "lng": -73.93462552137,
+    "provider": "nys"
+  },
+  "100; 120 ERSKINE PLACE, BRONX, 10475, NY": {
+    "lat": 40.861701000003,
+    "lng": -73.821375000001,
+    "provider": "nys"
+  },
+  "100; 120; 140 DONZIETTI PLACE, BRONX, 10475, NY": {
+    "lat": 40.876101000003,
+    "lng": -73.832620500001,
+    "provider": "nys"
+  },
+  "100 BENCHLEY PLACE, BRONX, 10475, NY": {
+    "lat": 40.874940000003,
+    "lng": -73.825515000001,
+    "provider": "nys"
+  },
+  "140 ALCOTT PLACE, BRONX, 10475, NY": {
+    "lat": 40.872726000003,
+    "lng": -73.829929500001,
+    "provider": "nys"
+  },
+  "120 CASALS PLACE, BRONX, 10475, NY": {
+    "lat": 40.878396000003,
+    "lng": -73.823557500001,
+    "provider": "nys"
+  },
+  "175 SEARSAVE., ELMSFORD, 10523, NY": {
+    "lat": 41.062914000003,
+    "lng": -73.812082500001,
+    "provider": "nys"
+  },
+  "800 ROUTE 340, PALISADES, 10964, NY": {
+    "lat": 41.010759000003,
+    "lng": -73.929609000001,
+    "provider": "nys"
+  },
+  "9 HESELTON DR, SLATE HILL, 10973, NY": {
+    "lat": 41.389704000003,
+    "lng": -74.449417500001,
+    "provider": "nys"
+  },
+  "1540 EAST 102ND STREET, BROOKLYN, 11236, NY": {
+    "lat": 40.635351000003,
+    "lng": -73.885338000001,
+    "provider": "nys"
+  },
+  "2045 ROCKAWAY PARKWAY, BROOKLYN, 11236, NY": {
+    "lat": 40.633218000003,
+    "lng": -73.888582500001,
+    "provider": "nys"
+  },
+  "250 BERRY STREET, BROOKLYN, 11249, NY": {
+    "lat": 40.714848000003,
+    "lng": -73.963129500001,
+    "provider": "nys"
+  },
+  "151 GREENWAY SOUTH, FOREST HILLS, 11375, NY": {
+    "lat": 40.713048000003,
+    "lng": -73.842439500001,
+    "provider": "nys"
+  },
+  "2977 HEMPSTEAD TURNPIKE, LEVITTOWN, 11756, NY": {
+    "lat": 40.725540000003,
+    "lng": -73.525779000001,
+    "provider": "nys"
+  },
+  "2981 HEMPSTEAD TURNPIKE, LEVITTOWN, 11756, NY": {
+    "lat": 40.725549000003,
+    "lng": -73.525621500001,
+    "provider": "nys"
+  },
+  "12 LAWRENCE RD, SHIRLEY, 11967, NY": {
+    "lat": 40.786560000003,
+    "lng": -72.860022000001,
+    "provider": "nys"
+  },
+  "120 GARNER ST, COHOES, 12047, NY": {
+    "lat": 42.772940315091,
+    "lng": -73.704975914256,
+    "provider": "nys"
+  },
+  "15631 ZOAR ROAD, WATERTOWN, 13601, NY": {
+    "lat": 43.894343,
+    "lng": -75.900072,
+    "provider": "nominatim"
+  },
+  "150 PLEASANT AVE., HAMBURG, 14075, NY": {
+    "lat": 42.719427000003,
+    "lng": -78.834172500001,
+    "provider": "nys"
+  },
+  "5359 SCHOOL ST., WEST VALLEY, 14171, NY": {
+    "lat": 42.405201000003,
+    "lng": -78.609127500001,
+    "provider": "nys"
+  },
+  "97 MAY ST, BUFFALO, 14211, NY": {
+    "lat": 42.903135000003,
+    "lng": -78.816987000001,
+    "provider": "nys"
+  },
+  "5 BEECHWOOD DR, ROCHESTER, 14616, NY": {
+    "lat": 43.170669000003,
+    "lng": -77.684026500001,
+    "provider": "nys"
+  },
+  "18 BROOK HILL LANE, PENFIELD, 14625, NY": {
+    "lat": 43.137522000003,
+    "lng": -77.497105500001,
+    "provider": "nys"
+  },
+  "106 CHARLES ST, JAMESTOWN, 14701, NY": {
+    "lat": 42.085719000003,
+    "lng": -79.245234000001,
+    "provider": "nys"
+  },
+  "52 CHARLES ST, JAMESTOWN, 14701, NY": {
+    "lat": 42.086295000003,
+    "lng": -79.245216000001,
+    "provider": "nys"
   }
 }

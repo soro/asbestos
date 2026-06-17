@@ -30559,5 +30559,130 @@
     "lat": 42.086295000003,
     "lng": -79.245216000001,
     "provider": "nys"
+  },
+  "39 E 83RD STREET, NEW YORK, 10028, NY": {
+    "lat": 40.778703000003,
+    "lng": -73.959435000001,
+    "provider": "nys"
+  },
+  "221 EAST LAKE BOULEVARD, MAHOPAC, 10541, NY": {
+    "lat": 41.379948000003,
+    "lng": -73.727586000001,
+    "provider": "nys"
+  },
+  "375 KNEELAND AVENUE, YONKERS, 10704, NY": {
+    "lat": 40.921596000003,
+    "lng": -73.874173500001,
+    "provider": "nys"
+  },
+  "39 SIDNEY PL, BROOKLYN, 11201, NY": {
+    "lat": 40.691808000003,
+    "lng": -73.994607000001,
+    "provider": "nys"
+  },
+  "760 BROADWAY, BROOKLYN, 11206, NY": {
+    "lat": 40.700349000003,
+    "lng": -73.941601500001,
+    "provider": "nys"
+  },
+  "2 DWIGHT STREET, BROOKLYN, 11231, NY": {
+    "lat": 40.678974000003,
+    "lng": -74.005785000001,
+    "provider": "nys"
+  },
+  "9 DWIGHT STREET, BROOKLYN, 11231, NY": {
+    "lat": 40.678443140001,
+    "lng": -74.006133619241,
+    "provider": "nys"
+  },
+  "7 MURRO BLVD, VALLEY STREAM, 11581, NY": {
+    "lat": 40.650111000003,
+    "lng": -73.700833500001,
+    "provider": "nys"
+  },
+  "1601 NEWBRIDG ROAD, NORTH BELLMORE, 11710, NY": {
+    "lat": 40.682574000003,
+    "lng": -73.538856000001,
+    "provider": "nys"
+  },
+  "1 SCHOLAR LANE, COMMACK, 11725, NY": {
+    "lat": 40.860216000003,
+    "lng": -73.288908000001,
+    "provider": "nys"
+  },
+  "99 MIDWOOD AVENUE, NESCONSET, 11767, NY": {
+    "lat": 40.840299000003,
+    "lng": -73.142806500001,
+    "provider": "nys"
+  },
+  "9 ADELAIDE AVE., EAST MORICHES, 11940, NY": {
+    "lat": 40.802643000003,
+    "lng": -72.762777000001,
+    "provider": "nys"
+  },
+  "97 CENTRAL AVE, ALBANY, 12206, NY": {
+    "lat": 42.659802000003,
+    "lng": -73.766250000001,
+    "provider": "nys"
+  },
+  "256 FIRST STREET, ALBANY, 12206, NY": {
+    "lat": 42.661962000003,
+    "lng": -73.761678000001,
+    "provider": "nys"
+  },
+  "144 FORT COVINGTON STQ, MALONE, 12953, NY": {
+    "lat": 44.853525000003,
+    "lng": -74.304819000001,
+    "provider": "nys"
+  },
+  "45 COUNTY ROAD 42, MASSENA, 13662, NY": {
+    "lat": 44.939907000003,
+    "lng": -74.876409000001,
+    "provider": "nys"
+  },
+  "3618 BRIAR LANE, ENDWELL, 13760, NY": {
+    "lat": 42.118470000003,
+    "lng": -76.016259000001,
+    "provider": "nys"
+  },
+  "11 ORTON AVE, BINGHAMTON, 13901, NY": {
+    "lat": 42.101937000003,
+    "lng": -75.938170500001,
+    "provider": "nys"
+  },
+  "4040 BAKER RD, ORCHARD PARK, 14127, NY": {
+    "lat": 42.773499000003,
+    "lng": -78.729462000001,
+    "provider": "nys"
+  },
+  "2164 FIVEMILE LINE RD, ROCHESTER, 14526, NY": {
+    "lat": 43.126722000003,
+    "lng": -77.475676500001,
+    "provider": "nys"
+  },
+  "350 RANSFORD AVE, ROCHESTER, 14622, NY": {
+    "lat": 43.201134000003,
+    "lng": -77.553963000001,
+    "provider": "nys"
+  },
+  "2 S. PORTAGE ST, WESTFIELD, 14787, NY": {
+    "lat": 42.321645000003,
+    "lng": -79.578099000001,
+    "provider": "nys"
+  },
+  "205 DEVON ROAD, ITHACA, 14850, NY": {
+    "lat": 42.462396000003,
+    "lng": -76.493943000001,
+    "provider": "nys"
+  },
+  "1401 NORTH CAYUGA STREET, ITHACA, 14850, NY": {
+    "lat": 42.455592000003,
+    "lng": -76.498074000001,
+    "provider": "nys"
+  },
+  "4 MANNING AVE, SAVONA, 14879, NY": {
+    "lat": 42.289308000003,
+    "lng": -77.230399500001,
+    "provider": "nys"
   }
 }

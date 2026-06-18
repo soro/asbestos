@@ -30684,5 +30684,160 @@
     "lat": 42.289308000003,
     "lng": -77.230399500001,
     "provider": "nys"
+  },
+  "170 PARK ROW, NEW YORK, 10038, NY": {
+    "lat": 40.713750000003,
+    "lng": -74.000011500001,
+    "provider": "nys"
+  },
+  "32 HIGHVIEW AVE, NANUET, 10954, NY": {
+    "lat": 41.087880000003,
+    "lng": -74.011243500001,
+    "provider": "nys"
+  },
+  "34 VERDIN DR., NEW CITY, 10956, NY": {
+    "lat": 41.153004000003,
+    "lng": -73.991538000001,
+    "provider": "nys"
+  },
+  "K505 @ 5800 20TH AVE., BROOKLYN, 11204, NY": {
+    "lat": 40.620762000003,
+    "lng": -73.981714500001,
+    "provider": "nys"
+  },
+  "385/395 FOUNTAIN AVENUE, BROOKLYN, 11208, NY": {
+    "lat": 40.670019000003,
+    "lng": -73.872900000001,
+    "provider": "nys"
+  },
+  "2983 FULTON STREET, BROOKLYN, 11208, NY": {
+    "lat": 40.680081000003,
+    "lng": -73.884550500001,
+    "provider": "nys"
+  },
+  "5905 GLENWOOD ROAD, BROOKLYN, 11234, NY": {
+    "lat": 40.634676000003,
+    "lng": -73.920456000001,
+    "provider": "nys"
+  },
+  "148-15 230 STREET, QUEENS, 11413, NY": {
+    "lat": 40.655844000003,
+    "lng": -73.753204500001,
+    "provider": "nys"
+  },
+  "150 TRAFALGAR BOULEVARD, ISLAND PARK, 11558, NY": {
+    "lat": 40.606785000003,
+    "lng": -73.646671500001,
+    "provider": "nys"
+  },
+  "150 TRAFALGAR BLVD, ISLAND PARK, 11558, NY": {
+    "lat": 40.606785000003,
+    "lng": -73.646671500001,
+    "provider": "nys"
+  },
+  "30 CLARK AVENUE, LYNBROOK, 11563, NY": {
+    "lat": 40.663089000003,
+    "lng": -73.679580000001,
+    "provider": "nys"
+  },
+  "475 ROUND HILL RD, ROSLYN, 11577, NY": {
+    "lat": 40.792257000003,
+    "lng": -73.639435500001,
+    "provider": "nys"
+  },
+  "47 GARDEN CITY ST, BAY SHORE, 11706, NY": {
+    "lat": 40.752531000003,
+    "lng": -73.291302000001,
+    "provider": "nys"
+  },
+  "15 MELVIN AVE, FARMINGVILLE, 11738, NY": {
+    "lat": 40.847049000003,
+    "lng": -73.043766000001,
+    "provider": "nys"
+  },
+  "50 CARMAN MILL RD., MASSAPEQUA, 11758, NY": {
+    "lat": 40.672881000003,
+    "lng": -73.433722500001,
+    "provider": "nys"
+  },
+  "198 BALTIMORE AVENUE, MASSAPEQUA, 11758, NY": {
+    "lat": 40.685418000003,
+    "lng": -73.464232500001,
+    "provider": "nys"
+  },
+  "460 WAVERLY AVENUE, PATCHOGUE, 11772, NY": {
+    "lat": 40.780746000003,
+    "lng": -73.035945000001,
+    "provider": "nys"
+  },
+  "299 LILAC LANE, SMITHTOWN, 11787, NY": {
+    "lat": 40.834224000003,
+    "lng": -73.210662000001,
+    "provider": "nys"
+  },
+  "1 CLUB LANE, HAUPPAUGE, 11788, NY": {
+    "lat": 40.813209000003,
+    "lng": -73.205595000001,
+    "provider": "nys"
+  },
+  "28 WILLOW STREET, WHEATLEY HEIGHTS, 11798, NY": {
+    "lat": 40.761765000003,
+    "lng": -73.364188500001,
+    "provider": "nys"
+  },
+  "2012 ROUTE 52, HOPEWELL JUNCTION, 12533, NY": {
+    "lat": 41.540418000003,
+    "lng": -73.833165000001,
+    "provider": "nys"
+  },
+  "138 DORN RD, LAGRANGEVILLE, 12540, NY": {
+    "lat": 41.636790000003,
+    "lng": -73.699110000001,
+    "provider": "nys"
+  },
+  "65 W. MARKET ST., RED HOOK, 12571, NY": {
+    "lat": 41.997852000003,
+    "lng": -73.880226000001,
+    "provider": "nys"
+  },
+  "99 HUDSON AVE, S GLENS FALLS, 12803, NY": {
+    "lat": 43.297641000003,
+    "lng": -73.631434500001,
+    "provider": "nys"
+  },
+  "208 ROCKWELL ROAD, NEDROW, 13120, NY": {
+    "lat": 42.976170000003,
+    "lng": -76.139176500001,
+    "provider": "nys"
+  },
+  "308 NORTH GEORGE ST, ROME, 13440, NY": {
+    "lat": 43.215570000003,
+    "lng": -75.458943000001,
+    "provider": "nys"
+  },
+  "247 MAIN STREET, OWEGO, 13732, NY": {
+    "lat": 42.105078000003,
+    "lng": -76.259925000001,
+    "provider": "nys"
+  },
+  "96 ROSS STREET, BATAVIA, 14020, NY": {
+    "lat": 42.999102000003,
+    "lng": -78.175543500001,
+    "provider": "nys"
+  },
+  "841 GENESEE STREET, ROCHESTER, 14611, NY": {
+    "lat": 43.133121000003,
+    "lng": -77.636785500001,
+    "provider": "nys"
+  },
+  "150 COLEBROOK DRIVE, ROCHESTER, 14617, NY": {
+    "lat": 43.240644000003,
+    "lng": -77.594985000001,
+    "provider": "nys"
+  },
+  "26 INSTITUTE ST., FREWSBURG, 14738, NY": {
+    "lat": 42.055560000003,
+    "lng": -79.160445000001,
+    "provider": "nys"
   }
 }

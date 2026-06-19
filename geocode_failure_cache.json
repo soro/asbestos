@@ -511,5 +511,14 @@
     ],
     "failedAt": "2026-06-13T01:48:43.824Z",
     "cacheVersion": 1
+  },
+  "3500 BAYSIDE STREET, SEAFORD, 11783, NY": {
+    "providers": [
+      "nys",
+      "census",
+      "nominatim"
+    ],
+    "failedAt": "2026-06-19T01:54:58.267Z",
+    "cacheVersion": 1
   }
 }

@@ -30839,5 +30839,150 @@
     "lat": 42.055560000003,
     "lng": -79.160445000001,
     "provider": "nys"
+  },
+  "23 WASHINGTON PLACE, NEW YORK, 10003, NY": {
+    "lat": 40.732056000003,
+    "lng": -73.997991000001,
+    "provider": "nys"
+  },
+  "610 EAST 12TH STREET, MANHATTAN, 10009, NY": {
+    "lat": 40.727736000003,
+    "lng": -73.978384500001,
+    "provider": "nys"
+  },
+  "427 EAST 102ND STREET, NEW YORK, 10029, NY": {
+    "lat": 40.787532000003,
+    "lng": -73.940566500001,
+    "provider": "nys"
+  },
+  "1160 MAMARONECK AVE, MAMARONECK, 10543, NY": {
+    "lat": 40.995432000003,
+    "lng": -73.746846000001,
+    "provider": "nys"
+  },
+  "245 NORTH MIDLAND AVE, NYACK, 10960, NY": {
+    "lat": 41.098311000003,
+    "lng": -73.923835500001,
+    "provider": "nys"
+  },
+  "11 GRANNY CT., PEARL RIVER, 10965, NY": {
+    "lat": 41.070591000003,
+    "lng": -74.026899000001,
+    "provider": "nys"
+  },
+  "1 ABERDEEN DR., WEST NYACK, 10994, NY": {
+    "lat": 41.108553000003,
+    "lng": -73.977723000001,
+    "provider": "nys"
+  },
+  "2630 BENSON AVE, BROOKLYN, 11214, NY": {
+    "lat": 40.593996000003,
+    "lng": -73.985751000001,
+    "provider": "nys"
+  },
+  "309 47 STREET, BROOKLYN, 11220, NY": {
+    "lat": 40.649103000003,
+    "lng": -74.011833000001,
+    "provider": "nys"
+  },
+  "826 SHARI LANE, EAST MEADOW, 11554, NY": {
+    "lat": 40.699971000003,
+    "lng": -73.571265000001,
+    "provider": "nys"
+  },
+  "1042 NORTHERN BLVD, ROSLYN, 11576, NY": {
+    "lat": 40.797657000003,
+    "lng": -73.665895500001,
+    "provider": "nys"
+  },
+  "169 PARK AVENUE, BBAYLON, 11702, NY": {
+    "lat": 40.703022000003,
+    "lng": -73.330506000001,
+    "provider": "nys"
+  },
+  "3369 OLD JERUSALEM RD, LEVITTOWN, 11756, NY": {
+    "lat": 40.703256000003,
+    "lng": -73.506514500001,
+    "provider": "nys"
+  },
+  "3297 BELTAGH AVENUE, WANTAGH, 11793, NY": {
+    "lat": 40.689099000003,
+    "lng": -73.513399500001,
+    "provider": "nys"
+  },
+  "105 FROEHLICH FARM BLVD, WOODBURY, 11797, NY": {
+    "lat": 40.802940000003,
+    "lng": -73.478353500001,
+    "provider": "nys"
+  },
+  "84 HOLLAND AVE, ALBANY, 12208, NY": {
+    "lat": 42.649740000003,
+    "lng": -73.776114000001,
+    "provider": "nys"
+  },
+  "19 LIBERTY STREET, KINGSTON, 12401, NY": {
+    "lat": 41.930856000003,
+    "lng": -74.009565000001,
+    "provider": "nys"
+  },
+  "16 WEDGEWOOD RD, FISHKILL, 12524, NY": {
+    "lat": 41.547915000003,
+    "lng": -73.865857500001,
+    "provider": "nys"
+  },
+  "99 MYERS CORNERS RD, WAPPINGERS FALLS, NY 12590, WAPPINGERS FALLS, 12590, NY": {
+    "lat": 41.598081000003,
+    "lng": -73.891723500001,
+    "provider": "nys"
+  },
+  "125 BUCKLEY STREET, LIBERTY, 12754, NY": {
+    "lat": 41.806836000003,
+    "lng": -74.754436500001,
+    "provider": "nys"
+  },
+  "5325 STATE ROUTE 42, SOUTH FALLSBURG, 12779, NY": {
+    "lat": 41.713884000003,
+    "lng": -74.623158000001,
+    "provider": "nys"
+  },
+  "99 PRISON ROAD, WOODBOURNE, 12788, NY": {
+    "lat": 41.754051000003,
+    "lng": -74.592688500001,
+    "provider": "nys"
+  },
+  "142 STATE ST., BINGHAMTON, 13901, NY": {
+    "lat": 42.099966000003,
+    "lng": -75.911809500001,
+    "provider": "nys"
+  },
+  "195 SPRUCE ST., NORTH TONAWANDA, 14120, NY": {
+    "lat": 43.028100000003,
+    "lng": -78.856353000001,
+    "provider": "nys"
+  },
+  "60 SOUITH LINCOLN AVE, ORCHARD PARK, 14127, NY": {
+    "lat": 42.765327000003,
+    "lng": -78.748042500001,
+    "provider": "nys"
+  },
+  "51 S. DAVIS STREET, ORCHARD PARK, 14127, NY": {
+    "lat": 42.763442020155,
+    "lng": -78.752372871893,
+    "provider": "nys"
+  },
+  "73 WILSON, BUFFALO, 14206, NY": {
+    "lat": 42.887160000003,
+    "lng": -78.839941500001,
+    "provider": "nys"
+  },
+  "126 NEWFIELD ST., BUFFALO, 14207, NY": {
+    "lat": 42.959385000003,
+    "lng": -78.897451500001,
+    "provider": "nys"
+  },
+  "320 W. CRAIG HILL DRIVE, ROCHESTER, 14626, NY": {
+    "lat": 43.206660000003,
+    "lng": -77.718577500001,
+    "provider": "nys"
   }
 }

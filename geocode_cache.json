@@ -30984,5 +30984,120 @@
     "lat": 43.206660000003,
     "lng": -77.718577500001,
     "provider": "nys"
+  },
+  "38 EAST 32ND STREET, NEW YORK, 10016, NY": {
+    "lat": 40.746042000003,
+    "lng": -73.983082500001,
+    "provider": "nys"
+  },
+  "35 LIME KILN ROAD, SUFFERN, 10901, NY": {
+    "lat": 41.162661000003,
+    "lng": -74.074860000001,
+    "provider": "nys"
+  },
+  "2327 E 65 ST, BROOKLYN, 11234, NY": {
+    "lat": 40.612977000003,
+    "lng": -73.907676000001,
+    "provider": "nys"
+  },
+  "2065 ROCKAWAY PARKWAY, BROOKLYN, 11236, NY": {
+    "lat": 40.633794000003,
+    "lng": -73.887043500001,
+    "provider": "nys"
+  },
+  "2075 ROCKWAY PARKWAY, BROOKLYN, 11236, NY": {
+    "lat": 40.632966000003,
+    "lng": -73.887597000001,
+    "provider": "nys"
+  },
+  "121 SHERIDAN ST, WETSBURY, 11590, NY": {
+    "lat": 40.749318000003,
+    "lng": -73.626133500001,
+    "provider": "nys"
+  },
+  "623 9TH AVENUE, EAST NORTHPORT, 11731, NY": {
+    "lat": 40.876731000003,
+    "lng": -73.337233500001,
+    "provider": "nys"
+  },
+  "5 WARRENTON CT, HUNTINGTON, 11743, NY": {
+    "lat": 40.869648000003,
+    "lng": -73.411695000001,
+    "provider": "nys"
+  },
+  "50 HOLLYWOOD AVE, SELDEN, 11784, NY": {
+    "lat": 40.854042000003,
+    "lng": -73.038474000001,
+    "provider": "nys"
+  },
+  "2 CHESTNUT STREET, CASTLETON ON HUDSON, 12033, NY": {
+    "lat": 42.528303000003,
+    "lng": -73.752052500001,
+    "provider": "nys"
+  },
+  "58 QUAKER STREET, GRANVILLE, 12832, NY": {
+    "lat": 43.401132000003,
+    "lng": -73.263325500001,
+    "provider": "nys"
+  },
+  "643 DUBOIS RD, CHAMPLAIN, 12919, NY": {
+    "lat": 45.000360000003,
+    "lng": -73.497708000001,
+    "provider": "nys"
+  },
+  "55 MONTGOMERY STREET, CANAJOHARIE, 13317, NY": {
+    "lat": 42.904440000003,
+    "lng": -74.568829500001,
+    "provider": "nys"
+  },
+  "1301 UNION CENTER MAINE HIGHWAY, ENDICOTT, 13760, NY": {
+    "lat": 42.114141000003,
+    "lng": -76.074178500001,
+    "provider": "nys"
+  },
+  "263 RIDGEFIELD RD, ENDICOTT, 13760, NY": {
+    "lat": 42.074667000003,
+    "lng": -76.126950000001,
+    "provider": "nys"
+  },
+  "1886 TWO ROD ROAD, MARILLA, 14102, NY": {
+    "lat": 42.837741000003,
+    "lng": -78.555487500001,
+    "provider": "nys"
+  },
+  "54 STATE ST., MIDDLEPORT, 14105, NY": {
+    "lat": 43.212186000003,
+    "lng": -78.468705000001,
+    "provider": "nys"
+  },
+  "7001 LEWISTON ROAD, OAKFIELD, 14125, NY": {
+    "lat": 43.074333000003,
+    "lng": -78.279763500001,
+    "provider": "nys"
+  },
+  "155 HEIM RD., BUFFALO, 14221, NY": {
+    "lat": 43.010775000003,
+    "lng": -78.761520000001,
+    "provider": "nys"
+  },
+  "1150 WINTON ROAD, ROCHESTER, 14618, NY": {
+    "lat": 43.122492000003,
+    "lng": -77.566162500001,
+    "provider": "nys"
+  },
+  "2653 ELMWOOD AVENUE, ROCHESTER, 14618, NY": {
+    "lat": 43.126375928023,
+    "lng": -77.56529111149,
+    "provider": "nys"
+  },
+  "1144 LONG POND ROAD, ROCHESTER, 14626, NY": {
+    "lat": 43.218144000003,
+    "lng": -77.693179500001,
+    "provider": "nys"
+  },
+  "199 SEA LION DR, MAYVILLE, 14757, NY": {
+    "lat": 42.260562000003,
+    "lng": -79.486110000001,
+    "provider": "nys"
   }
 }

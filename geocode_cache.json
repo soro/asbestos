@@ -31099,5 +31099,60 @@
     "lat": 42.260562000003,
     "lng": -79.486110000001,
     "provider": "nys"
+  },
+  "303 EAST 90TH STREET, NEW YORK, 10128, NY": {
+    "lat": 40.780341000003,
+    "lng": -73.949377500001,
+    "provider": "nys"
+  },
+  "1801 RICHMOND TERRACE, STATEN ISLAND, 10310, NY": {
+    "lat": 40.637754000003,
+    "lng": -74.125224000001,
+    "provider": "nys"
+  },
+  "124 MONITOR STREET, BROOKLYN, 11222, NY": {
+    "lat": 40.723632000003,
+    "lng": -73.942159500001,
+    "provider": "nys"
+  },
+  "85-06 122 ST, KEW GARDENES, 11415, NY": {
+    "lat": 40.703320492844,
+    "lng": -73.829475913233,
+    "provider": "nys"
+  },
+  "22 PERSHING AVE., POUGHKEEPSIE, 12601, NY": {
+    "lat": 41.700654000003,
+    "lng": -73.914619500001,
+    "provider": "nys"
+  },
+  "11 ORTON AVE, BINGHAMTON, 13905, NY": {
+    "lat": 42.101937000003,
+    "lng": -75.938170500001,
+    "provider": "nys"
+  },
+  "321 DEARBORN ST, BUFFALO, 14207, NY": {
+    "lat": 42.937974000003,
+    "lng": -78.902680500001,
+    "provider": "nys"
+  },
+  "101 CARTER ROAD, GENEVA, 14456, NY": {
+    "lat": 42.879123000003,
+    "lng": -76.991949000001,
+    "provider": "nys"
+  },
+  "30 WEST STREET, GENEVA, 14456, NY": {
+    "lat": 42.865047000003,
+    "lng": -76.996602000001,
+    "provider": "nys"
+  },
+  "465 SEWARD STREET, ROCHESTER, 14608, NY": {
+    "lat": 43.138674000003,
+    "lng": -77.626557000001,
+    "provider": "nys"
+  },
+  "300 COLLEGE AVE., ODESSA, 14869, NY": {
+    "lat": 42.334875000003,
+    "lng": -76.792522500001,
+    "provider": "nys"
   }
 }

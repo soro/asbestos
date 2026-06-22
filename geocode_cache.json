@@ -31154,5 +31154,220 @@
     "lat": 42.334875000003,
     "lng": -76.792522500001,
     "provider": "nys"
+  },
+  "200 PARK AVE SOUTH, NEW YORK, 10003, NY": {
+    "lat": 40.736790000003,
+    "lng": -73.989306000001,
+    "provider": "nys"
+  },
+  "1159 EAST 229TH, BRONX, 10466, NY": {
+    "lat": 40.886106987467,
+    "lng": -73.844703639045,
+    "provider": "nys"
+  },
+  "4011 MONTICELLO AVENUE, BRONX, 10466, NY": {
+    "lat": 40.891473000003,
+    "lng": -73.838569500001,
+    "provider": "nys"
+  },
+  "760 EAST GUN HILL ROAD, BRONX, 10467, NY": {
+    "lat": 40.876362000003,
+    "lng": -73.863738000001,
+    "provider": "nys"
+  },
+  "1780 WATSON AVENUE, BRONX, 10472, NY": {
+    "lat": 40.827258000003,
+    "lng": -73.866087000001,
+    "provider": "nys"
+  },
+  "1781 BRUCKNER BOULEVARD, BRONX, 10472, NY": {
+    "lat": 40.826304000003,
+    "lng": -73.865992500001,
+    "provider": "nys"
+  },
+  "36 GREENMEADOW RD, PLEASANTVILLE, 10570, NY": {
+    "lat": 41.140215000003,
+    "lng": -73.775970000001,
+    "provider": "nys"
+  },
+  "1 MONTCLAIR PLACE, YONKERS, 10710, NY": {
+    "lat": 40.963131000003,
+    "lng": -73.843281000001,
+    "provider": "nys"
+  },
+  "78 W CHURCH ST, SPRING VALLEY, 10977, NY": {
+    "lat": 41.113089000003,
+    "lng": -74.052409500001,
+    "provider": "nys"
+  },
+  "5 ELDORADO DRIVE, CHESTNUT RIDGE, 10977, NY": {
+    "lat": 41.087655000003,
+    "lng": -74.047635000001,
+    "provider": "nys"
+  },
+  "8227 LITTLE NECK PARKWAY, FLORAL PARK, 11004, NY": {
+    "lat": 40.739148000003,
+    "lng": -73.715125500001,
+    "provider": "nys"
+  },
+  "1109 BENMORE AVENUE, FRANKLIN SQUARE, 11010, NY": {
+    "lat": 40.714614000003,
+    "lng": -73.680583500001,
+    "provider": "nys"
+  },
+  "5 PLYMOUTH RD, PORT WASHINGTON, 11050, NY": {
+    "lat": 40.821399000003,
+    "lng": -73.679404500001,
+    "provider": "nys"
+  },
+  "45 WAKEFIELD AVENUE, PORT WASHINGTON, 11050, NY": {
+    "lat": 40.816692000003,
+    "lng": -73.673959500001,
+    "provider": "nys"
+  },
+  "79 NORTH OXFORD WALK, BROOKLYN, 11205, NY": {
+    "lat": 40.695417000003,
+    "lng": -73.974838500001,
+    "provider": "nys"
+  },
+  "3002 FORT HAMILTON PARKWAY, BROOKLYN, 11218, NY": {
+    "lat": 40.648167000003,
+    "lng": -73.978582500001,
+    "provider": "nys"
+  },
+  "67-16 PARSONS BLVD, QUEENS, 11365, NY": {
+    "lat": 40.734369000003,
+    "lng": -73.812109500001,
+    "provider": "nys"
+  },
+  "156-07 71ST AVENUE, QUEENS, 11367, NY": {
+    "lat": 40.730307073589,
+    "lng": -73.81281471929,
+    "provider": "nys"
+  },
+  "156-15 71ST AVENUE, QUEENS, 11367, NY": {
+    "lat": 40.730805000003,
+    "lng": -73.811911500001,
+    "provider": "nys"
+  },
+  "67-47 KISSENA BOULEVARD, QUEENS, 11367, NY": {
+    "lat": 40.734000000003,
+    "lng": -73.814494500001,
+    "provider": "nys"
+  },
+  "314 WASHINGTON AVE, CEDARHURST,, 11516, NY": {
+    "lat": 40.624407000003,
+    "lng": -73.728985500001,
+    "provider": "nys"
+  },
+  "47 GARDEN CITY STREET, BAYWOOD, 11706, NY": {
+    "lat": 40.752531000003,
+    "lng": -73.291302000001,
+    "provider": "nys"
+  },
+  "1909 ALLISON DR, NORTH BELLMORE, 11710, NY": {
+    "lat": 40.676652000003,
+    "lng": -73.530805500001,
+    "provider": "nys"
+  },
+  "2483 MARINE PL, BELLMORE, 11710, NY": {
+    "lat": 40.653189000003,
+    "lng": -73.531462500001,
+    "provider": "nys"
+  },
+  "744 EVELYN AVE, NORTH BELLMORE, 11710, NY": {
+    "lat": 40.704381000003,
+    "lng": -73.536889500001,
+    "provider": "nys"
+  },
+  "5125 MERRICK ROAD, MASSAPEQUA, 11762, NY": {
+    "lat": 40.667022000003,
+    "lng": -73.446889500001,
+    "provider": "nys"
+  },
+  "1774 MONTAUK HIGHWAY, WATER MILL, 11976, NY": {
+    "lat": 40.929471000003,
+    "lng": -72.324963000001,
+    "provider": "nys"
+  },
+  "225 MCCULLOUGH ROAD, EAST GREENBUSH, 12144, NY": {
+    "lat": 42.621723000003,
+    "lng": -73.724040000001,
+    "provider": "nys"
+  },
+  "5219 CO RT 7, SPENCERTOWN, 12165, NY": {
+    "lat": 42.322446000003,
+    "lng": -73.545606000001,
+    "provider": "nys"
+  },
+  "72 EASTERN PARKWAY, SAUGERTIES, 12477, NY": {
+    "lat": 42.003288000003,
+    "lng": -73.987236000001,
+    "provider": "nys"
+  },
+  "196 MAIN STREET, NEW PALTZ, 12561, NY": {
+    "lat": 41.744673000003,
+    "lng": -74.077245000001,
+    "provider": "nys"
+  },
+  "1019 CR 59, CAMBRIDGE, 12580, NY": {
+    "lat": 43.002252000003,
+    "lng": -73.443771000001,
+    "provider": "nys"
+  },
+  "15 RIVERVIEW STREET, WALDEN, 12586, NY": {
+    "lat": 41.557626000003,
+    "lng": -74.191387500001,
+    "provider": "nys"
+  },
+  "109 BONA VENTURA AVE, WALLKILL, 12589, NY": {
+    "lat": 41.603580000003,
+    "lng": -74.176047000001,
+    "provider": "nys"
+  },
+  "300 BALLARD ROAD, GANESVOORT, 12831, NY": {
+    "lat": 43.178373000003,
+    "lng": -73.734520500001,
+    "provider": "nys"
+  },
+  "492 TOM MILLER RD, PLATTSBURGH, 12901, NY": {
+    "lat": 44.704989000003,
+    "lng": -73.523542500001,
+    "provider": "nys"
+  },
+  "5408 WEST LAKE RD, AUBURN, 13021, NY": {
+    "lat": 42.872373000003,
+    "lng": -76.537260000001,
+    "provider": "nys"
+  },
+  "2 BUCCANEER BLVD, OSWEGO, 13126, NY": {
+    "lat": 43.450533000003,
+    "lng": -76.524610500001,
+    "provider": "nys"
+  },
+  "6398 PILLMORE DRIVE, ROME, 13440, NY": {
+    "lat": 43.294302000003,
+    "lng": -75.464649000001,
+    "provider": "nys"
+  },
+  "14 VANDEUSEN RD, DAVENPORT, 13750, NY": {
+    "lat": 42.469173000003,
+    "lng": -74.794194000001,
+    "provider": "nys"
+  },
+  "45 VICTORIA BLVD., KENMORE, 14217, NY": {
+    "lat": 42.963912000003,
+    "lng": -78.872098500001,
+    "provider": "nys"
+  },
+  "600 PARDEE RD, ROCHESTER, 14609, NY": {
+    "lat": 43.187292000003,
+    "lng": -77.552410500001,
+    "provider": "nys"
+  },
+  "201 CATIGNY, CORNING, 14830, NY": {
+    "lat": 42.1476833545,
+    "lng": -77.04896791781,
+    "provider": "census"
   }
 }

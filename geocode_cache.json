@@ -31369,5 +31369,180 @@
     "lat": 42.1476833545,
     "lng": -77.04896791781,
     "provider": "census"
+  },
+  "305 EAST 24TH STREET APT 2F, NEW YORK, 10010, NY": {
+    "lat": 40.738491000003,
+    "lng": -73.980027000001,
+    "provider": "nys"
+  },
+  "440 WEST 53RD STREET, MANHATTAN, 10019, NY": {
+    "lat": 40.766013000003,
+    "lng": -73.989355500001,
+    "provider": "nys"
+  },
+  "250 WEST 131ST STREET, NEW YORK, 10027, NY": {
+    "lat": 40.813299000003,
+    "lng": -73.947577500001,
+    "provider": "nys"
+  },
+  "218 EAST 104TH STREET, MANHATTAN, 10029, NY": {
+    "lat": 40.789440000003,
+    "lng": -73.944828000001,
+    "provider": "nys"
+  },
+  "421 EAST 102ND STREET, NEW YORK, 10029, NY": {
+    "lat": 40.787100000003,
+    "lng": -73.940886000001,
+    "provider": "nys"
+  },
+  "7 SAINT JAMES PLACE, NEW YORK, 10038, NY": {
+    "lat": 40.710213000003,
+    "lng": -73.999233000001,
+    "provider": "nys"
+  },
+  "93 NAGLE AVENUE, MANHATTAN, 10040, NY": {
+    "lat": 40.860207000003,
+    "lng": -73.927845000001,
+    "provider": "nys"
+  },
+  "510 PARK AVENUE, MANHATTAN, 10065, NY": {
+    "lat": 40.763448000003,
+    "lng": -73.969722000001,
+    "provider": "nys"
+  },
+  "1120 5TH AVENUE, NEW YORK, 10128, NY": {
+    "lat": 40.786164000003,
+    "lng": -73.956825000001,
+    "provider": "nys"
+  },
+  "135 EAST 96TH STREET, NEW YORK, 10128, NY": {
+    "lat": 40.786281000003,
+    "lng": -73.951492500001,
+    "provider": "nys"
+  },
+  "1060 FIFTH AVE, NEW YORK, 10128, NY": {
+    "lat": 40.782132000003,
+    "lng": -73.959475500001,
+    "provider": "nys"
+  },
+  "55 EAST 90TH STREET, NEW YORK, 10128, NY": {
+    "lat": 40.783248000003,
+    "lng": -73.956280500001,
+    "provider": "nys"
+  },
+  "135 CASSIDY PLACE, STATEN ISLAND, 10301, NY": {
+    "lat": 40.642317000003,
+    "lng": -74.096748000001,
+    "provider": "nys"
+  },
+  "476 RICHMOND TERRACE, STATEN ISLAND, 10301, NY": {
+    "lat": 40.646844000003,
+    "lng": -74.088319500001,
+    "provider": "nys"
+  },
+  "240 PARK HILL AVENUE, STATEN ISLAND, 10304, NY": {
+    "lat": 40.613544000003,
+    "lng": -74.082487500001,
+    "provider": "nys"
+  },
+  "78 NARROWS RD, STATEN ISLAND, 10305, NY": {
+    "lat": 40.604634000003,
+    "lng": -74.072812500001,
+    "provider": "nys"
+  },
+  "61 CLEVELAND PLACE, STATEN ISLAND, 10305, NY": {
+    "lat": 40.602108044245,
+    "lng": -74.068765853121,
+    "provider": "nys"
+  },
+  "777 SEAVIEW AVENUE, STATEN ISLAND, 10305, NY": {
+    "lat": 40.582539000003,
+    "lng": -74.078554500001,
+    "provider": "nys"
+  },
+  "439, RICHARD AVENUE, 10309, NY": {
+    "lat": 40.507416000003,
+    "lng": -74.223571500001,
+    "provider": "nys"
+  },
+  "6937 AMBOY ROAD, STATEN ISLAND, 10309, NY": {
+    "lat": 40.517676000003,
+    "lng": -74.232117000001,
+    "provider": "nys"
+  },
+  "780 POST AVENUE, STATEN ISLAND, 10310, NY": {
+    "lat": 40.631058000003,
+    "lng": -74.126956500001,
+    "provider": "nys"
+  },
+  "20 RICHMAN PLAZA, BRONX, 10453, NY": {
+    "lat": 40.851594000003,
+    "lng": -73.923102000001,
+    "provider": "nys"
+  },
+  "1925 HARRISON AVENUE, BRONX, 10453, NY": {
+    "lat": 40.853997000003,
+    "lng": -73.910655000001,
+    "provider": "nys"
+  },
+  "965 LONGWOOD AVE, BRONX, 10459, NY": {
+    "lat": 40.817610000003,
+    "lng": -73.897987500001,
+    "provider": "nys"
+  },
+  "124 EAMES PLACE, BRONX, 10468, NY": {
+    "lat": 40.869225000003,
+    "lng": -73.901601000001,
+    "provider": "nys"
+  },
+  "31 GLENGARY ROAD, CROTON-ON-HUDSON, 10520, NY": {
+    "lat": 41.221278000003,
+    "lng": -73.884105000001,
+    "provider": "nys"
+  },
+  "1980 CROMPOND ROAD, CORTLANDT MANOR, 10567, NY": {
+    "lat": 41.291550000003,
+    "lng": -73.893604500001,
+    "provider": "nys"
+  },
+  "1590 WASHINGTON AVENUE, SEAFORD, 11783, NY": {
+    "lat": 40.684554000003,
+    "lng": -73.486345500001,
+    "provider": "nys"
+  },
+  "660 MEADOW ROAD, SMITHTOWN, 11787, NY": {
+    "lat": 40.863888000003,
+    "lng": -73.239691500001,
+    "provider": "nys"
+  },
+  "49 LEVEY BOULEVARD, WYANDANCH, 11798, NY": {
+    "lat": 40.744350000003,
+    "lng": -73.370151000001,
+    "provider": "nys"
+  },
+  "272 DELAWARE, ALBANY, 12209, NY": {
+    "lat": 42.643350000003,
+    "lng": -73.775686500001,
+    "provider": "nys"
+  },
+  "1439 RUIE RD, NORTH TONAWANDA, 14120, NY": {
+    "lat": 43.065162000003,
+    "lng": -78.859138500001,
+    "provider": "nys"
+  },
+  "4832 PENN STREET, NIAGARA FALLS, 14305, NY": {
+    "lat": 43.131600000003,
+    "lng": -79.048948500001,
+    "provider": "nys"
+  },
+  "5509 E. HENRIETTA RD., RUSH, 14543, NY": {
+    "lat": 43.010955000003,
+    "lng": -77.640934500001,
+    "provider": "nys"
+  },
+  "74 VILLAGE LANE, ROCHESTER, 14622, NY": {
+    "lat": 43.135191000003,
+    "lng": -77.552244000001,
+    "provider": "nys"
   }
 }

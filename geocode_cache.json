@@ -31544,5 +31544,55 @@
     "lat": 43.135191000003,
     "lng": -77.552244000001,
     "provider": "nys"
+  },
+  "223 EAST 23RD STREET, NEW YORK, 10010, NY": {
+    "lat": 40.738383000003,
+    "lng": -73.981629000001,
+    "provider": "nys"
+  },
+  "1851 3RD AVENUE, MANHATTAN, 10029, NY": {
+    "lat": 40.789161000003,
+    "lng": -73.945980000001,
+    "provider": "nys"
+  },
+  "367 WADSWORTH AVENUE, MANHATTAN, 10040, NY": {
+    "lat": 40.856202000003,
+    "lng": -73.930113000001,
+    "provider": "nys"
+  },
+  "794 EAST 160TH ST, BRONX, 10456, NY": {
+    "lat": 40.820049000003,
+    "lng": -73.903545000001,
+    "provider": "nys"
+  },
+  "977 FOX STREET, BRONX, 10459, NY": {
+    "lat": 40.822092000003,
+    "lng": -73.894041000001,
+    "provider": "nys"
+  },
+  "550 WHITE PLAINS RD, EASTCHESTER, 10709, NY": {
+    "lat": 40.961044594013,
+    "lng": -73.811327269333,
+    "provider": "nys"
+  },
+  "209-58 112TH AVENUE, QUEENS VILLAGE, 11429, NY": {
+    "lat": 40.705362000003,
+    "lng": -73.745050500001,
+    "provider": "nys"
+  },
+  "409 SCHENECTADY STREET, SCHENECTADY, 12307, NY": {
+    "lat": 42.805242000003,
+    "lng": -73.940467500001,
+    "provider": "nys"
+  },
+  "6299 SOUTH BAY RD, CICERO, 13039, NY": {
+    "lat": 43.171092000003,
+    "lng": -76.086720000001,
+    "provider": "nys"
+  },
+  "500 PULTENEY ST, GENEVA, 14456, NY": {
+    "lat": 42.854661000003,
+    "lng": -76.983858000001,
+    "provider": "nys"
   }
 }

@@ -31594,5 +31594,85 @@
     "lat": 42.854661000003,
     "lng": -76.983858000001,
     "provider": "nys"
+  },
+  "68 LEXINGTON AVE, NEW YORK, 10010, NY": {
+    "lat": 40.741164000003,
+    "lng": -73.983730500001,
+    "provider": "nys"
+  },
+  "111 EAST 56TH STREET, MANHATTAN, 10022, NY": {
+    "lat": 40.760721000003,
+    "lng": -73.970455500001,
+    "provider": "nys"
+  },
+  "142 WEST END AVE, MANTATTAN, 10023, NY": {
+    "lat": 40.775814000003,
+    "lng": -73.986030000001,
+    "provider": "nys"
+  },
+  "456 RICHMOND TERRACE, STATEN ISLAND, 10301, NY": {
+    "lat": 40.647177000003,
+    "lng": -74.087748000001,
+    "provider": "nys"
+  },
+  "161 PARK AVE, STATEN ISLAND, 10302, NY": {
+    "lat": 40.636746000003,
+    "lng": -74.132577000001,
+    "provider": "nys"
+  },
+  "104 GORDON STREET, STATEN ISLAND, 10304, NY": {
+    "lat": 40.624128000003,
+    "lng": -74.082847500001,
+    "provider": "nys"
+  },
+  "295 ST. PAULS AVENUE, STATEN ISLAND, 10304, NY": {
+    "lat": 40.63072813218,
+    "lng": -74.080826019758,
+    "provider": "nys"
+  },
+  "80 SOUTH GOFF AVENUE, STATEN ISLAND, 10309, NY": {
+    "lat": 40.520295000003,
+    "lng": -74.211417000001,
+    "provider": "nys"
+  },
+  "110 MOSELY AVENUE, STATEN ISLAND, 10309, NY": {
+    "lat": 40.539753000003,
+    "lng": -74.173891500001,
+    "provider": "nys"
+  },
+  "1276 FULTON AVE, BRONX, 10456, NY": {
+    "lat": 40.831659000003,
+    "lng": -73.903536000001,
+    "provider": "nys"
+  },
+  "555 OVINGTON AVE., BROOKLYN, 11209, NY": {
+    "lat": 40.632066000003,
+    "lng": -74.019879000001,
+    "provider": "nys"
+  },
+  "4807 SURF AVE, BROOKLYN, 11224, NY": {
+    "lat": 40.577904000003,
+    "lng": -74.010640500001,
+    "provider": "nys"
+  },
+  "25 MILL LANE, FARMINGDALE, 11735, NY": {
+    "lat": 40.717494000003,
+    "lng": -73.430442000001,
+    "provider": "nys"
+  },
+  "2844 STATE ROUTE 10, SUMMIT, 12194, NY": {
+    "lat": 42.577398000003,
+    "lng": -74.588670000001,
+    "provider": "nys"
+  },
+  "342 JEFFERSON ST., SARATOGA SPRINGS, 12866, NY": {
+    "lat": 43.061841000003,
+    "lng": -73.774323000001,
+    "provider": "nys"
+  },
+  "430 ELMWOOD AVE, ROCHESTER, 14620, NY": {
+    "lat": 43.124292000003,
+    "lng": -77.626480500001,
+    "provider": "nys"
   }
 }

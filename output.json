@@ -34,17 +34,6 @@
   },
   {
     "contractor": "NEW YORK ENVIRONMENTAL SYSTEMS, INC.",
-    "start": "2025-06-25T00:00:00.000000000",
-    "end": "2026-06-25T00:00:00.000000000",
-    "street": "415 WEST 25TH STREET",
-    "city": "NEW YORK",
-    "zip": "10001",
-    "caseReference": "27131458",
-    "lat": 40.74804598531,
-    "lng": -74.000902758341
-  },
-  {
-    "contractor": "NEW YORK ENVIRONMENTAL SYSTEMS, INC.",
     "start": "2025-06-27T00:00:00.000000000",
     "end": "2026-06-27T00:00:00.000000000",
     "street": "427 WEST 26TH STREET",
@@ -219,5 +208,16 @@
     "lat": 40.746987000003,
     "lng": -73.992519000001,
     "geocodingProvider": "nys"
+  },
+  {
+    "contractor": "BARROS CONSTRUCTION CORP.",
+    "start": "2025-11-18T00:00:00.000000000",
+    "end": "2026-11-17T00:00:00.000000000",
+    "street": "426 WEST 27TH DRIVE",
+    "city": "NEW YORK",
+    "zip": "10001",
+    "caseReference": "27177344",
+    "lat": 40.749650252183,
+    "lng": -74.001153317583
   }
 ]

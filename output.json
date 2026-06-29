@@ -33,17 +33,6 @@
     "lng": -72.026324525219
   },
   {
-    "contractor": "NEW YORK ENVIRONMENTAL SYSTEMS, INC.",
-    "start": "2025-06-27T00:00:00.000000000",
-    "end": "2026-06-27T00:00:00.000000000",
-    "street": "427 WEST 26TH STREET",
-    "city": "NEW YORK",
-    "zip": "10001",
-    "caseReference": "27132718",
-    "lat": 40.749163277231,
-    "lng": -74.001616687255
-  },
-  {
     "contractor": "BARROS CONSTRUCTION CORP.",
     "start": "2025-07-02T00:00:00.000000000",
     "end": "2026-07-01T00:00:00.000000000",
@@ -217,6 +206,17 @@
     "city": "NEW YORK",
     "zip": "10001",
     "caseReference": "27177344",
+    "lat": 40.749650252183,
+    "lng": -74.001153317583
+  },
+  {
+    "contractor": "ABATEMENT UNLIMITED, INC.",
+    "start": "2025-12-13T00:00:00.000000000",
+    "end": "2026-12-12T00:00:00.000000000",
+    "street": "426 WEST 27TH DRIVE",
+    "city": "NEW YORK",
+    "zip": "10001",
+    "caseReference": "27186247",
     "lat": 40.749650252183,
     "lng": -74.001153317583
   }

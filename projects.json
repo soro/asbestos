@@ -1,45 +1,5 @@
 [
   {
-    "id": "nys_dol:27132718",
-    "title": "NEW YORK ENVIRONMENTAL SYSTEMS, INC.",
-    "contractor": "NEW YORK ENVIRONMENTAL SYSTEMS, INC.",
-    "start": "2025-06-27",
-    "end": "2026-06-27",
-    "address": {
-      "street": "427 WEST 26TH STREET",
-      "city": "NEW YORK",
-      "state": "NY",
-      "zip": "10001"
-    },
-    "addressKey": "427 W 26 ST|NEW YORK|10001",
-    "coordinates": {
-      "lat": 40.749163277231,
-      "lng": -74.001616687255,
-      "source": "nys_dol"
-    },
-    "sources": [
-      {
-        "source": "nys_dol",
-        "sourceId": "27132718",
-        "caseReference": "27132718",
-        "contractor": "NEW YORK ENVIRONMENTAL SYSTEMS, INC.",
-        "start": "2025-06-27",
-        "end": "2026-06-27",
-        "address": {
-          "street": "427 WEST 26TH STREET",
-          "city": "NEW YORK",
-          "state": "NY",
-          "zip": "10001"
-        },
-        "coordinates": {
-          "lat": 40.749163277231,
-          "lng": -74.001616687255,
-          "source": "nys_dol"
-        }
-      }
-    ]
-  },
-  {
     "id": "nys_dol:27133548",
     "title": "BARROS CONSTRUCTION CORP.",
     "contractor": "BARROS CONSTRUCTION CORP.",
@@ -97518,6 +97478,46 @@
           }
         ],
         "rawRowCount": 18
+      }
+    ]
+  },
+  {
+    "id": "nys_dol:27186247",
+    "title": "ABATEMENT UNLIMITED, INC.",
+    "contractor": "ABATEMENT UNLIMITED, INC.",
+    "start": "2025-12-13",
+    "end": "2026-12-12",
+    "address": {
+      "street": "426 WEST 27TH DRIVE",
+      "city": "NEW YORK",
+      "state": "NY",
+      "zip": "10001"
+    },
+    "addressKey": "426 W 27 DR|NEW YORK|10001",
+    "coordinates": {
+      "lat": 40.749650252183,
+      "lng": -74.001153317583,
+      "source": "nys_dol"
+    },
+    "sources": [
+      {
+        "source": "nys_dol",
+        "sourceId": "27186247",
+        "caseReference": "27186247",
+        "contractor": "ABATEMENT UNLIMITED, INC.",
+        "start": "2025-12-13",
+        "end": "2026-12-12",
+        "address": {
+          "street": "426 WEST 27TH DRIVE",
+          "city": "NEW YORK",
+          "state": "NY",
+          "zip": "10001"
+        },
+        "coordinates": {
+          "lat": 40.749650252183,
+          "lng": -74.001153317583,
+          "source": "nys_dol"
+        }
       }
     ]
   },

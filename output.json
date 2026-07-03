@@ -33,17 +33,6 @@
     "lng": -72.026324525219
   },
   {
-    "contractor": "BARROS CONSTRUCTION CORP.",
-    "start": "2025-07-02T00:00:00.000000000",
-    "end": "2026-07-01T00:00:00.000000000",
-    "street": "288 10TH AVENUE",
-    "city": "NEW YORK",
-    "zip": "10001",
-    "caseReference": "27133548",
-    "lat": 40.749931543391,
-    "lng": -74.002449176942
-  },
-  {
     "contractor": "ABATEMENT UNLIMITED, INC.",
     "start": "2025-07-03T00:00:00.000000000",
     "end": "2026-07-02T00:00:00.000000000",
@@ -219,5 +208,16 @@
     "caseReference": "27186247",
     "lat": 40.749650252183,
     "lng": -74.001153317583
+  },
+  {
+    "contractor": "BARROS CONSTRUCTION CORP.",
+    "start": "2026-01-13T00:00:00.000000000",
+    "end": "2027-01-12T00:00:00.000000000",
+    "street": "264 10TH AVENUE",
+    "city": "NEW YORK",
+    "zip": "10001",
+    "caseReference": "27196420",
+    "lat": 40.749203665043,
+    "lng": -74.002983118307
   }
 ]

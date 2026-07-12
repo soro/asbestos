@@ -33,17 +33,6 @@
     "lng": -72.026324525219
   },
   {
-    "contractor": "ABATEMENT UNLIMITED, INC.",
-    "start": "2025-07-11T00:00:00.000000000",
-    "end": "2026-07-10T00:00:00.000000000",
-    "street": "443 WEST 25TH STREET",
-    "city": "NEW",
-    "zip": "10001",
-    "caseReference": "27136547",
-    "lat": 40.748504169654,
-    "lng": -74.001979101784
-  },
-  {
     "contractor": "NEW YORK ENVIRONMENTAL SYSTEMS, INC.",
     "start": "2025-07-14T00:00:00.000000000",
     "end": "2026-07-14T00:00:00.000000000",
@@ -219,6 +208,18 @@
     "caseReference": "27195493",
     "lat": 40.746717000003,
     "lng": -73.993522500001,
+    "geocodingProvider": "nys"
+  },
+  {
+    "contractor": "INCINIA CONTRACTING INC",
+    "start": "2026-01-26T00:00:00.000000000",
+    "end": "2026-12-31T00:00:00.000000000",
+    "street": "226 WEST 25TH STREET",
+    "city": "NEW YORK",
+    "zip": "10001",
+    "caseReference": "27196051",
+    "lat": 40.745718000003,
+    "lng": -73.995763500001,
     "geocodingProvider": "nys"
   }
 ]

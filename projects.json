@@ -1,45 +1,5 @@
 [
   {
-    "id": "nys_dol:27136547",
-    "title": "ABATEMENT UNLIMITED, INC.",
-    "contractor": "ABATEMENT UNLIMITED, INC.",
-    "start": "2025-07-11",
-    "end": "2026-07-10",
-    "address": {
-      "street": "443 WEST 25TH STREET",
-      "city": "NEW",
-      "state": "NY",
-      "zip": "10001"
-    },
-    "addressKey": "443 W 25 ST|NEW|10001",
-    "coordinates": {
-      "lat": 40.748504169654,
-      "lng": -74.001979101784,
-      "source": "nys_dol"
-    },
-    "sources": [
-      {
-        "source": "nys_dol",
-        "sourceId": "27136547",
-        "caseReference": "27136547",
-        "contractor": "ABATEMENT UNLIMITED, INC.",
-        "start": "2025-07-11",
-        "end": "2026-07-10",
-        "address": {
-          "street": "443 WEST 25TH STREET",
-          "city": "NEW",
-          "state": "NY",
-          "zip": "10001"
-        },
-        "coordinates": {
-          "lat": 40.748504169654,
-          "lng": -74.001979101784,
-          "source": "nys_dol"
-        }
-      }
-    ]
-  },
-  {
     "id": "nys_dol:27137833",
     "title": "NEW YORK ENVIRONMENTAL SYSTEMS, INC.",
     "contractor": "NEW YORK ENVIRONMENTAL SYSTEMS, INC.",
@@ -113000,6 +112960,48 @@
           }
         ],
         "rawRowCount": 2
+      }
+    ]
+  },
+  {
+    "id": "nys_dol:27196051",
+    "title": "INCINIA CONTRACTING INC",
+    "contractor": "INCINIA CONTRACTING INC",
+    "start": "2026-01-26",
+    "end": "2026-12-31",
+    "address": {
+      "street": "226 WEST 25TH STREET",
+      "city": "NEW YORK",
+      "state": "NY",
+      "zip": "10001"
+    },
+    "addressKey": "226 W 25 ST|NEW YORK|10001",
+    "coordinates": {
+      "lat": 40.745718000003,
+      "lng": -73.995763500001,
+      "source": "geocoder",
+      "provider": "nys"
+    },
+    "sources": [
+      {
+        "source": "nys_dol",
+        "sourceId": "27196051",
+        "caseReference": "27196051",
+        "contractor": "INCINIA CONTRACTING INC",
+        "start": "2026-01-26",
+        "end": "2026-12-31",
+        "address": {
+          "street": "226 WEST 25TH STREET",
+          "city": "NEW YORK",
+          "state": "NY",
+          "zip": "10001"
+        },
+        "coordinates": {
+          "lat": 40.745718000003,
+          "lng": -73.995763500001,
+          "source": "geocoder",
+          "provider": "nys"
+        }
       }
     ]
   },

@@ -33,17 +33,6 @@
     "lng": -72.026324525219
   },
   {
-    "contractor": "SK IMPROVEMENTS CORP",
-    "start": "2025-07-18T00:00:00.000000000",
-    "end": "2026-07-18T00:00:00.000000000",
-    "street": "210 WEST 27TH STREET",
-    "city": "MANHATTAN",
-    "zip": "10001",
-    "caseReference": "27125195",
-    "lat": 40.746762871175,
-    "lng": -73.99430548773
-  },
-  {
     "contractor": "NEW YORK ENVIRONMENTAL SYSTEMS, INC.",
     "start": "2025-07-29T00:00:00.000000000",
     "end": "2026-07-29T00:00:00.000000000",
@@ -221,6 +210,18 @@
     "caseReference": "27196043",
     "lat": 40.745754000003,
     "lng": -73.995844500001,
+    "geocodingProvider": "nys"
+  },
+  {
+    "contractor": "VOLK INDUSTRIAL SERVICES CORP.",
+    "start": "2026-01-31T00:00:00.000000000",
+    "end": "2027-01-31T00:00:00.000000000",
+    "street": "333 WEST 34TH ST",
+    "city": "MANHATTAN",
+    "zip": "10001",
+    "caseReference": "27200049",
+    "lat": 40.753017000003,
+    "lng": -73.995007500001,
     "geocodingProvider": "nys"
   }
 ]

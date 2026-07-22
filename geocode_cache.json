@@ -31694,5 +31694,65 @@
     "lat": 40.753017000003,
     "lng": -73.995007500001,
     "provider": "nys"
+  },
+  "683 Mill Dam Road, Staten Island, 10306, NY": {
+    "lat": 40.553853352979,
+    "lng": -74.117360700954,
+    "provider": "nys"
+  },
+  "55 Merril Avenue, Staten Island, 10314, NY": {
+    "lat": 40.610385000003,
+    "lng": -74.162691000001,
+    "provider": "nys"
+  },
+  "31-30 Hunters Point Blvd., Queens, 11101, NY": {
+    "lat": 40.739787000003,
+    "lng": -73.935058500001,
+    "provider": "nys"
+  },
+  "3424 Vernon Blvrd, Queens, 11106, NY": {
+    "lat": 40.764870000003,
+    "lng": -73.940890500001,
+    "provider": "nys"
+  },
+  "160-05 Higland Avenue, Queens, 11432, NY": {
+    "lat": 40.709489068754,
+    "lng": -73.801722916623,
+    "provider": "nys"
+  },
+  "75 Baruch Dirve, New York, 10002, NY": {
+    "lat": 40.717548000003,
+    "lng": -73.978488000001,
+    "provider": "nys"
+  },
+  "1A-6b Cooper Place, Bronx, 10475, NY": {
+    "lat": 40.877226000003,
+    "lng": -73.825726500001,
+    "provider": "nys"
+  },
+  "30 Rockerfeller Plaza, New York, 10111, NY": {
+    "lat": 40.758831000003,
+    "lng": -73.978816500001,
+    "provider": "nys"
+  },
+  "3400 Forth Independence street, Bronx, 10463, NY": {
+    "lat": 40.881303000003,
+    "lng": -73.898923500001,
+    "provider": "nys"
+  },
+  "1070 Southern Blvrd, Bronx, 10459, NY": {
+    "lat": 40.825206000003,
+    "lng": -73.891732500001,
+    "provider": "nys"
+  },
+  "29A-36B Broun Place, Bronx, 10475, NY": {
+    "lat": 40.873644000003,
+    "lng": -73.826806500001,
+    "provider": "nys"
+  },
+  "5 East Main Street, New York, 10044, NY": {
+    "lat": 40.763759027616,
+    "lng": -73.948038699342,
+    "provider": "nys"
   }
 }

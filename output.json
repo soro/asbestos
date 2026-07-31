@@ -33,17 +33,6 @@
     "lng": -72.026324525219
   },
   {
-    "contractor": "NEW YORK ENVIRONMENTAL SYSTEMS, INC.",
-    "start": "2025-07-29T00:00:00.000000000",
-    "end": "2026-07-29T00:00:00.000000000",
-    "street": "428 WEST 26TH ST",
-    "city": "NEW YORK",
-    "zip": "10001",
-    "caseReference": "27142148",
-    "lat": 40.74890084132,
-    "lng": -74.001305529294
-  },
-  {
     "contractor": "NOVA DEVELOPMENT GROUP, INC.",
     "start": "2025-08-21T00:00:00.000000000",
     "end": "2026-08-01T00:00:00.000000000",
@@ -223,5 +212,16 @@
     "lat": 40.753017000003,
     "lng": -73.995007500001,
     "geocodingProvider": "nys"
+  },
+  {
+    "contractor": "BARROS CONSTRUCTION CORP.",
+    "start": "2026-02-07T00:00:00.000000000",
+    "end": "2027-02-06T00:00:00.000000000",
+    "street": "466 WEST 26TH STREET",
+    "city": "NEW YORK",
+    "zip": "10001",
+    "caseReference": "27204613",
+    "lat": 40.749232212646,
+    "lng": -74.002093095632
   }
 ]

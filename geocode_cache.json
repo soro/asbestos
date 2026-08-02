@@ -31754,5 +31754,25 @@
     "lat": 40.763759027616,
     "lng": -73.948038699342,
     "provider": "nys"
+  },
+  "2225 Webster, Bronx, 10457, NY": {
+    "lat": 40.854789000003,
+    "lng": -73.896750000001,
+    "provider": "nys"
+  },
+  "3414 GAR 9th Street, Queens, 11372, NY": {
+    "lat": 40.764825000003,
+    "lng": -73.939792500001,
+    "provider": "nys"
+  },
+  "149 East Moshulu Pkwy, Bronx, 10467, NY": {
+    "lat": 40.876767000003,
+    "lng": -73.881477000001,
+    "provider": "nys"
+  },
+  "83 EAST 4 TH STREET, New York, 10003, NY": {
+    "lat": 40.726530000003,
+    "lng": -73.989958500001,
+    "provider": "nys"
   }
 }

@@ -31774,5 +31774,10 @@
     "lat": 40.726530000003,
     "lng": -73.989958500001,
     "provider": "nys"
+  },
+  "NYC, JERSEY CITY, 10001, NY": {
+    "lat": 40.6408341,
+    "lng": -74.142581,
+    "provider": "nominatim"
   }
 }

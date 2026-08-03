@@ -2255,46 +2255,6 @@
     ]
   },
   {
-    "id": "nys_dol:27146025",
-    "title": "NOVA DEVELOPMENT GROUP, INC.",
-    "contractor": "NOVA DEVELOPMENT GROUP, INC.",
-    "start": "2025-08-21",
-    "end": "2026-08-01",
-    "address": {
-      "street": "424 WEST 33RD STREET",
-      "city": "MANHATTAN",
-      "state": "NY",
-      "zip": "10001"
-    },
-    "addressKey": "424 W 33 ST|MANHATTAN|10001",
-    "coordinates": {
-      "lat": 40.753097048765,
-      "lng": -73.997842811108,
-      "source": "nys_dol"
-    },
-    "sources": [
-      {
-        "source": "nys_dol",
-        "sourceId": "27146025",
-        "caseReference": "27146025",
-        "contractor": "NOVA DEVELOPMENT GROUP, INC.",
-        "start": "2025-08-21",
-        "end": "2026-08-01",
-        "address": {
-          "street": "424 WEST 33RD STREET",
-          "city": "MANHATTAN",
-          "state": "NY",
-          "zip": "10001"
-        },
-        "coordinates": {
-          "lat": 40.753097048765,
-          "lng": -73.997842811108,
-          "source": "nys_dol"
-        }
-      }
-    ]
-  },
-  {
     "id": "nyc_dep_acp7:TRU1046BX25",
     "title": "Cutlass Industrial Inc.",
     "contractor": "Cutlass Industrial Inc.",
@@ -98210,6 +98170,48 @@
           }
         ],
         "rawRowCount": 6
+      }
+    ]
+  },
+  {
+    "id": "nys_dol:27210817",
+    "title": "ABATEPRO MBE ENVIRONMENTAL CORP.",
+    "contractor": "ABATEPRO MBE ENVIRONMENTAL CORP.",
+    "start": "2026-03-06",
+    "end": "2027-02-23",
+    "address": {
+      "street": "NYC",
+      "city": "JERSEY CITY",
+      "state": "NY",
+      "zip": "10001"
+    },
+    "addressKey": "NYC|JERSEY CITY|10001",
+    "coordinates": {
+      "lat": 40.6408341,
+      "lng": -74.142581,
+      "source": "geocoder",
+      "provider": "nominatim"
+    },
+    "sources": [
+      {
+        "source": "nys_dol",
+        "sourceId": "27210817",
+        "caseReference": "27210817",
+        "contractor": "ABATEPRO MBE ENVIRONMENTAL CORP.",
+        "start": "2026-03-06",
+        "end": "2027-02-23",
+        "address": {
+          "street": "NYC",
+          "city": "JERSEY CITY",
+          "state": "NY",
+          "zip": "10001"
+        },
+        "coordinates": {
+          "lat": 40.6408341,
+          "lng": -74.142581,
+          "source": "geocoder",
+          "provider": "nominatim"
+        }
       }
     ]
   },

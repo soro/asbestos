@@ -31779,5 +31779,10 @@
     "lat": 40.6408341,
     "lng": -74.142581,
     "provider": "nominatim"
+  },
+  "131 WEST 33TH STREET, NEW YORK, 10001, NY": {
+    "lat": 40.749876000003,
+    "lng": -73.989751500001,
+    "provider": "nys"
   }
 }

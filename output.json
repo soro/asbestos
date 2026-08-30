@@ -33,28 +33,6 @@
     "lng": -72.026324525219
   },
   {
-    "contractor": "ABATEMENT UNLIMITED, INC.",
-    "start": "2025-08-30T00:00:00.000000000",
-    "end": "2026-08-29T00:00:00.000000000",
-    "street": "415 WEST 25TH ST",
-    "city": "NEW YORK",
-    "zip": "10001",
-    "caseReference": "27153169",
-    "lat": 40.74804598531,
-    "lng": -74.000902758341
-  },
-  {
-    "contractor": "ABATEMENT UNLIMITED, INC.",
-    "start": "2025-08-30T00:00:00.000000000",
-    "end": "2026-08-29T00:00:00.000000000",
-    "street": "420 WEST 26TH STREET",
-    "city": "NEW YORK",
-    "zip": "10001",
-    "caseReference": "27153170",
-    "lat": 40.748634377661,
-    "lng": -74.000660559366
-  },
-  {
     "contractor": "NEW YORK ENVIRONMENTAL SYSTEMS, INC.",
     "start": "2025-08-30T00:00:00.000000000",
     "end": "2026-08-30T00:00:00.000000000",
@@ -224,6 +202,30 @@
     "caseReference": "27210599",
     "lat": 40.749876000003,
     "lng": -73.989751500001,
+    "geocodingProvider": "nys"
+  },
+  {
+    "contractor": "MID VALLEY CONTRACTORS, INC",
+    "start": "2026-03-10T00:00:00.000000000",
+    "end": "2027-03-01T00:00:00.000000000",
+    "street": "50 WEST 34TH ST",
+    "city": "NEW YORK",
+    "zip": "10001",
+    "caseReference": "27211786",
+    "lat": 40.749489000003,
+    "lng": -73.987402500001,
+    "geocodingProvider": "nys"
+  },
+  {
+    "contractor": "BARROS CONSTRUCTION CORP.",
+    "start": "2026-03-12T00:00:00.000000000",
+    "end": "2027-03-11T00:00:00.000000000",
+    "street": "428 WEST 26 TH STREET",
+    "city": "NEW YORK",
+    "zip": "10001",
+    "caseReference": "27215137",
+    "lat": 40.748850000003,
+    "lng": -74.001451500001,
     "geocodingProvider": "nys"
   }
 ]

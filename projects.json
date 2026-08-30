@@ -40,86 +40,6 @@
     ]
   },
   {
-    "id": "nys_dol:27153169",
-    "title": "ABATEMENT UNLIMITED, INC.",
-    "contractor": "ABATEMENT UNLIMITED, INC.",
-    "start": "2025-08-30",
-    "end": "2026-08-29",
-    "address": {
-      "street": "415 WEST 25TH ST",
-      "city": "NEW YORK",
-      "state": "NY",
-      "zip": "10001"
-    },
-    "addressKey": "415 W 25 ST|NEW YORK|10001",
-    "coordinates": {
-      "lat": 40.74804598531,
-      "lng": -74.000902758341,
-      "source": "nys_dol"
-    },
-    "sources": [
-      {
-        "source": "nys_dol",
-        "sourceId": "27153169",
-        "caseReference": "27153169",
-        "contractor": "ABATEMENT UNLIMITED, INC.",
-        "start": "2025-08-30",
-        "end": "2026-08-29",
-        "address": {
-          "street": "415 WEST 25TH ST",
-          "city": "NEW YORK",
-          "state": "NY",
-          "zip": "10001"
-        },
-        "coordinates": {
-          "lat": 40.74804598531,
-          "lng": -74.000902758341,
-          "source": "nys_dol"
-        }
-      }
-    ]
-  },
-  {
-    "id": "nys_dol:27153170",
-    "title": "ABATEMENT UNLIMITED, INC.",
-    "contractor": "ABATEMENT UNLIMITED, INC.",
-    "start": "2025-08-30",
-    "end": "2026-08-29",
-    "address": {
-      "street": "420 WEST 26TH STREET",
-      "city": "NEW YORK",
-      "state": "NY",
-      "zip": "10001"
-    },
-    "addressKey": "420 W 26 ST|NEW YORK|10001",
-    "coordinates": {
-      "lat": 40.748634377661,
-      "lng": -74.000660559366,
-      "source": "nys_dol"
-    },
-    "sources": [
-      {
-        "source": "nys_dol",
-        "sourceId": "27153170",
-        "caseReference": "27153170",
-        "contractor": "ABATEMENT UNLIMITED, INC.",
-        "start": "2025-08-30",
-        "end": "2026-08-29",
-        "address": {
-          "street": "420 WEST 26TH STREET",
-          "city": "NEW YORK",
-          "state": "NY",
-          "zip": "10001"
-        },
-        "coordinates": {
-          "lat": 40.748634377661,
-          "lng": -74.000660559366,
-          "source": "nys_dol"
-        }
-      }
-    ]
-  },
-  {
     "id": "nys_dol:27154195",
     "title": "NEW YORK ENVIRONMENTAL SYSTEMS, INC.",
     "contractor": "NEW YORK ENVIRONMENTAL SYSTEMS, INC.",
@@ -80518,6 +80438,48 @@
     ]
   },
   {
+    "id": "nys_dol:27211786",
+    "title": "MID VALLEY CONTRACTORS, INC",
+    "contractor": "MID VALLEY CONTRACTORS, INC",
+    "start": "2026-03-10",
+    "end": "2027-03-01",
+    "address": {
+      "street": "50 WEST 34TH ST",
+      "city": "NEW YORK",
+      "state": "NY",
+      "zip": "10001"
+    },
+    "addressKey": "50 W 34 ST|NEW YORK|10001",
+    "coordinates": {
+      "lat": 40.749489000003,
+      "lng": -73.987402500001,
+      "source": "geocoder",
+      "provider": "nys"
+    },
+    "sources": [
+      {
+        "source": "nys_dol",
+        "sourceId": "27211786",
+        "caseReference": "27211786",
+        "contractor": "MID VALLEY CONTRACTORS, INC",
+        "start": "2026-03-10",
+        "end": "2027-03-01",
+        "address": {
+          "street": "50 WEST 34TH ST",
+          "city": "NEW YORK",
+          "state": "NY",
+          "zip": "10001"
+        },
+        "coordinates": {
+          "lat": 40.749489000003,
+          "lng": -73.987402500001,
+          "source": "geocoder",
+          "provider": "nys"
+        }
+      }
+    ]
+  },
+  {
     "id": "nyc_dep_acp7:TRU1860BX25",
     "title": "J & N Construction Group Corp.",
     "contractor": "J & N Construction Group Corp.",
@@ -80644,6 +80606,48 @@
           }
         ],
         "rawRowCount": 7
+      }
+    ]
+  },
+  {
+    "id": "nys_dol:27215137",
+    "title": "BARROS CONSTRUCTION CORP.",
+    "contractor": "BARROS CONSTRUCTION CORP.",
+    "start": "2026-03-12",
+    "end": "2027-03-11",
+    "address": {
+      "street": "428 WEST 26 TH STREET",
+      "city": "NEW YORK",
+      "state": "NY",
+      "zip": "10001"
+    },
+    "addressKey": "428 W 26 TH ST|NEW YORK|10001",
+    "coordinates": {
+      "lat": 40.748850000003,
+      "lng": -74.001451500001,
+      "source": "geocoder",
+      "provider": "nys"
+    },
+    "sources": [
+      {
+        "source": "nys_dol",
+        "sourceId": "27215137",
+        "caseReference": "27215137",
+        "contractor": "BARROS CONSTRUCTION CORP.",
+        "start": "2026-03-12",
+        "end": "2027-03-11",
+        "address": {
+          "street": "428 WEST 26 TH STREET",
+          "city": "NEW YORK",
+          "state": "NY",
+          "zip": "10001"
+        },
+        "coordinates": {
+          "lat": 40.748850000003,
+          "lng": -74.001451500001,
+          "source": "geocoder",
+          "provider": "nys"
+        }
       }
     ]
   },

@@ -31784,5 +31784,15 @@
     "lat": 40.749876000003,
     "lng": -73.989751500001,
     "provider": "nys"
+  },
+  "50 WEST 34TH ST, NEW YORK, 10001, NY": {
+    "lat": 40.749489000003,
+    "lng": -73.987402500001,
+    "provider": "nys"
+  },
+  "428 WEST 26 TH STREET, NEW YORK, 10001, NY": {
+    "lat": 40.748850000003,
+    "lng": -74.001451500001,
+    "provider": "nys"
   }
 }

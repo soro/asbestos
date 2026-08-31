@@ -1,85 +1,5 @@
 [
   {
-    "id": "nys_dol:27152991",
-    "title": "NEW YORK ENVIRONMENTAL SYSTEMS, INC.",
-    "contractor": "NEW YORK ENVIRONMENTAL SYSTEMS, INC.",
-    "start": "2025-08-30",
-    "end": "2026-08-30",
-    "address": {
-      "street": "288 10TH AVENUE",
-      "city": "NEW YORK",
-      "state": "NY",
-      "zip": "10001"
-    },
-    "addressKey": "288 10 AVE|NEW YORK|10001",
-    "coordinates": {
-      "lat": 40.749931543391,
-      "lng": -74.002449176942,
-      "source": "nys_dol"
-    },
-    "sources": [
-      {
-        "source": "nys_dol",
-        "sourceId": "27152991",
-        "caseReference": "27152991",
-        "contractor": "NEW YORK ENVIRONMENTAL SYSTEMS, INC.",
-        "start": "2025-08-30",
-        "end": "2026-08-30",
-        "address": {
-          "street": "288 10TH AVENUE",
-          "city": "NEW YORK",
-          "state": "NY",
-          "zip": "10001"
-        },
-        "coordinates": {
-          "lat": 40.749931543391,
-          "lng": -74.002449176942,
-          "source": "nys_dol"
-        }
-      }
-    ]
-  },
-  {
-    "id": "nys_dol:27154195",
-    "title": "NEW YORK ENVIRONMENTAL SYSTEMS, INC.",
-    "contractor": "NEW YORK ENVIRONMENTAL SYSTEMS, INC.",
-    "start": "2025-08-30",
-    "end": "2026-08-30",
-    "address": {
-      "street": "426 WEST 27TH DRIVE",
-      "city": "NEW YORK",
-      "state": "NY",
-      "zip": "10001"
-    },
-    "addressKey": "426 W 27 DR|NEW YORK|10001",
-    "coordinates": {
-      "lat": 40.749650252183,
-      "lng": -74.001153317583,
-      "source": "nys_dol"
-    },
-    "sources": [
-      {
-        "source": "nys_dol",
-        "sourceId": "27154195",
-        "caseReference": "27154195",
-        "contractor": "NEW YORK ENVIRONMENTAL SYSTEMS, INC.",
-        "start": "2025-08-30",
-        "end": "2026-08-30",
-        "address": {
-          "street": "426 WEST 27TH DRIVE",
-          "city": "NEW YORK",
-          "state": "NY",
-          "zip": "10001"
-        },
-        "coordinates": {
-          "lat": 40.749650252183,
-          "lng": -74.001153317583,
-          "source": "nys_dol"
-        }
-      }
-    ]
-  },
-  {
     "id": "nyc_dep_acp7:TRU2091MN25",
     "title": "NTM Enterprises, LLC",
     "contractor": "NTM Enterprises, LLC",
@@ -80944,6 +80864,90 @@
           }
         ],
         "rawRowCount": 1
+      }
+    ]
+  },
+  {
+    "id": "nys_dol:27213584",
+    "title": "ESG, INC.",
+    "contractor": "ESG, INC.",
+    "start": "2026-03-13",
+    "end": "2027-03-12",
+    "address": {
+      "street": "345 8TH AVE",
+      "city": "NEW YORK",
+      "state": "NY",
+      "zip": "10001"
+    },
+    "addressKey": "345 8 AVE|NEW YORK|10001",
+    "coordinates": {
+      "lat": 40.748184000003,
+      "lng": -73.996839000001,
+      "source": "geocoder",
+      "provider": "nys"
+    },
+    "sources": [
+      {
+        "source": "nys_dol",
+        "sourceId": "27213584",
+        "caseReference": "27213584",
+        "contractor": "ESG, INC.",
+        "start": "2026-03-13",
+        "end": "2027-03-12",
+        "address": {
+          "street": "345 8TH AVE",
+          "city": "NEW YORK",
+          "state": "NY",
+          "zip": "10001"
+        },
+        "coordinates": {
+          "lat": 40.748184000003,
+          "lng": -73.996839000001,
+          "source": "geocoder",
+          "provider": "nys"
+        }
+      }
+    ]
+  },
+  {
+    "id": "nys_dol:27212411",
+    "title": "P.A.L. ENVIRONMENTAL SAFETY CORP. DBA PAL ENVIRONMENTAL SERVICES",
+    "contractor": "P.A.L. ENVIRONMENTAL SAFETY CORP. DBA PAL ENVIRONMENTAL SERVICES",
+    "start": "2026-03-16",
+    "end": "2027-03-01",
+    "address": {
+      "street": "1140 BROADWAY",
+      "city": "NEW YORK",
+      "state": "NY",
+      "zip": "10001"
+    },
+    "addressKey": "1140 BROADWAY|NEW YORK|10001",
+    "coordinates": {
+      "lat": 40.743972000003,
+      "lng": -73.988829000001,
+      "source": "geocoder",
+      "provider": "nys"
+    },
+    "sources": [
+      {
+        "source": "nys_dol",
+        "sourceId": "27212411",
+        "caseReference": "27212411",
+        "contractor": "P.A.L. ENVIRONMENTAL SAFETY CORP. DBA PAL ENVIRONMENTAL SERVICES",
+        "start": "2026-03-16",
+        "end": "2027-03-01",
+        "address": {
+          "street": "1140 BROADWAY",
+          "city": "NEW YORK",
+          "state": "NY",
+          "zip": "10001"
+        },
+        "coordinates": {
+          "lat": 40.743972000003,
+          "lng": -73.988829000001,
+          "source": "geocoder",
+          "provider": "nys"
+        }
       }
     ]
   },

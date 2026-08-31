@@ -34,28 +34,6 @@
   },
   {
     "contractor": "NEW YORK ENVIRONMENTAL SYSTEMS, INC.",
-    "start": "2025-08-30T00:00:00.000000000",
-    "end": "2026-08-30T00:00:00.000000000",
-    "street": "288 10TH AVENUE",
-    "city": "NEW YORK",
-    "zip": "10001",
-    "caseReference": "27152991",
-    "lat": 40.749931543391,
-    "lng": -74.002449176942
-  },
-  {
-    "contractor": "NEW YORK ENVIRONMENTAL SYSTEMS, INC.",
-    "start": "2025-08-30T00:00:00.000000000",
-    "end": "2026-08-30T00:00:00.000000000",
-    "street": "426 WEST 27TH DRIVE",
-    "city": "NEW YORK",
-    "zip": "10001",
-    "caseReference": "27154195",
-    "lat": 40.749650252183,
-    "lng": -74.001153317583
-  },
-  {
-    "contractor": "NEW YORK ENVIRONMENTAL SYSTEMS, INC.",
     "start": "2025-09-20T00:00:00.000000000",
     "end": "2026-09-20T00:00:00.000000000",
     "street": "264 10TH AVENUE",
@@ -226,6 +204,30 @@
     "caseReference": "27215137",
     "lat": 40.748850000003,
     "lng": -74.001451500001,
+    "geocodingProvider": "nys"
+  },
+  {
+    "contractor": "ESG, INC.",
+    "start": "2026-03-13T00:00:00.000000000",
+    "end": "2027-03-12T00:00:00.000000000",
+    "street": "345 8TH AVE",
+    "city": "NEW YORK",
+    "zip": "10001",
+    "caseReference": "27213584",
+    "lat": 40.748184000003,
+    "lng": -73.996839000001,
+    "geocodingProvider": "nys"
+  },
+  {
+    "contractor": "P.A.L. ENVIRONMENTAL SAFETY CORP. DBA PAL ENVIRONMENTAL SERVICES",
+    "start": "2026-03-16T00:00:00.000000000",
+    "end": "2027-03-01T00:00:00.000000000",
+    "street": "1140 BROADWAY",
+    "city": "NEW YORK",
+    "zip": "10001",
+    "caseReference": "27212411",
+    "lat": 40.743972000003,
+    "lng": -73.988829000001,
     "geocodingProvider": "nys"
   }
 ]

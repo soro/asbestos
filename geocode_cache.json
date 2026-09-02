@@ -31804,5 +31804,45 @@
     "lat": 40.743972000003,
     "lng": -73.988829000001,
     "provider": "nys"
+  },
+  "51 Edwards Street, Brooklyn, 11225, NY": {
+    "lat": 40.695255000003,
+    "lng": -73.978042500001,
+    "provider": "nys"
+  },
+  "535 Havenmeyer Ave, Bronx, 10453, NY": {
+    "lat": 40.818006000003,
+    "lng": -73.845333000001,
+    "provider": "nys"
+  },
+  "855 Bushwick, Brooklyn, 11221, NY": {
+    "lat": 40.694157000003,
+    "lng": -73.926063000001,
+    "provider": "nys"
+  },
+  "87 Columbia Hights, Brooklyn, 11201, NY": {
+    "lat": 40.700034000003,
+    "lng": -73.995403500001,
+    "provider": "nys"
+  },
+  "1155 University Ave, Brooklyn, 11201, NY": {
+    "lat": 40.690930912676,
+    "lng": -73.981480708575,
+    "provider": "nys"
+  },
+  "352 Bowery Street, New York, 10012, NY": {
+    "lat": 40.726755000003,
+    "lng": -73.991898000001,
+    "provider": "nys"
+  },
+  "64 Saint Mark Place, New York, 10035, NY": {
+    "lat": 40.727925000003,
+    "lng": -73.986367500001,
+    "provider": "nys"
+  },
+  "19 E 103rd, New York, 10029, NY": {
+    "lat": 40.792005000003,
+    "lng": -73.951425000001,
+    "provider": "nys"
   }
 }

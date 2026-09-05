@@ -22,6 +22,18 @@
     "lng": -73.945271795079
   },
   {
+    "contractor": "SETANTA INC.",
+    "start": "2026-09-14T00:00:00.000000000",
+    "end": "2027-09-04T00:00:00.000000000",
+    "street": "51-55 EAST 129TH STREET",
+    "city": "NEW YORK",
+    "zip": "01754",
+    "caseReference": "27279421",
+    "lat": 40.808088000003,
+    "lng": -73.938060000001,
+    "geocodingProvider": "nys"
+  },
+  {
     "contractor": "WPS CONTRACTING GROUP LLC",
     "start": "2025-10-20T00:00:00.000000000",
     "end": "2026-10-20T00:00:00.000000000",
@@ -216,18 +228,6 @@
     "caseReference": "27213584",
     "lat": 40.748184000003,
     "lng": -73.996839000001,
-    "geocodingProvider": "nys"
-  },
-  {
-    "contractor": "P.A.L. ENVIRONMENTAL SAFETY CORP. DBA PAL ENVIRONMENTAL SERVICES",
-    "start": "2026-03-16T00:00:00.000000000",
-    "end": "2027-03-01T00:00:00.000000000",
-    "street": "1140 BROADWAY",
-    "city": "NEW YORK",
-    "zip": "10001",
-    "caseReference": "27212411",
-    "lat": 40.743972000003,
-    "lng": -73.988829000001,
     "geocodingProvider": "nys"
   }
 ]

@@ -67,18 +67,6 @@
     "lng": -74.002983118307
   },
   {
-    "contractor": "ALPHA ENVIRONMENTAL SERVICES, INC",
-    "start": "2025-09-25T00:00:00.000000000",
-    "end": "2026-09-15T00:00:00.000000000",
-    "street": "145 WEST 28TH STREET",
-    "city": "MANHATTAN",
-    "zip": "10001",
-    "caseReference": "27158372",
-    "lat": 40.746987000003,
-    "lng": -73.992519000001,
-    "geocodingProvider": "nys"
-  },
-  {
     "contractor": "BARROS CONSTRUCTION CORP.",
     "start": "2025-11-18T00:00:00.000000000",
     "end": "2026-11-17T00:00:00.000000000",
@@ -228,6 +216,18 @@
     "caseReference": "27213584",
     "lat": 40.748184000003,
     "lng": -73.996839000001,
+    "geocodingProvider": "nys"
+  },
+  {
+    "contractor": "P.A.L. ENVIRONMENTAL SAFETY CORP. DBA PAL ENVIRONMENTAL SERVICES",
+    "start": "2026-03-16T00:00:00.000000000",
+    "end": "2027-03-01T00:00:00.000000000",
+    "street": "1140 BROADWAY",
+    "city": "NEW YORK",
+    "zip": "10001",
+    "caseReference": "27212411",
+    "lat": 40.743972000003,
+    "lng": -73.988829000001,
     "geocodingProvider": "nys"
   }
 ]

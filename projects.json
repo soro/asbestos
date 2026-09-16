@@ -80,48 +80,6 @@
     ]
   },
   {
-    "id": "nys_dol:27158372",
-    "title": "ALPHA ENVIRONMENTAL SERVICES, INC",
-    "contractor": "ALPHA ENVIRONMENTAL SERVICES, INC",
-    "start": "2025-09-25",
-    "end": "2026-09-15",
-    "address": {
-      "street": "145 WEST 28TH STREET",
-      "city": "MANHATTAN",
-      "state": "NY",
-      "zip": "10001"
-    },
-    "addressKey": "145 W 28 ST|MANHATTAN|10001",
-    "coordinates": {
-      "lat": 40.746987000003,
-      "lng": -73.992519000001,
-      "source": "geocoder",
-      "provider": "nys"
-    },
-    "sources": [
-      {
-        "source": "nys_dol",
-        "sourceId": "27158372",
-        "caseReference": "27158372",
-        "contractor": "ALPHA ENVIRONMENTAL SERVICES, INC",
-        "start": "2025-09-25",
-        "end": "2026-09-15",
-        "address": {
-          "street": "145 WEST 28TH STREET",
-          "city": "MANHATTAN",
-          "state": "NY",
-          "zip": "10001"
-        },
-        "coordinates": {
-          "lat": 40.746987000003,
-          "lng": -73.992519000001,
-          "source": "geocoder",
-          "provider": "nys"
-        }
-      }
-    ]
-  },
-  {
     "id": "nyc_dep_acp7:TRU1720BK25",
     "title": "J&G Cleaning Solutions Corporation",
     "contractor": "J&G Cleaning Solutions Corporation",
@@ -75830,6 +75788,48 @@
         "coordinates": {
           "lat": 40.748184000003,
           "lng": -73.996839000001,
+          "source": "geocoder",
+          "provider": "nys"
+        }
+      }
+    ]
+  },
+  {
+    "id": "nys_dol:27212411",
+    "title": "P.A.L. ENVIRONMENTAL SAFETY CORP. DBA PAL ENVIRONMENTAL SERVICES",
+    "contractor": "P.A.L. ENVIRONMENTAL SAFETY CORP. DBA PAL ENVIRONMENTAL SERVICES",
+    "start": "2026-03-16",
+    "end": "2027-03-01",
+    "address": {
+      "street": "1140 BROADWAY",
+      "city": "NEW YORK",
+      "state": "NY",
+      "zip": "10001"
+    },
+    "addressKey": "1140 BROADWAY|NEW YORK|10001",
+    "coordinates": {
+      "lat": 40.743972000003,
+      "lng": -73.988829000001,
+      "source": "geocoder",
+      "provider": "nys"
+    },
+    "sources": [
+      {
+        "source": "nys_dol",
+        "sourceId": "27212411",
+        "caseReference": "27212411",
+        "contractor": "P.A.L. ENVIRONMENTAL SAFETY CORP. DBA PAL ENVIRONMENTAL SERVICES",
+        "start": "2026-03-16",
+        "end": "2027-03-01",
+        "address": {
+          "street": "1140 BROADWAY",
+          "city": "NEW YORK",
+          "state": "NY",
+          "zip": "10001"
+        },
+        "coordinates": {
+          "lat": 40.743972000003,
+          "lng": -73.988829000001,
           "source": "geocoder",
           "provider": "nys"
         }

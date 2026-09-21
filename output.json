@@ -45,28 +45,6 @@
     "lng": -72.026324525219
   },
   {
-    "contractor": "NEW YORK ENVIRONMENTAL SYSTEMS, INC.",
-    "start": "2025-09-20T00:00:00.000000000",
-    "end": "2026-09-20T00:00:00.000000000",
-    "street": "264 10TH AVENUE",
-    "city": "NEW YORK",
-    "zip": "10001",
-    "caseReference": "27159614",
-    "lat": 40.749203665043,
-    "lng": -74.002983118307
-  },
-  {
-    "contractor": "NEW YORK ENVIRONMENTAL SYSTEMS, INC.",
-    "start": "2025-09-20T00:00:00.000000000",
-    "end": "2026-09-20T00:00:00.000000000",
-    "street": "264 10TH AVENUE",
-    "city": "NEW YORK",
-    "zip": "10001",
-    "caseReference": "27159615",
-    "lat": 40.749203665043,
-    "lng": -74.002983118307
-  },
-  {
     "contractor": "BARROS CONSTRUCTION CORP.",
     "start": "2025-11-18T00:00:00.000000000",
     "end": "2026-11-17T00:00:00.000000000",
@@ -229,5 +207,28 @@
     "lat": 40.743972000003,
     "lng": -73.988829000001,
     "geocodingProvider": "nys"
+  },
+  {
+    "contractor": "ADVANCED DRI LLC",
+    "start": "2026-03-18T00:00:00.000000000",
+    "end": "2027-03-14T00:00:00.000000000",
+    "street": "24 FIFTH AVE",
+    "city": "NEW YORK",
+    "zip": "10001",
+    "caseReference": "27213487",
+    "lat": 40.733109000003,
+    "lng": -73.995957000001,
+    "geocodingProvider": "nys"
+  },
+  {
+    "contractor": "ABATEMENT UNLIMITED, INC.",
+    "start": "2026-03-24T00:00:00.000000000",
+    "end": "2027-03-23T00:00:00.000000000",
+    "street": "426 WEST 27TH DRIVE",
+    "city": "NEW YORK",
+    "zip": "10001",
+    "caseReference": "27218566",
+    "lat": 40.749650252183,
+    "lng": -74.001153317583
   }
 ]

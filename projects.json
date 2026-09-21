@@ -1,85 +1,5 @@
 [
   {
-    "id": "nys_dol:27159614",
-    "title": "NEW YORK ENVIRONMENTAL SYSTEMS, INC.",
-    "contractor": "NEW YORK ENVIRONMENTAL SYSTEMS, INC.",
-    "start": "2025-09-20",
-    "end": "2026-09-20",
-    "address": {
-      "street": "264 10TH AVENUE",
-      "city": "NEW YORK",
-      "state": "NY",
-      "zip": "10001"
-    },
-    "addressKey": "264 10 AVE|NEW YORK|10001",
-    "coordinates": {
-      "lat": 40.749203665043,
-      "lng": -74.002983118307,
-      "source": "nys_dol"
-    },
-    "sources": [
-      {
-        "source": "nys_dol",
-        "sourceId": "27159614",
-        "caseReference": "27159614",
-        "contractor": "NEW YORK ENVIRONMENTAL SYSTEMS, INC.",
-        "start": "2025-09-20",
-        "end": "2026-09-20",
-        "address": {
-          "street": "264 10TH AVENUE",
-          "city": "NEW YORK",
-          "state": "NY",
-          "zip": "10001"
-        },
-        "coordinates": {
-          "lat": 40.749203665043,
-          "lng": -74.002983118307,
-          "source": "nys_dol"
-        }
-      }
-    ]
-  },
-  {
-    "id": "nys_dol:27159615",
-    "title": "NEW YORK ENVIRONMENTAL SYSTEMS, INC.",
-    "contractor": "NEW YORK ENVIRONMENTAL SYSTEMS, INC.",
-    "start": "2025-09-20",
-    "end": "2026-09-20",
-    "address": {
-      "street": "264 10TH AVENUE",
-      "city": "NEW YORK",
-      "state": "NY",
-      "zip": "10001"
-    },
-    "addressKey": "264 10 AVE|NEW YORK|10001",
-    "coordinates": {
-      "lat": 40.749203665043,
-      "lng": -74.002983118307,
-      "source": "nys_dol"
-    },
-    "sources": [
-      {
-        "source": "nys_dol",
-        "sourceId": "27159615",
-        "caseReference": "27159615",
-        "contractor": "NEW YORK ENVIRONMENTAL SYSTEMS, INC.",
-        "start": "2025-09-20",
-        "end": "2026-09-20",
-        "address": {
-          "street": "264 10TH AVENUE",
-          "city": "NEW YORK",
-          "state": "NY",
-          "zip": "10001"
-        },
-        "coordinates": {
-          "lat": 40.749203665043,
-          "lng": -74.002983118307,
-          "source": "nys_dol"
-        }
-      }
-    ]
-  },
-  {
     "id": "nyc_dep_acp7:TRU1370BX25",
     "title": "New York Environmental Systems, Inc.",
     "contractor": "New York Environmental Systems, Inc.",
@@ -80215,6 +80135,48 @@
     ]
   },
   {
+    "id": "nys_dol:27213487",
+    "title": "ADVANCED DRI LLC",
+    "contractor": "ADVANCED DRI LLC",
+    "start": "2026-03-18",
+    "end": "2027-03-14",
+    "address": {
+      "street": "24 FIFTH AVE",
+      "city": "NEW YORK",
+      "state": "NY",
+      "zip": "10001"
+    },
+    "addressKey": "24 FIFTH AVE|NEW YORK|10001",
+    "coordinates": {
+      "lat": 40.733109000003,
+      "lng": -73.995957000001,
+      "source": "geocoder",
+      "provider": "nys"
+    },
+    "sources": [
+      {
+        "source": "nys_dol",
+        "sourceId": "27213487",
+        "caseReference": "27213487",
+        "contractor": "ADVANCED DRI LLC",
+        "start": "2026-03-18",
+        "end": "2027-03-14",
+        "address": {
+          "street": "24 FIFTH AVE",
+          "city": "NEW YORK",
+          "state": "NY",
+          "zip": "10001"
+        },
+        "coordinates": {
+          "lat": 40.733109000003,
+          "lng": -73.995957000001,
+          "source": "geocoder",
+          "provider": "nys"
+        }
+      }
+    ]
+  },
+  {
     "id": "nyc_dep_acp7:TRU0257QN26",
     "title": "Delta Environmental, Inc.",
     "contractor": "Delta Environmental, Inc.",
@@ -84828,6 +84790,46 @@
           }
         ],
         "rawRowCount": 35
+      }
+    ]
+  },
+  {
+    "id": "nys_dol:27218566",
+    "title": "ABATEMENT UNLIMITED, INC.",
+    "contractor": "ABATEMENT UNLIMITED, INC.",
+    "start": "2026-03-24",
+    "end": "2027-03-23",
+    "address": {
+      "street": "426 WEST 27TH DRIVE",
+      "city": "NEW YORK",
+      "state": "NY",
+      "zip": "10001"
+    },
+    "addressKey": "426 W 27 DR|NEW YORK|10001",
+    "coordinates": {
+      "lat": 40.749650252183,
+      "lng": -74.001153317583,
+      "source": "nys_dol"
+    },
+    "sources": [
+      {
+        "source": "nys_dol",
+        "sourceId": "27218566",
+        "caseReference": "27218566",
+        "contractor": "ABATEMENT UNLIMITED, INC.",
+        "start": "2026-03-24",
+        "end": "2027-03-23",
+        "address": {
+          "street": "426 WEST 27TH DRIVE",
+          "city": "NEW YORK",
+          "state": "NY",
+          "zip": "10001"
+        },
+        "coordinates": {
+          "lat": 40.749650252183,
+          "lng": -74.001153317583,
+          "source": "nys_dol"
+        }
       }
     ]
   },
